@@ -13,7 +13,7 @@ const nextConfig = {
   },
 
   images: {
-    domains: ["https://todo-template-app-name.app/", "https://localhost:3000"],
+    domains: ["http://ltc-investments.pl/", "https://localhost:3000"],
     //   website of this project, so that images are loaded on the live website too
     remotePatterns: [
       {

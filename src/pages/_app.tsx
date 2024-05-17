@@ -12,9 +12,9 @@ function MyApp({ Component, pageProps }: AppProps<{}>) {
       <Layout>
         <Head>
           {/* //       _._. Title & Meta tags - which will be visible in the browser tab & are good for SEO */}
-          <title>LTC Investments</title>
+          <title>Template app</title>
           {/* for example : <title>iPhone 12 XS Max For Sale in Colorado - Big Discounts | Apple</title>  */}
-          <meta name="description" content="LTC Investments" />
+          <meta name="description" content="TODO content" />
         </Head>
         {/* //       _._. Base Next.js component, visible to users */}
         <Component {...pageProps} />

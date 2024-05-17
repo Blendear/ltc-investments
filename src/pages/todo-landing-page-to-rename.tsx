@@ -25,7 +25,7 @@ const OneTwoTFWCNCss = {
 
 const OneTwoThreeFourWordComponentName =
   ({}: OneTwoThreeFourWordComponentNameProps) => {
-    return <div>AComponent a</div>;
+    return <div>AComponent</div>;
   };
 
 export default OneTwoThreeFourWordComponentName;
