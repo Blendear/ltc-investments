@@ -31,7 +31,7 @@ const globalCss = {
 
     main: {
       // 150px on top, because navbar takes 150px
-      padding: "180px 15px 30px 15px",
+      padding: "150px 15px 30px 15px",
     },
 
     h1: {
