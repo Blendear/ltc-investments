@@ -40,7 +40,9 @@ const AboutUs = () => {
     <article css={aboutUsCss.container}>
       <ImageWithWrapper
         wrapperCss={aboutUsCss.imageForDescription("left")}
-        src={"/images/LTC Investments - Logo.png"}
+        src={
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/991px-Placeholder_view_vector.svg.png"
+        }
       />
       <section css={aboutUsCss.description("right")}>
         <h2>Tytuł tytuł tytuł</h2>

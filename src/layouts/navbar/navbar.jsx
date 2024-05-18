@@ -20,7 +20,7 @@ const Navbar = () => {
       <Link href="/home">
         <ImageWithWrapper
           wrapperCss={navbarCss.logo}
-          src={"/images/LTC Investments - Logo.png"}
+          src={"/images/ltc-logo.png"}
         />
       </Link>
     </nav>
