@@ -1,9 +1,12 @@
 export const colors = {
   primaryLight: "255, 255, 255",
-  secondaryLight: "0, 122, 126",
+  secondaryLight: "238,238,238",
   tertiaryLight: "0, 0, 0",
   quaternaryLight: "97, 39, 14",
   whiteLight: "255, 255, 255",
+
+  backgroundGradient:
+    "linear-gradient(to top, rgb(255,255,255), rgb(238,238,238))",
 
   shadowSharpRight: "0.2rem 0 0rem 0 rgba(0, 0, 0, 0.3)",
   shadowSharpRightDown: "1.1rem 0.3rem 0rem 0 rgba(0, 0, 0, 0.3)",
