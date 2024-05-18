@@ -12,8 +12,19 @@ const aboutUsCss = {
 
     "@media (orientation: landscape)": {
       gridTemplateColumns: "1fr 4fr 1fr",
+      columnGap: "3rem",
+      rowGap: "3rem",
     },
   }),
+
+  pageIdentifier: css([
+    universalCss.h1,
+    {
+      "@media (orientation: landscape)": {
+        gridColumn: "1/-1",
+      },
+    },
+  ]),
 
   description: (position: "left" | "right") =>
     css({
@@ -31,7 +42,7 @@ const aboutUsCss = {
       "@media (orientation: landscape)": {
         gridColumn: position === "left" ? "1" : "3",
         gridRow: position === "left" ? "2" : "3",
-        aspectRatio: "1/1.5",
+        aspectRatio: "1/1.25",
       },
     }),
 };
@@ -39,7 +50,7 @@ const aboutUsCss = {
 const AboutUs = () => {
   return (
     <article css={aboutUsCss.container}>
-      <h1 css={universalCss.h1}>O nas</h1>
+      <h1 css={aboutUsCss.pageIdentifier}>O nas</h1>
 
       <ImageWithWrapper
         wrapperCss={aboutUsCss.imageForDescription("left")}
