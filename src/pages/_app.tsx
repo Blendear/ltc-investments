@@ -10,6 +10,11 @@ import { variables } from "@/styles/emotion-css/variables";
 
 const globalCss = {
   container: css({
+    "*": {
+      margin: "0",
+      padding: "0",
+    },
+
     body: {
       margin: "0",
       background: colors.backgroundGradient,
