@@ -6,7 +6,7 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/todo-landing-page-to-rename",
+        destination: "/about-us",
         permanent: true,
       },
     ];
