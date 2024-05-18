@@ -43,6 +43,10 @@ export const universalCss = {
     backgroundColor: `rgb(${colors.tertiaryLight})`,
   }),
 
+  h1: css({
+    textAlign: "center",
+  }),
+
   wrapperWithCenteredSvg: (wrapperSize: string, svgSize: string) =>
     css({
       justifySelf: "center",

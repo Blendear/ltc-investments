@@ -19,6 +19,7 @@ const aboutUsCss = {
     css({
       "@media (orientation: landscape)": {
         gridColumn: position === "left" ? "1/3" : "2/4",
+        gridRow: position === "left" ? "3" : "2",
       },
     }),
 
@@ -29,7 +30,7 @@ const aboutUsCss = {
 
       "@media (orientation: landscape)": {
         gridColumn: position === "left" ? "1" : "3",
-        gridRow: position === "left" ? "1" : "2",
+        gridRow: position === "left" ? "2" : "3",
         aspectRatio: "1/1.5",
       },
     }),
@@ -38,6 +39,8 @@ const aboutUsCss = {
 const AboutUs = () => {
   return (
     <article css={aboutUsCss.container}>
+      <h1 css={universalCss.h1}>O nas</h1>
+
       <ImageWithWrapper
         wrapperCss={aboutUsCss.imageForDescription("left")}
         src={
