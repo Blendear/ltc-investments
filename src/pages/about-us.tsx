@@ -9,11 +9,11 @@ const aboutUsCss = {
   container: css({
     display: "grid",
     gridTemplateColumns: "1fr",
+    rowGap: "2rem",
 
     "@media (orientation: landscape)": {
       gridTemplateColumns: "1fr 4fr 1fr",
       columnGap: "3rem",
-      rowGap: "3rem",
     },
   }),
 
@@ -28,6 +28,9 @@ const aboutUsCss = {
 
   description: (position: "left" | "right") =>
     css({
+      display: "grid",
+      rowGap: "1rem",
+
       "@media (orientation: landscape)": {
         gridColumn: position === "left" ? "1/3" : "2/4",
         gridRow: position === "left" ? "3" : "2",
