@@ -13,6 +13,10 @@ const globalCss = {
       margin: "0",
       background: colors.backgroundGradient,
     },
+
+    main: {
+      padding: "30px 15px",
+    },
   }),
 };
 
