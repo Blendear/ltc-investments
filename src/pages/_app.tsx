@@ -6,16 +6,34 @@ import store from "../store/redux/store-redux";
 import { Provider } from "react-redux";
 import Layout from "../layouts/layout/layout";
 import Head from "next/head";
+import { variables } from "@/styles/emotion-css/variables";
 
 const globalCss = {
   container: css({
     body: {
       margin: "0",
       background: colors.backgroundGradient,
+      // fontFamily is available thanks to the "font importer" code inside "_document.tsx"
+      fontFamily: "'Montserrat', sans-serif",
+      fontStyle: "normal",
+      fontSize: variables.fontSize.regular,
+    },
+
+    html: {
+      boxSizing: "border-box",
+      fontSize: "62.5%", // 10px/16px = 62.5% -> 1rem = 10px
     },
 
     main: {
       padding: "30px 15px",
+    },
+
+    h1: {
+      fontSize: variables.fontSize.heading,
+    },
+
+    h2: {
+      fontSize: variables.fontSize.subheading,
     },
   }),
 };
