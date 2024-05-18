@@ -3,9 +3,8 @@ import { css } from "@emotion/react";
 import { variables } from "@/styles/emotion-css/variables";
 import { universalCss } from "@/styles/emotion-css/universal";
 import { colors } from "@/styles/emotion-css/colors";
-import { OneTwoThreeFourWordComponentNameProps } from "../types";
 
-const OneTwoTFWCNCss = {
+const investitionsCss = {
   container: css({
     // gridRow: "1 / 3",
     // padding: "1rem",
@@ -23,9 +22,8 @@ const OneTwoTFWCNCss = {
   }),
 };
 
-const OneTwoThreeFourWordComponentName =
-  ({}: OneTwoThreeFourWordComponentNameProps) => {
-    return <div>AComponent</div>;
-  };
+const Investitions = () => {
+  return <div css={investitionsCss.container}>AComponent</div>;
+};
 
-export default OneTwoThreeFourWordComponentName;
+export default Investitions;
