@@ -8,10 +8,25 @@ import ImageWithWrapper from "@/components/ImageWithWrapper";
 
 const navbarCss = {
   container: css({
+    position: "fixed",
+    top: "0",
+    zIndex: "100",
+    height: "max-content",
+    width: "100%",
+    display: "grid",
+    alignItems: "center",
     backgroundColor: `rgb(${colors.tertiaryLight})`,
   }),
 
-  logo: css({ width: "125px", height: "125px" }),
+  logo: css({
+    width: "125px",
+    height: "125px",
+
+    "@media (orientation:landscape)": {
+      width: "150px",
+      height: "150px",
+    },
+  }),
 };
 
 const Navbar = () => {
