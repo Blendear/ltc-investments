@@ -24,9 +24,13 @@ const aboutUsCss = {
 
   imageForDescription: (position: "left" | "right") =>
     css({
+      width: "100%",
+      aspectRatio: "1/1",
+
       "@media (orientation: landscape)": {
         gridColumn: position === "left" ? "1" : "3",
         gridRow: position === "left" ? "1" : "2",
+        aspectRatio: "1/1.5",
       },
     }),
 };
