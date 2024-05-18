@@ -10,7 +10,7 @@ import Head from "next/head";
 const globalCss = {
   container: css({
     body: {
-      margin: "10px 15px",
+      margin: "0",
       background: colors.backgroundGradient,
     },
   }),
