@@ -52,7 +52,7 @@ function MyApp({ Component, pageProps }: AppProps<{}>) {
       <Layout>
         <Head>
           {/* //       _._. Title & Meta tags - which will be visible in the browser tab & are good for SEO */}
-          <title>Template app</title>
+          <title>LTC Investments</title>
           {/* for example : <title>iPhone 12 XS Max For Sale in Colorado - Big Discounts | Apple</title>  */}
           <meta name="description" content="TODO content" />
         </Head>
