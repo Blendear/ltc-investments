@@ -36,7 +36,9 @@ const footerCss = {
         },
 
         "& > a": {
-          all: "unset",
+          ":hover": {
+            color: `rgb(${colors.secondaryLight})`,
+          },
         },
 
         "& > p > span": {

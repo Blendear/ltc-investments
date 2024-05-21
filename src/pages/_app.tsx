@@ -10,9 +10,21 @@ import { variables } from "@/styles/emotion-css/variables";
 
 const globalCss = {
   container: css({
-    "*": {
+    "*, *::before, *::after": {
       margin: "0",
       padding: "0",
+      boxSizing: "inherit",
+
+      "@media (prefers-reduced-motion: reduce)": {
+        animationDuration: "0.01ms !important",
+        animationIterationCount: "1 !important",
+        transitionDuration: "0.01ms !important",
+        scrollBehavior: "auto", // "!important" doesn't work here
+      },
+    },
+
+    "html:focus-within": {
+      scrollBehavior: "smooth",
     },
 
     body: {
@@ -25,6 +37,8 @@ const globalCss = {
     },
 
     html: {
+      lineHeight: "1.15",
+      WebkitTextSizeAdjust: "100%",
       boxSizing: "border-box",
       fontSize: "62.5%", // 10px/16px = 62.5% -> 1rem = 10px
     },
@@ -40,6 +54,37 @@ const globalCss = {
 
     h2: {
       fontSize: variables.fontSize.subheading,
+    },
+
+    li: {
+      listStyle: "none",
+    },
+
+    textarea: {
+      resize: "none",
+      border: "none",
+      background: "none",
+      outline: "none",
+      "&::-webkit-scrollbar": {
+        display: "none",
+      },
+    },
+
+    "a, button": {
+      all: "unset",
+      // For WebKit-based browsers (Safari, Chrome, newer Edge, Opera)
+      WebkitTapHighlightColor: "transparent",
+      // For Firefox, Internet Explorer, and other browsers
+      outline: "none",
+      userSelect: "none", // Prevents text selection which might cause visual feedback
+      MsTouchAction: "manipulation", // Prevent default touch actions in IE
+      touchAction: "manipulation", // Prevent default touch actions in modern browsers
+
+      cursor: "pointer",
+    },
+
+    input: {
+      all: "unset",
     },
   }),
 };
