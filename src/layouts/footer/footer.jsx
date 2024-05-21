@@ -14,9 +14,11 @@ const footerCss = {
   container: css({
     display: "grid",
     justifyItems: "center",
+    backgroundColor: `rgb(${colors.primaryLight})`,
+    color: `rgb(${colors.whiteLight})`,
 
     "& > div": {
-      padding: "0 0 6rem 0",
+      padding: "6rem 0",
       display: "grid",
       width: "100%",
       justifyItems: "center",
@@ -28,8 +30,11 @@ const footerCss = {
       },
 
       "& div:not(:first-of-type):not(:last-of-type)": {
-        display: "grid",
+        alignSelf: "center",
         width: "23rem",
+        display: "grid",
+        gridTemplateRows: `repeat(5, ${variables.fontSize.regular})`,
+        rowGap: "1rem",
 
         "@media (orientation: landscape)": {
           width: "max-content",
@@ -53,8 +58,8 @@ const footerCss = {
     height: "125px",
 
     "@media (orientation:landscape)": {
-      width: "150px",
-      height: "150px",
+      width: "200px",
+      height: "200px",
     },
   }),
 
@@ -72,7 +77,7 @@ const footerCss = {
   socialSvg: css([
     universalCss.wrapperWithCenteredSvg("6rem", "80%"),
     {
-      color: `rgb(${colors.primaryLight},0.5)`,
+      color: `rgb(${colors.whiteLight},0.75)`,
     },
   ]),
 };
