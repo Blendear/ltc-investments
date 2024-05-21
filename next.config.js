@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Translation / Internalisation
+  i18n: {
+    locales: ["en", "pl"],
+    defaultLocale: "pl",
+  },
+
   reactStrictMode: true,
   swcMinify: true,
   async redirects() {

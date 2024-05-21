@@ -6,6 +6,9 @@ import { colors } from "@/styles/emotion-css/colors";
 import { FaLinkedin } from "react-icons/fa";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { en } from "../../../public/locales/en";
+import { pl } from "../../../public/locales/pl";
 
 const footerCss = {
   container: css({}),
@@ -21,6 +24,9 @@ const footerCss = {
   }),
 };
 const Footer = () => {
+  const { locale } = useRouter();
+  const t = locale === "en" ? en.footer : pl.footer;
+
   return (
     <footer>
       <div>
@@ -31,17 +37,25 @@ const Footer = () => {
       </div>
 
       <div>
-        <Link href="/home">Strona Główna</Link>
-        <Link href="/about-us"> O nas</Link>
-        <Link href="/contact"> Kontakt</Link>
-        <Link href="/investitions"> Inwestycje</Link>
-        <Link href="/offers"> Oferty</Link>
+        <Link href="/home">{t.home}</Link>
+        <Link href="/about-us">{t.aboutUs}</Link>
+        <Link href="/contact">{t.contact}</Link>
+        <Link href="/investitions">{t.investitions}</Link>
+        <Link href="/offers">{t.offers}</Link>
       </div>
 
       <div>
-        <p>Al. Jana PAwła II 58 B/7</p>
-        <p>470232, Kędzierzyn-Koźle</p>
-        <p>Polska</p>
+        <p> {t.addressStreet}</p>
+        <p> {t.addressCode}</p>
+        <p> {t.addressCity}</p>
+        <p> {t.addressCountry}</p>
+      </div>
+
+      <div>
+        <p> {t.phoneLabel}: +48 504 537 611</p>
+        <p> {t.emailLabel}: ltc.prawne@gmail.com</p>
+        <p> {t.nipLabel}: 7543070445</p>
+        <p> {t.krsLabel}: 0001059206</p>
       </div>
 
       <div>
