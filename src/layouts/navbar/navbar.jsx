@@ -15,7 +15,7 @@ const navbarCss = {
     width: "100%",
     display: "grid",
     alignItems: "center",
-    backgroundColor: `rgb(${colors.tertiaryLight})`,
+    backgroundColor: `rgb(${colors.primaryLight})`,
   }),
 
   logo: css({
