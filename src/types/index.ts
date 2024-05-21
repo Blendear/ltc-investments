@@ -7,3 +7,7 @@ export type ImageWithWrapperProps = {
   alt?: string;
   wrapperCss?: {};
 };
+
+export type AppDataUniversalForAllUsersType = {
+  languageChosen: "pl" | "eng";
+};
