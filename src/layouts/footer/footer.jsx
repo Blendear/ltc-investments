@@ -18,26 +18,29 @@ const footerCss = {
     color: `rgb(${colors.whiteLight})`,
 
     "& > div": {
-      padding: "6rem 0",
+      padding: "2rem 0 6rem 0",
       display: "grid",
       width: "100%",
       justifyItems: "center",
-      rowGap: "3rem",
+      columnGap: "20px",
 
-      "@media (orientation: landscape)": {
+      "@media (min-width:922px)": {
+        padding: "0",
         maxWidth: "1100px",
         gridAutoFlow: "column",
       },
 
-      "& div:not(:first-of-type):not(:last-of-type)": {
+      "& > div:not(:first-of-type):not(:last-of-type)": {
         alignSelf: "center",
         width: "23rem",
         display: "grid",
-        gridTemplateRows: `repeat(5, ${variables.fontSize.regular})`,
+        justifyItems: "center",
         rowGap: "1rem",
 
-        "@media (orientation: landscape)": {
+        "@media (min-width:922px)": {
           width: "max-content",
+          justifyItems: "start",
+          gridTemplateRows: `repeat(5, ${variables.fontSize.regular})`,
         },
 
         "& > a": {
@@ -50,17 +53,18 @@ const footerCss = {
           color: `rgb(${colors.secondaryLight})`,
         },
       },
+
+      "& > div:not(:first-of-type):not(:nth-of-type(2))": {
+        "@media (max-width:922px)": {
+          margin: "40px 0 0 0",
+        },
+      },
     },
   }),
 
   logo: css({
-    width: "125px",
-    height: "125px",
-
-    "@media (orientation:landscape)": {
-      width: "200px",
-      height: "200px",
-    },
+    width: "275px",
+    height: "275px",
   }),
 
   socialsSvgs: css({
