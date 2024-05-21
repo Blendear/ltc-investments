@@ -4,6 +4,9 @@ import { variables } from "@/styles/emotion-css/variables";
 import { universalCss } from "@/styles/emotion-css/universal";
 import { colors } from "@/styles/emotion-css/colors";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
+import { useRouter } from "next/router";
+import { en } from "../../public/locales/en";
+import { pl } from "../../public/locales/pl";
 
 const aboutUsCss = {
   container: css({
@@ -51,6 +54,9 @@ const aboutUsCss = {
 };
 
 const AboutUs = () => {
+  const { locale } = useRouter();
+  const t = locale === "en" ? en.aboutUs : pl.aboutUs;
+
   return (
     <article css={aboutUsCss.container}>
       <h1 css={aboutUsCss.pageIdentifier}>O nas</h1>

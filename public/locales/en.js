@@ -16,4 +16,14 @@ export const en = {
     krsLabel: "KRS",
     nipLabel: "NIP",
   },
+
+  aboutUs: {},
+
+  contact: {},
+
+  home: {},
+
+  investitions: {},
+
+  offers: {},
 };

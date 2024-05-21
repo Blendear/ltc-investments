@@ -3,6 +3,9 @@ import { css } from "@emotion/react";
 import { variables } from "@/styles/emotion-css/variables";
 import { universalCss } from "@/styles/emotion-css/universal";
 import { colors } from "@/styles/emotion-css/colors";
+import { useRouter } from "next/router";
+import { en } from "../../public/locales/en";
+import { pl } from "../../public/locales/pl";
 
 const contactCss = {
   container: css({
@@ -23,6 +26,9 @@ const contactCss = {
 };
 
 const Contact = () => {
+  const { locale } = useRouter();
+  const t = locale === "en" ? en.contact : pl.contact;
+
   return <div css={contactCss.container}>AComponent</div>;
 };
 
