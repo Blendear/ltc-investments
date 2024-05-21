@@ -11,14 +11,24 @@ const homeCss = {
   container: css({
     // gridRow: "1 / 3",
     // padding: "1rem",
+    //
     // width: "100%",
     // boxSizing: "border-box",
     // aspectRatio: "2/1",
     // backgroundColor: `rgb(${colors.primaryLight})`,
+    //
     // display: "grid",
     // gridTemplateRows: "1fr",
+    // rowGap: "1rem",
+    // columnGap: "2rem",
+    //
     // justifyItems: "center",
-    // fontSize: "clamp(1rem, 4vw, 2rem)",
+    // fontSize: variables.fontSize.heading,
+    //
+    // "@media (orientation: landscape)": {
+    // ...
+    // }
+    //
     // "& div:nth-child(1)": {
     //   backgroundColor: "yellow",
     // },
