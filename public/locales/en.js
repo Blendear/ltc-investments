@@ -7,7 +7,7 @@ export const en = {
     offers: "Offers",
 
     addressStreet: "Al. Jana Pawła II 58 B/7",
-    addressCode: "470232",
+    addressCode: "47-232",
     addressCity: "Kędzierzyn-Koźle",
     addressCountry: "Poland",
 

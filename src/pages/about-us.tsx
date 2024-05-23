@@ -63,40 +63,34 @@ const AboutUs = () => {
 
       <ImageWithWrapper
         wrapperCss={aboutUsCss.imageForDescription("left")}
-        src={
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/991px-Placeholder_view_vector.svg.png"
-        }
+        src={"/images/about-us/Description_1.jpg"}
       />
       <section css={aboutUsCss.description("right")}>
-        <h2>Tytuł tytuł tytuł</h2>
+        <h2>Dynamiczny rozwój w nieruchomościach</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          LTC Investments sp. z o.o. to dynamicznie rozwijająca się firma
+          działająca w branży nieruchomości. Nasza oferta obejmuje wynajem
+          lokali użytkowych i mieszkań, a także kompleksowe zarządzanie
+          nieruchomościami. Z pasją i zaangażowaniem wspieramy naszych klientów
+          w realizacji ich inwestycyjnych celów, oferując profesjonalne
+          doradztwo i wsparcie na każdym etapie.
         </p>
       </section>
 
       <ImageWithWrapper
         wrapperCss={aboutUsCss.imageForDescription("right")}
-        src={
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/991px-Placeholder_view_vector.svg.png"
-        }
+        src={"/images/about-us/Description_1b.jpg"}
       />
 
       <section css={aboutUsCss.description("left")}>
-        <h2>Tytuł tytuł tytuł</h2>
+        <h2>Specjaliści od zarządzania nieruchomościami</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Specjalizujemy się w szeroko pojętej branży nieruchomości, oferując
+          wynajem mieszkań i lokali użytkowych oraz kompleksowe zarządzanie
+          nieruchomościami. LTC Investments sp. z o.o. to zespół doświadczonych
+          specjalistów, którzy z pasją podchodzą do inwestycji i doradztwa
+          inwestycyjnego, pomagając klientom osiągnąć maksymalne korzyści z ich
+          przedsięwzięć.
         </p>
       </section>
     </article>
