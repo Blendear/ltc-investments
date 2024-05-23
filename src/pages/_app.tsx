@@ -44,6 +44,8 @@ const globalCss = {
     },
 
     main: {
+      display: "grid",
+      justifyItems: "center",
       // 150px on top, because navbar takes 150px, yet 180 on orientation landscape
       padding: "150px 30px 60px 30px",
 

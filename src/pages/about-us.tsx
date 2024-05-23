@@ -12,11 +12,13 @@ const aboutUsCss = {
   container: css({
     display: "grid",
     gridTemplateColumns: "1fr",
-    rowGap: "2rem",
+    rowGap: "4rem",
 
     "@media (orientation: landscape)": {
-      gridTemplateColumns: "1fr 4fr 1fr",
+      maxWidth: "900px",
+      gridTemplateColumns: "1fr 2fr 1fr",
       columnGap: "3rem",
+      rowGap: "5rem",
     },
   }),
 
@@ -32,11 +34,20 @@ const aboutUsCss = {
   description: (position: "left" | "right") =>
     css({
       display: "grid",
-      rowGap: "1rem",
+      rowGap: "2rem",
 
       "@media (orientation: landscape)": {
         gridColumn: position === "left" ? "1/3" : "2/4",
         gridRow: position === "left" ? "3" : "2",
+      },
+
+      "& > h2": {
+        "@media (orientation: portrait)": {
+          textAlign: "center",
+        },
+      },
+      "& > p": {
+        textAlign: "justify",
       },
     }),
 
@@ -48,7 +59,8 @@ const aboutUsCss = {
       "@media (orientation: landscape)": {
         gridColumn: position === "left" ? "1" : "3",
         gridRow: position === "left" ? "2" : "3",
-        aspectRatio: "1/1.25",
+        aspectRatio: "1.5/1",
+        height: "250px",
       },
     }),
 };
@@ -66,14 +78,17 @@ const AboutUs = () => {
         src={"/images/about-us/Description_1.jpg"}
       />
       <section css={aboutUsCss.description("right")}>
-        <h2>Dynamiczny rozwój w nieruchomościach</h2>
+        <h2>Dynamiczny rozwój nieruchomości</h2>
         <p>
           LTC Investments sp. z o.o. to dynamicznie rozwijająca się firma
           działająca w branży nieruchomości. Nasza oferta obejmuje wynajem
           lokali użytkowych i mieszkań, a także kompleksowe zarządzanie
-          nieruchomościami. Z pasją i zaangażowaniem wspieramy naszych klientów
-          w realizacji ich inwestycyjnych celów, oferując profesjonalne
-          doradztwo i wsparcie na każdym etapie.
+          nieruchomościami.
+        </p>
+        <p>
+          Z pasją i zaangażowaniem wspieramy naszych klientów w realizacji ich
+          inwestycyjnych celów, oferując profesjonalne doradztwo i wsparcie na
+          każdym etapie.
         </p>
       </section>
 
@@ -83,14 +98,16 @@ const AboutUs = () => {
       />
 
       <section css={aboutUsCss.description("left")}>
-        <h2>Specjaliści od zarządzania nieruchomościami</h2>
+        <h2>Profesjonalne doradztwo inwestycyjne</h2>
         <p>
           Specjalizujemy się w szeroko pojętej branży nieruchomości, oferując
           wynajem mieszkań i lokali użytkowych oraz kompleksowe zarządzanie
-          nieruchomościami. LTC Investments sp. z o.o. to zespół doświadczonych
-          specjalistów, którzy z pasją podchodzą do inwestycji i doradztwa
-          inwestycyjnego, pomagając klientom osiągnąć maksymalne korzyści z ich
-          przedsięwzięć.
+          nieruchomościami.
+        </p>
+        <p>
+          LTC Investments sp. z o.o. to zespół doświadczonych specjalistów,
+          którzy z pasją podchodzą do inwestycji i doradztwa inwestycyjnego,
+          pomagając klientom osiągnąć maksymalne korzyści z ich przedsięwzięć.
         </p>
       </section>
     </article>
