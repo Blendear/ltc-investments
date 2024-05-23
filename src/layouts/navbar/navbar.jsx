@@ -35,7 +35,7 @@ const Navbar = () => {
       <Link href="/home">
         <ImageWithWrapper
           wrapperCss={navbarCss.logo}
-          src={"/images/ltc-investments-logo.png"}
+          src={"/images/brand/ltc-investments-logo.png"}
         />
       </Link>
     </nav>

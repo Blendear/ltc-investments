@@ -95,7 +95,7 @@ const Footer = () => {
         <div>
           <ImageWithWrapper
             wrapperCss={footerCss.logo}
-            src={"/images/ltc-investments-logo.png"}
+            src={"/images/brand/ltc-investments-logo.png"}
           />
         </div>
 
