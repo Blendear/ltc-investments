@@ -11,11 +11,15 @@ const navbarCss = {
     position: "fixed",
     top: "0",
     zIndex: "100",
-    height: "max-content",
+    height: "125px",
     width: "100%",
     display: "grid",
     alignItems: "center",
     backgroundColor: `rgb(${colors.primaryLight})`,
+
+    "@media (orientation:landscape)": {
+      height: "150px",
+    },
   }),
 
   logo: css({
