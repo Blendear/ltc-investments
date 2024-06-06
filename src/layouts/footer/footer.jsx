@@ -116,16 +116,19 @@ const Footer = () => {
 
         <div>
           <p>
-            {t.phoneLabel}: <span>+48 504 537 611</span>
+            {t.phoneLabel}: <span>+48 604 513 082</span>
           </p>
           <p>
-            {t.emailLabel}: <span>ltc.prawne@gmail.com</span>
+            {t.emailLabel}: <span>l.cibis@gmail.com</span>
           </p>
           <p>
             {t.nipLabel}: <span>7543070445</span>
           </p>
           <p>
             {t.krsLabel}: <span>0001059206</span>
+          </p>
+          <p>
+            {t.regonLabel}: <span>161512181</span>
           </p>
         </div>
 

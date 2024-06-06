@@ -15,6 +15,7 @@ export const pl = {
     emailLabel: "Email",
     krsLabel: "KRS",
     nipLabel: "NIP",
+    regonLabel: "REGON",
   },
 
   aboutUs: {},
