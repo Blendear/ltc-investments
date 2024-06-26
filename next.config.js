@@ -2,7 +2,7 @@
 const nextConfig = {
   // Translation / Internalisation
   i18n: {
-    locales: ["en", "pl"],
+    locales: ["en", "pl", "de"],
     defaultLocale: "pl",
   },
 
