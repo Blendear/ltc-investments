@@ -20,7 +20,17 @@ export const de = {
 
   aboutUs: {},
 
-  contact: {},
+  contact: {
+    header: "Kontaktiere uns",
+
+    addressStreet: "Al. Jana Pawła II 58 B/7",
+    addressCode: "47-232",
+    addressCity: "Kędzierzyn-Koźle",
+    addressCountry: "Polen",
+    krsLabel: "KRS",
+    nipLabel: "NIP",
+    regonLabel: "REGON",
+  },
 
   home: {},
 
