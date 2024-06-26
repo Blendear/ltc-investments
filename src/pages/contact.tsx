@@ -17,7 +17,13 @@ const contactCss = {
 
     header: css({}),
 
-    map: css({}),
+    map: {
+      container: css({ width: "100%" }),
+
+      image: css({
+        aspectRatio: "16/9",
+      }),
+    },
   },
 
   svgWithDividerAndData: css({}),
@@ -28,15 +34,18 @@ const Contact = () => {
 
   return (
     <article css={contactCss.container}>
-      <section>
+      <section css={contactCss.weAreHere.container}>
         <h1>{t.header}</h1>
-        <button>
+        <a
+          href="https://www.google.com/maps/place/Aleja+Jana+Paw%C5%82a+II+58%2F7,+47-232+K%C4%99dzierzyn-Ko%C5%BAle/@50.3521152,18.2126408,14z/data=!4m5!3m4!1s0x47111116a621f50f:0xd3e91c2074b54a6e!8m2!3d50.3516983!4d18.2348327?hl=pl-PL&entry=ttu"
+          css={contactCss.weAreHere.map.container}
+        >
           <ImageWithWrapper
             src="/images/contact/map.png"
             alt="A map with a location of the company"
-            wrapperCss={contactCss.weAreHere.map}
+            wrapperCss={contactCss.weAreHere.map.image}
           />
-        </button>
+        </a>
       </section>
 
       <section css={contactCss.svgWithDividerAndData}>
