@@ -3,14 +3,14 @@ import { en } from "../../../../public/locales/en";
 import { pl } from "../../../../public/locales/pl";
 import { de } from "../../../../public/locales/de";
 
-export const useTranslation = () => {
+export const useTranslation = (pageName) => {
   const { locale } = useRouter();
 
   const t =
     {
-      pl: pl.contact,
-      en: en.contact,
-      de: de.contact,
+      pl: pl[pageName],
+      en: en[pageName],
+      de: de[pageName],
     }[locale] || en;
 
   return { t };

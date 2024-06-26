@@ -24,7 +24,7 @@ const contactCss = {
 };
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("contact");
 
   return (
     <article css={contactCss.container}>
