@@ -13,5 +13,5 @@ export const useTranslation = () => {
       de: de.contact,
     }[locale] || en;
 
-  return t;
+  return { t };
 };
