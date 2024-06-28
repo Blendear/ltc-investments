@@ -3,13 +3,12 @@ import { css } from "@emotion/react";
 import { variables } from "@/styles/emotion-css/variables";
 import { universalCss } from "@/styles/emotion-css/universal";
 import { colors } from "@/styles/emotion-css/colors";
-import { OneTwoThreeFourWordComponentNameProps } from "@/types";
+import { TilesWithSummaryListProps } from "../types";
 
-const OneTwoTFWCNCss = {
+const TilesWSLCss = {
   container: css({}),
 };
 
-export const OneTwoThreeFourWordComponentName =
-  ({}: OneTwoThreeFourWordComponentNameProps) => {
-    return <div>OneTwoThreeFourWordComponentName</div>;
-  };
+export const TilesWithSummaryList = ({}: TilesWithSummaryListProps) => {
+  return <div>TilesWithSummaryList</div>;
+};
