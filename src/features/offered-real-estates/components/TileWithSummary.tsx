@@ -22,11 +22,17 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
   return (
     <div css={tileWSCss.container(tile.variant)}>
       <section css={tileWSCss.gallery}>
-        {tile.variant !== "summary-short" ? (
-          <ImageWithWrapper src={tile.details.imagePathsList[0]} />
-        ) : (
-          <Gallery imagesPathsList={tile.details.imagePathsList} />
-        )}
+        {
+          {
+            "summary-short": (
+              <ImageWithWrapper src={tile.details.imagePathsList[0]} />
+            ),
+
+            "details-long": (
+              <Gallery imagesPathsList={tile.details.imagePathsList} />
+            ),
+          }[tile.variant]
+        }
       </section>
 
       <h2>{tile.details.name}</h2>
