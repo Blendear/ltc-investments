@@ -45,7 +45,7 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
         <h2>{tile.details.name}</h2>
         <div>
           <FiMapPin />
-          <p>{tile.details.localisation}</p>
+          <p>{tile.details.location}</p>
         </div>
         <div>
           <div>
