@@ -37,7 +37,20 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       pricePerSquareMeter: 1000,
     },
   ],
-  houses: [],
+  houses: [
+    {
+      id: 1,
+      imagePathsList: [
+        "https://static.wikia.nocookie.net/lugaresesdla/images/c/cf/34397_1216345233135_454_300.jpg/revision/latest?cb=20180329115746&path-prefix=es",
+        "https://static.wikia.nocookie.net/lugaresesdla/images/c/cf/34397_1216345233135_454_300.jpg/revision/latest?cb=20180329115746&path-prefix=es",
+        "https://static.wikia.nocookie.net/lugaresesdla/images/c/cf/34397_1216345233135_454_300.jpg/revision/latest?cb=20180329115746&path-prefix=es",
+      ],
+      name: "Gondor",
+      localisation: "Śródziemie, ul. Mordoru 7",
+      squareMeters: 77,
+      pricePerSquareMeter: 777,
+    },
+  ],
   premises: [],
   plots: [],
 };
