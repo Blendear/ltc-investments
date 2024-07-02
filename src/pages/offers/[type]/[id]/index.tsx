@@ -3,27 +3,26 @@ import { css } from "@emotion/react";
 import { variables } from "@/styles/emotion-css/variables";
 import { universalCss } from "@/styles/emotion-css/universal";
 import { colors } from "@/styles/emotion-css/colors";
-import { TileWithSummary } from "@/features/offered-real-estates/components/TileWithSummary";
 import { useTranslation } from "@/features/translation/hooks/useTranslation";
 import { offeredRealEstates } from "@/features/offered-real-estates/data/offeredRealEstates";
+import { useRouter } from "next/router";
 
-const offersCss = {
+const realEstateDCss = {
   container: css({}),
 };
 
-const Offers = () => {
+const RealEstateDetails = () => {
   const t = useTranslation("offers");
 
+  const router = useRouter();
+
+  console.log(router.query);
+
   return (
-    <div css={offersCss.container}>
-      <TileWithSummary
-        tile={{
-          variant: "summary-short",
-          details: offeredRealEstates.apartments[0],
-        }}
-      />
+    <div css={realEstateDCss.container}>
+      {router.query.type} {router.query.id}
     </div>
   );
 };
 
-export default Offers;
+export default RealEstateDetails;

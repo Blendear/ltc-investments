@@ -6,6 +6,11 @@ export type OfferedRealEstatesType = {
 };
 
 export type RealEstateType = {
+  typeAndId:
+    | `apartment-${number}`
+    | `house-${number}`
+    | `premise-${number}`
+    | `plot-${number}`;
   name: string;
   imagePathsList: string[];
   localisation: string;

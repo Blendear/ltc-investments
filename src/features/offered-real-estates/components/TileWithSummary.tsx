@@ -9,6 +9,7 @@ import { FiMapPin } from "react-icons/fi";
 import { GrMoney } from "react-icons/gr";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
 import { Gallery } from "./Gallery";
+import Link from "next/link";
 
 const tileWSCss = {
   container: (variant) => css({}),
@@ -20,7 +21,7 @@ const tileWSCss = {
 
 export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
   return (
-    <div css={tileWSCss.container(tile.variant)}>
+    <Link css={tileWSCss.container(tile.variant)} href={`/offers/1`}>
       <section css={tileWSCss.gallery}>
         {
           {
@@ -34,14 +35,11 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
           }[tile.variant]
         }
       </section>
-
       <h2>{tile.details.name}</h2>
-
       <div>
         <FiMapPin />
         <p>{tile.details.localisation}</p>
       </div>
-
       <div>
         <div>
           <BiArea />
@@ -57,8 +55,7 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
           </p>
         </div>
       </div>
-
       <p>{tile.details.squareMeters * tile.details.pricePerSquareMeter} zł</p>
-    </div>
+    </Link>
   );
 };
