@@ -3,7 +3,7 @@ import { OfferedRealEstatesType } from "../types";
 export const offeredRealEstates: OfferedRealEstatesType = {
   apartments: [
     {
-      typeAndId: "apartment-1",
+      id: 1,
       imagePathsList: [
         "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
         "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
@@ -17,7 +17,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       pricePerSquareMeter: 1000,
     },
     {
-      typeAndId: "apartment-2",
+      id: 2,
       imagePathsList: [
         "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
       ],
@@ -27,7 +27,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       pricePerSquareMeter: 1000,
     },
     {
-      typeAndId: "apartment-3",
+      id: 3,
       imagePathsList: [
         "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
       ],

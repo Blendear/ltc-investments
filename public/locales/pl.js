@@ -36,5 +36,7 @@ export const pl = {
 
   investitions: {},
 
-  offers: {},
+  offers: {
+    header: "Nasze oferty",
+  },
 };

@@ -5,12 +5,10 @@ export type OfferedRealEstatesType = {
   plots: RealEstateType[];
 };
 
+export type TypeOfRealEstate = keyof OfferedRealEstatesType;
+
 export type RealEstateType = {
-  typeAndId:
-    | `apartment-${number}`
-    | `house-${number}`
-    | `premise-${number}`
-    | `plot-${number}`;
+  id: number;
   name: string;
   imagePathsList: string[];
   localisation: string;

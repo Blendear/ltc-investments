@@ -12,7 +12,7 @@ const realEstateDCss = {
 };
 
 const RealEstateDetails = () => {
-  const t = useTranslation("offers");
+  const { t } = useTranslation("offers");
 
   const router = useRouter();
 
