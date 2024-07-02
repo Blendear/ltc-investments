@@ -9,6 +9,8 @@ import { useRouter } from "next/router";
 import { TilesWithSummaryList } from "@/features/offered-real-estates/components/TilesWithSummaryList";
 import { useEffect, useState } from "react";
 import { TypeOfRealEstate } from "@/features/offered-real-estates/types";
+import Link from "next/link";
+import { TypesOfRealEstatesLinks } from "@/features/offered-real-estates/components/TypesOfRealEstatesLinks";
 
 const offersCss = {
   container: css({}),
@@ -28,6 +30,8 @@ const OffersByTypeOfRealEstate = () => {
 
   return (
     <article css={offersCss.container}>
+      <TypesOfRealEstatesLinks />
+
       <h1>{t.header}</h1>
 
       {typeOfRealEstate && (

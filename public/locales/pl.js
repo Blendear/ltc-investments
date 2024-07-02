@@ -37,6 +37,13 @@ export const pl = {
   investitions: {},
 
   offers: {
+    typesOfRealEstates: {
+      apartments: "Mieszkania",
+      houses: "Domy",
+      premises: "Lokale",
+      plots: "Działki",
+    },
+
     header: "Nasze oferty",
   },
 };

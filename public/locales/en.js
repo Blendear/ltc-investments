@@ -37,6 +37,13 @@ export const en = {
   investitions: {},
 
   offers: {
+    typesOfRealEstates: {
+      apartments: "Apartments",
+      houses: "Houses",
+      premises: "Premises",
+      plots: "Plots",
+    },
+
     header: "Our offers",
   },
 };
