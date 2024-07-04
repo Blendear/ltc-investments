@@ -5,6 +5,7 @@ import { universalCss } from "@/styles/emotion-css/universal";
 import { colors } from "@/styles/emotion-css/colors";
 import Link from "next/link";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
+import HamburgerMenu from "@/features/navigation/components/HamburgerMenu";
 
 const navbarCss = {
   container: css({
@@ -14,6 +15,7 @@ const navbarCss = {
     height: "125px",
     width: "100%",
     display: "grid",
+    gridTemplateColumns: "max-content 1fr",
     alignItems: "center",
     backgroundColor: `rgb(${colors.primaryLight})`,
 
@@ -42,6 +44,10 @@ const Navbar = () => {
           src={"/images/brand/ltc-investments-logo.png"}
         />
       </Link>
+
+      {/* <HamburgerMenu
+        subpages={["home", "aboutUs", "contact", "investitions", "offers"]}
+      /> */}
     </nav>
   );
 };

@@ -1,4 +1,12 @@
 export const pl = {
+  menu: {
+    home: "Strona Główna",
+    aboutUs: "O nas",
+    contact: "Kontakt",
+    investitions: "Inwestycje",
+    offers: "Oferty",
+  },
+
   footer: {
     home: "Strona Główna",
     aboutUs: "O nas",

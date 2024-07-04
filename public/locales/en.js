@@ -1,4 +1,12 @@
 export const en = {
+  menu: {
+    home: "Home",
+    aboutUs: "About Us",
+    contact: "Contact",
+    investitions: "Investitions",
+    offers: "Offers",
+  },
+
   footer: {
     home: "Home",
     aboutUs: "About Us",
