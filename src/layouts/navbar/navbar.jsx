@@ -6,6 +6,7 @@ import { colors } from "@/styles/emotion-css/colors";
 import Link from "next/link";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
 import HamburgerMenu from "@/features/navigation/components/HamburgerMenu";
+import { LanguageFlagChooser } from "@/features/translation/components/LanguageFlagChooser";
 
 const navbarCss = {
   container: css({
@@ -15,7 +16,7 @@ const navbarCss = {
     height: "125px",
     width: "100%",
     display: "grid",
-    gridTemplateColumns: "max-content 1fr",
+    gridTemplateColumns: "max-content 1fr max-content",
     alignItems: "center",
     backgroundColor: `rgb(${colors.primaryLight})`,
 
@@ -45,9 +46,11 @@ const Navbar = () => {
         />
       </Link>
 
-      {/* <HamburgerMenu
+      <HamburgerMenu
         subpages={["home", "aboutUs", "contact", "investitions", "offers"]}
-      /> */}
+      />
+
+      <LanguageFlagChooser />
     </nav>
   );
 };
