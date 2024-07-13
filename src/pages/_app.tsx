@@ -78,14 +78,6 @@ const globalCss = {
 
     "a, button": {
       all: "unset",
-      // For WebKit-based browsers (Safari, Chrome, newer Edge, Opera)
-      WebkitTapHighlightColor: "transparent",
-      // For Firefox, Internet Explorer, and other browsers
-      outline: "none",
-      userSelect: "none", // Prevents text selection which might cause visual feedback
-      MsTouchAction: "manipulation", // Prevent default touch actions in IE
-      touchAction: "manipulation", // Prevent default touch actions in modern browsers
-
       cursor: "pointer",
     },
 
