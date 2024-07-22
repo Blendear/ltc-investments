@@ -12,24 +12,21 @@ export type RealEstateType = {
   name: string;
   consultant: ConsultantType;
   imagePathsList: string[];
-  location: string;
-  roomsAmount?: number;
-  squareMeters: number;
-  pricePerSquareMeter: number;
   detailedDescriptions: {
     characteristics: CharacteristicsType;
     about: string;
     location: string;
     additionalInfo?: string;
-    priceSpecification?: string;
+    // priceSpecification?: string;
   };
 };
 
 export type CharacteristicsType = {
   // Use english strings, since they are used as translation labels
 
-  offerSymbol?: string; // Symbol oferty, np. "MLY-LS-7355"
-  area?: string; // Powierzchnia, np. "33,00 m²"
+  offerSymbol?: `${"APA" | "HOU" | "PRE" | "PLO"}-${number}`; // Symbol oferty, np. "APA-2" - used for finding the translation label for this real estate details page
+  area?: number; // Powierzchnia, np. "33,00"
+  pricePerSquareMeter: number;
 
   buildingType?: "tenement" | "block"; // Typ budynku, np. "kamienica"
   feesIncludedInRent?: string; // Opłaty w czynszu, np. "fundusz remontowy, woda"

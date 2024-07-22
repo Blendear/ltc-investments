@@ -45,24 +45,34 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
         <h2>{tile.details.name}</h2>
         <div>
           <FiMapPin />
-          <p>{tile.details.location}</p>
+          <p>{tile.details.detailedDescriptions.location}</p>
         </div>
         <div>
           <div>
             <BiArea />
             <p>
-              {tile.details.squareMeters} m<sup>2</sup>
+              {tile.details.detailedDescriptions.characteristics.area} m
+              <sup>2</sup>
             </p>
           </div>
 
           <div>
             <GrMoney />
             <p>
-              {tile.details.pricePerSquareMeter} zł/m<sup>2</sup>
+              {
+                tile.details.detailedDescriptions.characteristics
+                  .pricePerSquareMeter
+              }
+              zł/m<sup>2</sup>
             </p>
           </div>
         </div>
-        <p>{tile.details.squareMeters * tile.details.pricePerSquareMeter} zł</p>
+        <p>
+          {tile.details.detailedDescriptions.characteristics.area *
+            tile.details.detailedDescriptions.characteristics
+              .pricePerSquareMeter}
+          zł
+        </p>
       </div>
     </Link>
   );
