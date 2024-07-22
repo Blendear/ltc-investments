@@ -40,7 +40,33 @@ export const de = {
     regonLabel: "REGON",
   },
 
-  home: {},
+  home: {
+    brandName: "LTC Investments",
+    brandSlogan: "Ihre Investitionen, unsere Leidenschaft",
+    infoChunks: {
+      first: {
+        header: "Immobilienvermietung",
+        content:
+          "Wir bieten die Vermietung von Wohnungen und Gewerberäumen an, die auf Ihre Bedürfnisse zugeschnitten sind. Unsere Flexibilität und individuelle Herangehensweise garantieren Zufriedenheit mit der Wahl des idealen Raums.",
+      },
+      second: {
+        header: "Vermietungsmanagement",
+        content:
+          "Besitzen Sie eine Immobilie, die ständige Pflege erfordert? Unser umfassender Vermietungsservice bietet Ihnen Sicherheit und Ruhe in jeder Phase.",
+      },
+      third: {
+        header: "Entwicklungstätigkeit",
+        content:
+          "Wir setzen Entwicklungsprojekte um, die Modernität mit Funktionalität verbinden. Unsere Leidenschaft für die Schaffung einzigartiger Räume zeigt sich in jedem Detail.",
+      },
+      fourth: {
+        header: "Immobilienverkauf",
+        content:
+          "Wir bieten den Verkauf von Immobilien an, die auf Ihre Bedürfnisse zugeschnitten sind. Unsere Flexibilität und individuelle Herangehensweise garantieren Zufriedenheit mit der Wahl des idealen Raums.",
+      },
+    },
+    aboutUsButton: "Über uns",
+  },
 
   investitions: {},
 
