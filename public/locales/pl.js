@@ -26,7 +26,23 @@ export const pl = {
     regonLabel: "REGON",
   },
 
-  aboutUs: {},
+  aboutUs: {
+    header: "O nas",
+    sectionOne: {
+      header: "Dynamiczny rozwój nieruchomości",
+      paragraphOne:
+        "LTC Investments sp. z o.o. to dynamicznie rozwijająca się firma działająca w branży nieruchomości. Nasza oferta obejmuje wynajem lokali użytkowych i mieszkań, a także kompleksowe zarządzanie nieruchomościami.",
+      paragraphTwo:
+        "Z pasją i zaangażowaniem wspieramy naszych klientów w realizacji ich inwestycyjnych celów, oferując profesjonalne doradztwo i wsparcie na każdym etapie.",
+    },
+    sectionTwo: {
+      header: "Profesjonalne doradztwo inwestycyjne",
+      paragraphOne:
+        "Specjalizujemy się w szeroko pojętej branży nieruchomości, oferując wynajem mieszkań i lokali użytkowych oraz kompleksowe zarządzanie nieruchomościami.",
+      paragraphTwo:
+        "LTC Investments sp. z o.o. to zespół doświadczonych specjalistów, którzy z pasją podchodzą do inwestycji i doradztwa inwestycyjnego, pomagając klientom osiągnąć maksymalne korzyści z ich przedsięwzięć.",
+    },
+  },
 
   contact: {
     header: "Skontaktuj się z nami",

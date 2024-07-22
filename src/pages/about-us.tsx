@@ -7,6 +7,7 @@ import ImageWithWrapper from "@/components/ImageWithWrapper";
 import { useRouter } from "next/router";
 import { en } from "../../public/locales/en";
 import { pl } from "../../public/locales/pl";
+import { useTranslation } from "@/features/translation/hooks/useTranslation";
 
 export const investmentsAndAboutUsCss = {
   container: css({
@@ -66,30 +67,20 @@ export const investmentsAndAboutUsCss = {
 };
 
 const AboutUs = () => {
-  const { locale } = useRouter();
-  const t = locale === "en" ? en.aboutUs : pl.aboutUs;
+  const { t } = useTranslation("aboutUs");
 
   return (
     <article css={investmentsAndAboutUsCss.container}>
-      <h1 css={investmentsAndAboutUsCss.pageIdentifier}>O nas</h1>
+      <h1 css={investmentsAndAboutUsCss.pageIdentifier}>{t.header}</h1>
 
       <ImageWithWrapper
         wrapperCss={investmentsAndAboutUsCss.imageForDescription("left")}
         src={"/images/about-us/Description_1.jpg"}
       />
       <section css={investmentsAndAboutUsCss.description("right")}>
-        <h2>Dynamiczny rozwój nieruchomości</h2>
-        <p>
-          LTC Investments sp. z o.o. to dynamicznie rozwijająca się firma
-          działająca w branży nieruchomości. Nasza oferta obejmuje wynajem
-          lokali użytkowych i mieszkań, a także kompleksowe zarządzanie
-          nieruchomościami.
-        </p>
-        <p>
-          Z pasją i zaangażowaniem wspieramy naszych klientów w realizacji ich
-          inwestycyjnych celów, oferując profesjonalne doradztwo i wsparcie na
-          każdym etapie.
-        </p>
+        <h2>{t.sectionOne.header}</h2>
+        <p>{t.sectionOne.paragraphOne}</p>
+        <p>{t.sectionOne.paragraphTwo}</p>
       </section>
 
       <ImageWithWrapper
@@ -98,17 +89,9 @@ const AboutUs = () => {
       />
 
       <section css={investmentsAndAboutUsCss.description("left")}>
-        <h2>Profesjonalne doradztwo inwestycyjne</h2>
-        <p>
-          Specjalizujemy się w szeroko pojętej branży nieruchomości, oferując
-          wynajem mieszkań i lokali użytkowych oraz kompleksowe zarządzanie
-          nieruchomościami.
-        </p>
-        <p>
-          LTC Investments sp. z o.o. to zespół doświadczonych specjalistów,
-          którzy z pasją podchodzą do inwestycji i doradztwa inwestycyjnego,
-          pomagając klientom osiągnąć maksymalne korzyści z ich przedsięwzięć.
-        </p>
+        <h2>{t.sectionTwo.header}</h2>
+        <p>{t.sectionTwo.paragraphOne}</p>
+        <p>{t.sectionTwo.paragraphTwo}</p>
       </section>
     </article>
   );

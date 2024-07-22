@@ -26,7 +26,23 @@ export const de = {
     regonLabel: "REGON",
   },
 
-  aboutUs: {},
+  aboutUs: {
+    header: "Über uns",
+    sectionOne: {
+      header: "Dynamische Immobilienentwicklung",
+      paragraphOne:
+        "LTC Investments sp. z o.o. ist ein dynamisch wachsendes Unternehmen in der Immobilienbranche. Unser Angebot umfasst die Vermietung von Gewerbe- und Wohnräumen sowie das umfassende Immobilienmanagement.",
+      paragraphTwo:
+        "Mit Leidenschaft und Engagement unterstützen wir unsere Kunden bei der Verwirklichung ihrer Investitionsziele und bieten professionelle Beratung und Unterstützung in jeder Phase.",
+    },
+    sectionTwo: {
+      header: "Professionelle Anlageberatung",
+      paragraphOne:
+        "Wir sind auf die Immobilienbranche spezialisiert und bieten die Vermietung von Wohnungen und Gewerberäumen sowie das umfassende Immobilienmanagement an.",
+      paragraphTwo:
+        "LTC Investments sp. z o.o. ist ein Team erfahrener Spezialisten, die mit Leidenschaft an Investitionen und Anlageberatung herangehen und Kunden helfen, maximale Vorteile aus ihren Vorhaben zu ziehen.",
+    },
+  },
 
   contact: {
     header: "Kontaktiere uns",

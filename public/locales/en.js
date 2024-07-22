@@ -26,7 +26,23 @@ export const en = {
     regonLabel: "REGON",
   },
 
-  aboutUs: {},
+  aboutUs: {
+    header: "About us",
+    sectionOne: {
+      header: "Dynamic real estate development",
+      paragraphOne:
+        "LTC Investments sp. z o.o. is a dynamically developing company operating in the real estate industry. Our offer includes the rental of commercial premises and apartments, as well as comprehensive property management.",
+      paragraphTwo:
+        "With passion and commitment, we support our clients in achieving their investment goals, offering professional advice and support at every stage.",
+    },
+    sectionTwo: {
+      header: "Professional investment advice",
+      paragraphOne:
+        "We specialize in the broadly understood real estate industry, offering the rental of apartments and commercial premises, as well as comprehensive property management.",
+      paragraphTwo:
+        "LTC Investments sp. z o.o. is a team of experienced specialists who approach investments and investment advice with passion, helping clients achieve maximum benefits from their ventures.",
+    },
+  },
 
   contact: {
     header: "Contact us",
