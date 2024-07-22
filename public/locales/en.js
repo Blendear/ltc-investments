@@ -68,7 +68,23 @@ export const en = {
     aboutUsButton: "About Us",
   },
 
-  investments: {},
+  investments: {
+    header: "Investments",
+    sectionOne: {
+      header: "Advanced projects",
+      paragraphOne:
+        "We specialize in strategic real estate investments. We carry out projects with high return potential, both in the residential and commercial sectors.",
+      paragraphTwo:
+        "Our investments are carefully planned and implemented to maximize value for our clients and partners. Each project is analyzed in terms of profitability, location, and growth potential.",
+    },
+    sectionTwo: {
+      header: "Innovative solutions",
+      paragraphOne:
+        "We implement innovative investment solutions that respond to changing market needs. Our projects are based on the latest trends and technologies in the real estate industry.",
+      paragraphTwo:
+        "Thanks to the experience and knowledge of our team, we are able to offer investments that not only meet the expectations of our clients but also set new standards in the industry.",
+    },
+  },
 
   offers: {
     typesOfRealEstates: {

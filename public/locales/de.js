@@ -68,7 +68,23 @@ export const de = {
     aboutUsButton: "Über uns",
   },
 
-  investments: {},
+  investments: {
+    header: "Investitionen",
+    sectionOne: {
+      header: "Fortgeschrittene Projekte",
+      paragraphOne:
+        "Wir sind auf strategische Immobilieninvestitionen spezialisiert. Wir realisieren Projekte mit hohem Renditepotenzial, sowohl im Wohn- als auch im Gewerbesektor.",
+      paragraphTwo:
+        "Unsere Investitionen werden sorgfältig geplant und umgesetzt, um den Wert für unsere Kunden und Partner zu maximieren. Jedes Projekt wird hinsichtlich Rentabilität, Standort und Wachstumspotenzial analysiert.",
+    },
+    sectionTwo: {
+      header: "Innovative Lösungen",
+      paragraphOne:
+        "Wir implementieren innovative Investitionslösungen, die auf die sich ändernden Marktanforderungen reagieren. Unsere Projekte basieren auf den neuesten Trends und Technologien in der Immobilienbranche.",
+      paragraphTwo:
+        "Dank der Erfahrung und des Wissens unseres Teams sind wir in der Lage, Investitionen anzubieten, die nicht nur die Erwartungen unserer Kunden erfüllen, sondern auch neue Maßstäbe in der Branche setzen.",
+    },
+  },
 
   offers: {
     typesOfRealEstates: {

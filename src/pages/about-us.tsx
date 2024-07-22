@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import { en } from "../../public/locales/en";
 import { pl } from "../../public/locales/pl";
 
-const aboutUsCss = {
+export const investmentsAndAboutUsCss = {
   container: css({
     display: "grid",
     gridTemplateColumns: "1fr",
@@ -70,14 +70,14 @@ const AboutUs = () => {
   const t = locale === "en" ? en.aboutUs : pl.aboutUs;
 
   return (
-    <article css={aboutUsCss.container}>
-      <h1 css={aboutUsCss.pageIdentifier}>O nas</h1>
+    <article css={investmentsAndAboutUsCss.container}>
+      <h1 css={investmentsAndAboutUsCss.pageIdentifier}>O nas</h1>
 
       <ImageWithWrapper
-        wrapperCss={aboutUsCss.imageForDescription("left")}
+        wrapperCss={investmentsAndAboutUsCss.imageForDescription("left")}
         src={"/images/about-us/Description_1.jpg"}
       />
-      <section css={aboutUsCss.description("right")}>
+      <section css={investmentsAndAboutUsCss.description("right")}>
         <h2>Dynamiczny rozwój nieruchomości</h2>
         <p>
           LTC Investments sp. z o.o. to dynamicznie rozwijająca się firma
@@ -93,11 +93,11 @@ const AboutUs = () => {
       </section>
 
       <ImageWithWrapper
-        wrapperCss={aboutUsCss.imageForDescription("right")}
+        wrapperCss={investmentsAndAboutUsCss.imageForDescription("right")}
         src={"/images/about-us/Description_1b.jpg"}
       />
 
-      <section css={aboutUsCss.description("left")}>
+      <section css={investmentsAndAboutUsCss.description("left")}>
         <h2>Profesjonalne doradztwo inwestycyjne</h2>
         <p>
           Specjalizujemy się w szeroko pojętej branży nieruchomości, oferując
