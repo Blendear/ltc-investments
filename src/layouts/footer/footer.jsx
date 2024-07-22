@@ -103,12 +103,12 @@ const Footer = () => {
           {/* <Link href="/home">{t.home}</Link>
           <Link href="/about-us">{t.aboutUs}</Link>
           <Link href="/contact">{t.contact}</Link>
-          <Link href="/investitions">{t.investitions}</Link>
+          <Link href="/investments">{t.investments}</Link>
           <Link href="/offers">{t.offers}</Link> */}
           <Link href="/about-us">{t.home}</Link>
           <Link href="/about-us">{t.aboutUs}</Link>
           <Link href="/about-us">{t.contact}</Link>
-          <Link href="/about-us">{t.investitions}</Link>
+          <Link href="/about-us">{t.investments}</Link>
           <Link href="/about-us">{t.offers}</Link>
         </div>
 

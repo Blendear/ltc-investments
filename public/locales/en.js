@@ -3,7 +3,7 @@ export const en = {
     home: "Home",
     aboutUs: "About Us",
     contact: "Contact",
-    investitions: "Investitions",
+    investments: "Investments",
     offers: "Offers",
   },
 
@@ -11,7 +11,7 @@ export const en = {
     home: "Home",
     aboutUs: "About Us",
     contact: "Contact",
-    investitions: "Investitions",
+    investments: "Investments",
     offers: "Offers",
 
     addressStreet: "Al. Jana Pawła II 58 B/7",
@@ -68,7 +68,7 @@ export const en = {
     aboutUsButton: "About Us",
   },
 
-  investitions: {},
+  investments: {},
 
   offers: {
     typesOfRealEstates: {

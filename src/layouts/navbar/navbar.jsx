@@ -47,7 +47,7 @@ const Navbar = () => {
       </Link>
 
       {/* <HamburgerMenu
-        subpages={["home", "aboutUs", "contact", "investitions", "offers"]}
+        subpages={["home", "aboutUs", "contact", "investments", "offers"]}
       /> */}
 
       {/* <LanguageFlagChooser /> */}

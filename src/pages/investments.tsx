@@ -6,8 +6,9 @@ import { colors } from "@/styles/emotion-css/colors";
 import { useRouter } from "next/router";
 import { en } from "../../public/locales/en";
 import { pl } from "../../public/locales/pl";
+import { useTranslation } from "@/features/translation/hooks/useTranslation";
 
-const investitionsCss = {
+const investmentsCss = {
   container: css({
     // gridRow: "1 / 3",
     // padding: "1rem",
@@ -36,11 +37,10 @@ const investitionsCss = {
   }),
 };
 
-const Investitions = () => {
-  const { locale } = useRouter();
-  const t = locale === "en" ? en.investitions : pl.investitions;
+const Investments = () => {
+  const { t } = useTranslation("investments");
 
-  return <div css={investitionsCss.container}>AComponent</div>;
+  return <div css={investmentsCss.container}>AComponent</div>;
 };
 
-export default Investitions;
+export default Investments;
