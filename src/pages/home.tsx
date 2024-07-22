@@ -6,6 +6,21 @@ import { colors } from "@/styles/emotion-css/colors";
 import { useTranslation } from "@/features/translation/hooks/useTranslation";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
 import Link from "next/link";
+import { BsHouse } from "react-icons/bs";
+import { FaRegHandshake } from "react-icons/fa";
+import { TiGroupOutline } from "react-icons/ti";
+import { AiOutlineTeam } from "react-icons/ai";
+import { AiOutlineStock } from "react-icons/ai";
+import { GrMoney } from "react-icons/gr";
+import { HiOutlineBanknotes } from "react-icons/hi2";
+import { RiBuilding2Line } from "react-icons/ri";
+
+const icons = {
+  first: <BsHouse />,
+  second: <AiOutlineTeam />,
+  third: <RiBuilding2Line />,
+  fourth: <HiOutlineBanknotes />,
+};
 
 const homeCss = {
   container: css({}),
@@ -16,7 +31,12 @@ const homeCss = {
     backgroundVisual: css({ width: "100%", height: "500px" }),
   },
 
-  infoChunks: css({}),
+  infoChunks: css({
+    "& > div > svg": {
+      fontSize: "100px",
+      color: `rgb(${colors.secondaryLight}, 0.85)`,
+    },
+  }),
 
   aboutUsButton: css({}),
 };
@@ -39,8 +59,7 @@ const Home = () => {
         {["first", "second", "third", "fourth"].map((dataVisualizer, index) => {
           return (
             <div key={index}>
-              {" "}
-              <svg />
+              {icons[dataVisualizer]}
               <p>{t.infoChunks[dataVisualizer].header}</p>
               <p>{t.infoChunks[dataVisualizer].content}</p>
             </div>
