@@ -35,9 +35,9 @@ export const ConsultantVisualizer = ({
             capitalizeFirstLetter(consultant.surname)}
         </p>
 
-        <p>{consultant.phoneNumber}</p>
+        <a href={`tel:${consultant.phoneNumber}`}>{consultant.phoneNumber}</a>
 
-        <p>{consultant.email}</p>
+        <a href={`mailto:${consultant.email}`}>{consultant.email}</a>
       </div>
     </div>
   );
