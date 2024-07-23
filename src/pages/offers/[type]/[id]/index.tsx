@@ -35,6 +35,8 @@ const RealEstateDetails = () => {
   const characteristicsKeys = t.detailedDescriptions.characteristicsKeys;
   const characteristicsValues = t.detailedDescriptions.characteristicsValues;
 
+  // if there is a translation for the given value, the translated version is returned,
+  // otherwise the original value is returned (for example when it's a number)
   const translateValue = (key, value) => {
     if (characteristicsValues[key] && characteristicsValues[key][value]) {
       return characteristicsValues[key][value];
@@ -61,14 +63,15 @@ const RealEstateDetails = () => {
             not a number nor a offerSymbol */}
             <ul>
               {Object.keys(characteristicsKeys).map((key) => {
+                // the actual value, not the translation label
+                const chValueData =
+                  realEstate.detailedDescriptions.characteristics[key];
+
                 return (
-                  realEstate.detailedDescriptions.characteristics[key] && (
+                  chValueData && (
                     <li key={key}>
                       <strong>{characteristicsKeys[key]}</strong>
-                      {translateValue(
-                        key,
-                        realEstate.detailedDescriptions.characteristics[key]
-                      )}
+                      {translateValue(key, chValueData)}
                     </li>
                   )
                 );
