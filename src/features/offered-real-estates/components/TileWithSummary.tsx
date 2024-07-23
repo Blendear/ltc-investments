@@ -23,6 +23,7 @@ const tileWSCss = {
 export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
   const router = useRouter();
 
+  console.log("variant", tile.variant);
   const conditionalContent = (
     <div>
       <section css={tileWSCss.gallery}>
@@ -77,7 +78,7 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
         css={tileWSCss.container(tile.variant)}
         href={`${router.query.type}/${tile.details.id}`}
       >
-        {conditionalContent}
+        <a>{conditionalContent}</a>
       </Link>
     ),
 

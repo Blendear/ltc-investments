@@ -40,10 +40,12 @@ const Navbar = () => {
   return (
     <nav css={navbarCss.container}>
       <Link href="/home">
-        <ImageWithWrapper
-          wrapperCss={navbarCss.logo}
-          src={"/images/brand/ltc-investments-logo.png"}
-        />
+        <a>
+          <ImageWithWrapper
+            wrapperCss={navbarCss.logo}
+            src={"/images/brand/ltc-investments-logo.png"}
+          />
+        </a>
       </Link>
 
       {/* <HamburgerMenu

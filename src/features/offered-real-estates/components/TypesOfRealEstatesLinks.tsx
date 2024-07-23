@@ -23,12 +23,12 @@ const NavLink = ({ activeType, setActiveType, type }) => {
 
   return (
     <Link href={`/offers/${type}`}>
-      <div
+      <a
         css={typesOfRealELCss.link(activeType === type)}
         onClick={() => setActiveType(type)}
       >
         {t.typesOfRealEstates[type]}
-      </div>
+      </a>
     </Link>
   );
 };
