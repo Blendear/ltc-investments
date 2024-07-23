@@ -49,6 +49,10 @@ const globalCss = {
       // 150px on top, because navbar takes 150px, yet 180 on orientation landscape
       padding: "150px 30px 60px 30px",
 
+      "@media(max-width: 370px)": {
+        padding: "150px 8px 60px 8px",
+      },
+
       "@media (orientation:landscape)": {
         padding: "180px 30px 60px 30px",
       },

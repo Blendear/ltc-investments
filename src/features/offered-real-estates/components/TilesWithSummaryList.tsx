@@ -7,17 +7,27 @@ import { TilesWithSummaryListProps } from "../types";
 import { TileWithSummary } from "./TileWithSummary";
 
 const TilesWSLCss = {
-  container: css({}),
+  container: css({
+    display: "flex",
+    gap: variables.gap.md,
+    flexWrap: "wrap",
+    justifyContent: "center",
+
+    "& > li": {
+      width: "100%",
+      flex: "0 0 23%",
+    },
+  }),
 };
 
 export const TilesWithSummaryList = ({
   tilesList,
 }: TilesWithSummaryListProps) => {
   return (
-    <ul>
+    <ul css={TilesWSLCss.container}>
       {tilesList.map((realEstate, index) => (
         <li key={index}>
-          <TileWithSummary tile={realEstate.tile} />{" "}
+          <TileWithSummary tile={realEstate.tile} />
         </li>
       ))}
     </ul>

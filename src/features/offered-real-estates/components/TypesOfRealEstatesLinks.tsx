@@ -8,14 +8,37 @@ import { useTranslation } from "@/features/translation/hooks/useTranslation";
 import { useState } from "react";
 
 const typesOfRealELCss = {
-  container: css({}),
+  container: css({
+    justifySelf: "center",
+    width: "max-content",
+    display: "grid",
+    gridTemplateColumns: "repeat(4, 1fr)",
+    rowGap: variables.gap.sm,
+    columnGap: variables.gap.md,
+    justifyItems: "center",
+
+    "@media (max-width: 675px)": {
+      gridTemplateColumns: "repeat(2, 1fr)",
+    },
+  }),
 
   link: (activeType) =>
-    css({
-      color: activeType
-        ? `rgb(${colors.secondaryLight})`
-        : `rgb(${colors.primaryLight})`,
-    }),
+    css([
+      {
+        padding: variables.gap.xs,
+        width: "100%",
+        border: `2px solid rgb(${colors.primaryLight}, 0.25)`,
+        borderRadius: variables.borderRadius.sm,
+        textAlign: "center",
+        color: `rgb(${colors.primaryLight})`,
+      },
+
+      activeType && {
+        border: `2px solid rgb(${colors.secondaryLight})`,
+        fontWeight: "bold",
+        color: `rgb(${colors.secondaryLight})`,
+      },
+    ]),
 };
 
 const NavLink = ({ activeType, setActiveType, type }) => {
@@ -36,9 +59,8 @@ const NavLink = ({ activeType, setActiveType, type }) => {
 export const TypesOfRealEstatesLinks = ({}) => {
   const [activeType, setActiveType] = useState("apartments");
 
-  console.log(activeType);
   return (
-    <div>
+    <div css={typesOfRealELCss.container}>
       <NavLink
         activeType={activeType}
         setActiveType={setActiveType}

@@ -13,7 +13,19 @@ import Link from "next/link";
 import { TypesOfRealEstatesLinks } from "@/features/offered-real-estates/components/TypesOfRealEstatesLinks";
 
 const offersCss = {
-  container: css({}),
+  container: css({
+    width: "100%",
+    display: "grid",
+    rowGap: variables.gap.md,
+
+    "@media (orientation: landscape)": {
+      rowGap: variables.gap.lg,
+    },
+
+    "& > h1": {
+      textAlign: "center",
+    },
+  }),
 };
 
 const OffersByTypeOfRealEstate = () => {
@@ -30,9 +42,9 @@ const OffersByTypeOfRealEstate = () => {
 
   return (
     <article css={offersCss.container}>
-      <TypesOfRealEstatesLinks />
-
       <h1>{t.header}</h1>
+
+      <TypesOfRealEstatesLinks />
 
       {typeOfRealEstate && (
         <TilesWithSummaryList
