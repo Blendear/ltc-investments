@@ -12,6 +12,8 @@ import {
   RealEstateType,
 } from "@/features/offered-real-estates/types";
 import { useEffect, useState } from "react";
+import { ConsultantVisualizer } from "@/features/offered-real-estates/components/ConsultantVisualizer";
+import { consultants } from "@/features/offered-real-estates/data/consultants";
 
 const realEstateDCss = {
   container: css({}),
@@ -77,6 +79,15 @@ const RealEstateDetails = () => {
                 );
               })}
             </ul>
+          </section>
+
+          <section>
+            <h2>{t.detailedDescriptions.headers.consultant}</h2>
+            <ConsultantVisualizer
+              consultant={consultants.find(
+                (consultant) => consultant.name === realEstate.consultant
+              )}
+            />
           </section>
 
           <section>

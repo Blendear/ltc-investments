@@ -10,7 +10,7 @@ export type TypeOfRealEstate = keyof OfferedRealEstatesType;
 export type RealEstateType = {
   id: number;
   name: string;
-  consultant: ConsultantType;
+  consultant: ConsultantNameType;
   imagePathsList: string[];
   detailedDescriptions: {
     characteristics: CharacteristicsType;
@@ -81,7 +81,7 @@ export type CharacteristicsType = {
   electricity?: "in-street" | "in-building" | "no";
 };
 
-export type ConsultantType = "lukas";
+export type ConsultantNameType = "lukas";
 
 export type TilesWithSummaryListProps = {
   tilesList: TileWithSummaryProps[];
@@ -97,3 +97,15 @@ export type TileType = {
 };
 
 export type GalleryProps = { imagesPathsList: string[] };
+
+export type ConsultantVisualizerProps = {
+  consultant: ConsultantType;
+};
+
+export type ConsultantType = {
+  name: ConsultantNameType;
+  surname: string;
+  imagePath: string;
+  phoneNumber: string;
+  email: string;
+};

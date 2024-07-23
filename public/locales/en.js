@@ -117,6 +117,7 @@ export const en = {
     detailedDescriptions: {
       headers: {
         characteristics: "Characteristics",
+        consultant: "Consultant",
         about: "About the offer",
         location: "Location",
         additionalInfo: "Additional Information",
