@@ -29,7 +29,9 @@ const RealEstateDetails = () => {
   useEffect(() => {
     if (router.query.type && router.query.id) {
       setRealEstate(
-        offeredRealEstates[router.query.type as string][router.query.id]
+        offeredRealEstates[router.query.type as string][
+          (parseInt(router.query.id as string) - 1).toString()
+        ]
       );
     }
   }, [router.query.type, router.query.id]);
