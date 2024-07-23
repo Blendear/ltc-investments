@@ -111,5 +111,168 @@ export const de = {
     },
 
     header: "Unsere Angebote",
+
+    detailedDescriptions: {
+      headers: {
+        characteristics: "Charakteristik",
+        about: "Über das Angebot",
+        location: "Lage",
+        additionalInfo: "Zusätzliche Informationen",
+      },
+
+      characteristicsKeys: {
+        offerSymbol: "Angebots-Symbol",
+        area: "Fläche",
+        buildingType: "Gebäudetyp",
+        feesIncludedInRent: "Im Mietpreis enthaltene Gebühren",
+        feesByMeters: "Gebühren nach Zählern",
+        monthlyAdministrativeRent: "Monatliche Verwaltungsmiete",
+        securityDeposit: "Sicherheitskaution",
+        depositType: "Kautionsart",
+        typeOfPremises: "Art der Räumlichkeiten",
+        floor: "Stockwerk",
+        totalFloorsInBuilding: "Gesamtanzahl der Stockwerke im Gebäude",
+        roomCount: "Zimmeranzahl",
+        installations: "Installationen",
+        parkingPossible: "Parkmöglichkeit",
+        ownParking: "Eigenes Parken",
+        condition: "Zustand",
+        windows: "Fenster",
+        balcony: "Balkon",
+        furniture: "Möblierung",
+        plotDevelopment: "Grundstücksentwicklung",
+        plotTopography: "Geländetopografie",
+        plotFencing: "Grundstückseinzäunung",
+        gas: "Gas",
+        water: "Wasser",
+        electricity: "Strom",
+        accessRoad: "Zufahrtsstraße",
+        surroundings: "Umgebung",
+        location: "Lage",
+      },
+
+      characteristicsValues: {
+        buildingType: {
+          tenement: "Mietshaus",
+          block: "Block",
+        },
+        feesIncludedInRent: {
+          "renovation-fund, water": "Renovierungsfond, Wasser",
+          "renovation-fund, water, heating":
+            "Renovierungsfond, Wasser, Heizung",
+          "renovation-fund, water, heating, garbage-collection":
+            "Renovierungsfond, Wasser, Heizung, Müllabfuhr",
+          "renovation-fund, water, heating, garbage-collection, cleaning":
+            "Renovierungsfond, Wasser, Heizung, Müllabfuhr, Reinigung",
+        },
+        feesNotIncludedInRentAndCountedFromLiveUsage: {
+          electricity: "Strom",
+          gas: "Gas",
+          water: "Wasser",
+          heating: "Heizung",
+          "electricity-and-water": "Strom und Wasser",
+          "electricity-and-heating": "Strom und Heizung",
+          "electricity-and-gas": "Strom und Gas",
+          "water-and-heating": "Wasser und Heizung",
+          "water-and-gas": "Wasser und Gas",
+          "heating-and-gas": "Heizung und Gas",
+          "electricity-and-water-and-heating": "Strom, Wasser und Heizung",
+          "electricity-and-water-and-gas": "Strom, Wasser und Gas",
+          "electricity-and-heating-and-gas": "Strom, Heizung und Gas",
+          "water-and-heating-and-gas": "Wasser, Heizung und Gas",
+          "electricity-and-water-and-heating-and-gas":
+            "Strom, Wasser, Heizung und Gas",
+        },
+        depositType: {
+          "one-month": "ein Monat",
+          "two-months": "zwei Monate",
+        },
+        typeOfPremises: {
+          "one-storey": "ein Stockwerk",
+          "multi-storey": "mehrstöckig",
+        },
+        installations: {
+          new: "neu",
+          renewed: "erneuert",
+          "to-renew": "zu erneuern",
+          "to-replace": "zu ersetzen",
+          "to-install": "zu installieren",
+        },
+        parkingPossible: {
+          yes: "ja",
+          no: "nein",
+        },
+        ownParking: {
+          yes: "ja",
+          no: "nein",
+        },
+        condition: {
+          "need renovation": "renovierungsbedürftig",
+          good: "gut",
+          "very good": "sehr gut",
+          perfect: "perfekt",
+        },
+        windows: {
+          wooden: "Holz",
+          plastic: "Plastik",
+          aluminium: "Aluminium",
+        },
+        balcony: {
+          yes: "ja",
+          no: "nein",
+        },
+        furniture: {
+          furnished: "möbliert",
+          "partly-furnished": "teilmöbliert",
+          unfurnished: "unmöbliert",
+        },
+        plotDevelopment: {
+          undeveloped: "unbebaut",
+          developed: "bebaut",
+        },
+        plotTopography: {
+          flat: "flach",
+          sloping: "abfallend",
+          hill: "Hügel",
+        },
+        plotFencing: {
+          yes: "ja",
+          no: "nein",
+        },
+        gas: {
+          "in-street": "auf der Straße",
+          "in-building": "im Gebäude",
+          no: "kein",
+        },
+        water: {
+          "in-street": "auf der Straße",
+          "in-building": "im Gebäude",
+          no: "kein",
+        },
+        electricity: {
+          "in-street": "auf der Straße",
+          "in-building": "im Gebäude",
+          no: "kein",
+        },
+        accessRoad: {
+          asphalt: "Asphalt",
+          dirt: "Schotter",
+          concrete: "Beton",
+        },
+        surroundings: {
+          houses: "Häuser",
+          forest: "Wald",
+          lake: "See",
+          river: "Fluss",
+          mountains: "Berge",
+        },
+        location: {
+          city: "Stadt",
+          suburbs: "Vororte",
+          village: "Dorf",
+          countryside: "ländlich",
+        },
+      },
+    },
   },
 };

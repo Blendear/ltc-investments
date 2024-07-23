@@ -32,7 +32,15 @@ const RealEstateDetails = () => {
     }
   }, [router.query.type, router.query.id]);
 
-  // console.log(router.query, realEstate);
+  const characteristicsKeys = t.detailedDescriptions.characteristicsKeys;
+  const characteristicsValues = t.detailedDescriptions.characteristicsValues;
+
+  const translateValue = (key, value) => {
+    if (characteristicsValues[key] && characteristicsValues[key][value]) {
+      return characteristicsValues[key][value];
+    }
+    return value;
+  };
 
   return (
     <article css={realEstateDCss.container}>
@@ -48,17 +56,19 @@ const RealEstateDetails = () => {
           <section>
             <h2>{t.detailedDescriptions.headers.characteristics}</h2>
 
+            {/* Both the key and value of the given characteristic is used as
+            a translation label to fetch the language-specific naming, if it's
+            not a number nor a offerSymbol */}
             <ul>
-              {Object.keys(t.detailedDescriptions.characteristicsLabels).map(
-                (key) => (
-                  <li key={key}>
-                    <strong>
-                      {t.detailedDescriptions.characteristicsLabels[key]}:
-                    </strong>
-                    {realEstate[key]}
-                  </li>
-                )
-              )}
+              {Object.keys(characteristicsKeys).map((key) => (
+                <li key={key}>
+                  <strong>{characteristicsKeys[key]}:</strong>{" "}
+                  {translateValue(
+                    key,
+                    realEstate.detailedDescriptions.characteristics[key]
+                  )}
+                </li>
+              ))}
             </ul>
           </section>
 

@@ -1,3 +1,5 @@
+import { de } from "./de";
+
 export const en = {
   menu: {
     home: "Home",
@@ -111,5 +113,167 @@ export const en = {
     },
 
     header: "Our offers",
+
+    detailedDescriptions: {
+      headers: {
+        characteristics: "Characteristics",
+        about: "About the offer",
+        location: "Location",
+        additionalInfo: "Additional Information",
+      },
+
+      characteristicsKeys: {
+        offerSymbol: "Offer Symbol",
+        area: "Area",
+        buildingType: "Building Type",
+        feesIncludedInRent: "Fees Included in Rent",
+        feesByMeters: "Fees by Meters",
+        monthlyAdministrativeRent: "Monthly Administrative Rent",
+        securityDeposit: "Security Deposit",
+        depositType: "Deposit Type",
+        typeOfPremises: "Type of Premises",
+        floor: "Floor",
+        totalFloorsInBuilding: "Total Floors in Building",
+        roomCount: "Room Count",
+        installations: "Installations",
+        parkingPossible: "Parking Possible",
+        ownParking: "Own Parking",
+        condition: "Condition",
+        windows: "Windows",
+        balcony: "Balcony",
+        furniture: "Furniture",
+        plotDevelopment: "Plot Development",
+        plotTopography: "Plot Topography",
+        plotFencing: "Plot Fencing",
+        gas: "Gas",
+        water: "Water",
+        electricity: "Electricity",
+        accessRoad: "Access Road",
+        surroundings: "Surroundings",
+        location: "Location",
+      },
+
+      characteristicsValues: {
+        buildingType: {
+          tenement: "tenement",
+          block: "block",
+        },
+        feesIncludedInRent: {
+          "renovation-fund, water": "renovation fund, water",
+          "renovation-fund, water, heating": "renovation fund, water, heating",
+          "renovation-fund, water, heating, garbage-collection":
+            "renovation fund, water, heating, garbage collection",
+          "renovation-fund, water, heating, garbage-collection, cleaning":
+            "renovation fund, water, heating, garbage collection, cleaning",
+        },
+        feesNotIncludedInRentAndCountedFromLiveUsage: {
+          electricity: "electricity",
+          gas: "gas",
+          water: "water",
+          heating: "heating",
+          "electricity-and-water": "electricity and water",
+          "electricity-and-heating": "electricity and heating",
+          "electricity-and-gas": "electricity and gas",
+          "water-and-heating": "water and heating",
+          "water-and-gas": "water and gas",
+          "heating-and-gas": "heating and gas",
+          "electricity-and-water-and-heating": "electricity, water and heating",
+          "electricity-and-water-and-gas": "electricity, water and gas",
+          "electricity-and-heating-and-gas": "electricity, heating and gas",
+          "water-and-heating-and-gas": "water, heating and gas",
+          "electricity-and-water-and-heating-and-gas":
+            "electricity, water, heating and gas",
+        },
+        depositType: {
+          "one-month": "one-month",
+          "two-months": "two-months",
+        },
+        typeOfPremises: {
+          "one-storey": "one-storey",
+          "multi-storey": "multi-storey",
+        },
+        installations: {
+          new: "new",
+          renewed: "renewed",
+          "to-renew": "to renew",
+          "to-replace": "to replace",
+          "to-install": "to install",
+        },
+        parkingPossible: {
+          yes: "yes",
+          no: "no",
+        },
+        ownParking: {
+          yes: "yes",
+          no: "no",
+        },
+        condition: {
+          "need renovation": "need renovation",
+          good: "good",
+          "very good": "very good",
+          perfect: "perfect",
+        },
+        windows: {
+          wooden: "wooden",
+          plastic: "plastic",
+          aluminium: "aluminium",
+        },
+        balcony: {
+          yes: "yes",
+          no: "no",
+        },
+        furniture: {
+          furnished: "furnished",
+          "partly-furnished": "partly furnished",
+          unfurnished: "unfurnished",
+        },
+        plotDevelopment: {
+          undeveloped: "undeveloped",
+          developed: "developed",
+        },
+        plotTopography: {
+          flat: "flat",
+          sloping: "sloping",
+          hill: "hill",
+        },
+        plotFencing: {
+          yes: "yes",
+          no: "no",
+        },
+        gas: {
+          "in-street": "in street",
+          "in-building": "in building",
+          no: "no",
+        },
+        water: {
+          "in-street": "in street",
+          "in-building": "in building",
+          no: "no",
+        },
+        electricity: {
+          "in-street": "in street",
+          "in-building": "in building",
+          no: "no",
+        },
+        accessRoad: {
+          asphalt: "asphalt",
+          dirt: "dirt",
+          concrete: "concrete",
+        },
+        surroundings: {
+          houses: "houses",
+          forest: "forest",
+          lake: "lake",
+          river: "river",
+          mountains: "mountains",
+        },
+        location: {
+          city: "city",
+          suburbs: "suburbs",
+          village: "village",
+          countryside: "countryside",
+        },
+      },
+    },
   },
 };

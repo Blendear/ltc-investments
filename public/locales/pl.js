@@ -1,3 +1,5 @@
+import { off } from "process";
+
 export const pl = {
   menu: {
     home: "Strona Główna",
@@ -120,7 +122,7 @@ export const pl = {
         additionalInfo: "Dodatkowe informacje",
       },
 
-      characteristicsLabels: {
+      characteristicsKeys: {
         offerSymbol: "Symbol oferty",
         area: "Powierzchnia",
         buildingType: "Typ budynku",
@@ -149,6 +151,129 @@ export const pl = {
         accessRoad: "Droga dojazdowa",
         surroundings: "Otoczenie",
         location: "Położenie",
+      },
+
+      characteristicsValues: {
+        buildingType: {
+          tenement: "kamienica",
+          block: "blok",
+        },
+        feesIncludedInRent: {
+          "renovation-fund, water": "fundusz remontowy, woda",
+          "renovation-fund, water, heating":
+            "fundusz remontowy, woda, ogrzewanie",
+          "renovation-fund, water, heating, garbage-collection":
+            "fundusz remontowy, woda, ogrzewanie, wywóz śmieci",
+          "renovation-fund, water, heating, garbage-collection, cleaning":
+            "fundusz remontowy, woda, ogrzewanie, wywóz śmieci, sprzątanie",
+        },
+        feesNotIncludedInRentAndCountedFromLiveUsage: {
+          electricity: "prąd",
+          gas: "gaz",
+          water: "woda",
+          heating: "ogrzewanie",
+          "electricity-and-water": "prąd i woda",
+          "electricity-and-heating": "prąd i ogrzewanie",
+          "electricity-and-gas": "prąd i gaz",
+          "water-and-heating": "woda i ogrzewanie",
+          "water-and-gas": "woda i gaz",
+          "heating-and-gas": "ogrzewanie i gaz",
+          "electricity-and-water-and-heating": "prąd, woda i ogrzewanie",
+          "electricity-and-water-and-gas": "prąd, woda i gaz",
+          "electricity-and-heating-and-gas": "prąd, ogrzewanie i gaz",
+          "water-and-heating-and-gas": "woda, ogrzewanie i gaz",
+          "electricity-and-water-and-heating-and-gas":
+            "prąd, woda, ogrzewanie i gaz",
+        },
+        depositType: {
+          "one-month": "jednomiesięczna",
+          "two-months": "dwumiesięczna",
+        },
+        typeOfPremises: {
+          "one-storey": "jednopoziomowy",
+          "multi-storey": "wielopoziomowy",
+        },
+        installations: {
+          new: "nowe",
+          renewed: "odnowione",
+          "to-renew": "do odnowienia",
+          "to-replace": "do wymiany",
+          "to-install": "do zainstalowania",
+        },
+        parkingPossible: {
+          yes: "tak",
+          no: "nie",
+        },
+        ownParking: {
+          yes: "tak",
+          no: "nie",
+        },
+        condition: {
+          "need renovation": "do remontu",
+          good: "dobry",
+          "very good": "bardzo dobry",
+          perfect: "idealny",
+        },
+        windows: {
+          wooden: "drewniane",
+          plastic: "plastikowe",
+          aluminium: "aluminiowe",
+        },
+        balcony: {
+          yes: "tak",
+          no: "nie",
+        },
+        furniture: {
+          furnished: "umeblowane",
+          "partly-furnished": "częściowo umeblowane",
+          unfurnished: "nieumeblowane",
+        },
+        plotDevelopment: {
+          undeveloped: "niezabudowana",
+          developed: "zabudowana",
+        },
+        plotTopography: {
+          flat: "płaska",
+          sloping: "pochyła",
+          hill: "wzgórze",
+        },
+        plotFencing: {
+          yes: "tak",
+          no: "nie",
+        },
+        gas: {
+          "in-street": "w ulicy",
+          "in-building": "w budynku",
+          no: "brak",
+        },
+        water: {
+          "in-street": "w ulicy",
+          "in-building": "w budynku",
+          no: "brak",
+        },
+        electricity: {
+          "in-street": "w ulicy",
+          "in-building": "w budynku",
+          no: "brak",
+        },
+        accessRoad: {
+          asphalt: "asfaltowa",
+          dirt: "polna",
+          concrete: "betonowa",
+        },
+        surroundings: {
+          houses: "domy",
+          forest: "las",
+          lake: "jezioro",
+          river: "rzeka",
+          mountains: "góry",
+        },
+        location: {
+          city: "miasto",
+          suburbs: "przedmieścia",
+          village: "wieś",
+          countryside: "okolica wiejska",
+        },
       },
     },
   },
