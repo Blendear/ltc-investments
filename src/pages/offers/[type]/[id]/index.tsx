@@ -81,10 +81,17 @@ const RealEstateDetails = () => {
 
           <section>
             <h2>{t.detailedDescriptions.headers.about}</h2>
+            <p>{realEstate.detailedDescriptions.about}</p>
 
             <h2>{t.detailedDescriptions.headers.location}</h2>
+            <p>{realEstate.detailedDescriptions.location}</p>
 
-            <h2>{t.detailedDescriptions.headers.additionalInfo}</h2>
+            {realEstate.detailedDescriptions.additionalInfo && (
+              <>
+                <h2>{t.detailedDescriptions.headers.additionalInfo}</h2>
+                <p>{realEstate.detailedDescriptions.additionalInfo}</p>
+              </>
+            )}
           </section>
         </div>
       )}

@@ -85,6 +85,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
         },
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         location: "Imperium Kędzierzyńskie, ul. Pazia 2",
+        additionalInfo:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
     },
     {
