@@ -22,18 +22,19 @@ export type RealEstateType = {
 };
 
 export type CharacteristicsType = {
-  // Use english strings, since they are used as translation labels
+  // Values are english strings, since they are used as translation labels that are rendered as the value
 
-  offerSymbol: `${"APA" | "HOU" | "PRE" | "PLO"}-${number}`; // Symbol oferty, np. "APA-2" - used for finding the translation label for this real estate details page
-  area: number; // Powierzchnia, np. "33,00"
+  // Used for finding the translation label for this real estate details page
+  offerSymbol: `${"APA" | "HOU" | "PRE" | "PLO"}-${number}`;
+  area: number;
   pricePerSquareMeter: number;
 
-  buildingType?: "tenement" | "block"; // Typ budynku, np. "kamienica"
+  buildingType?: "tenement" | "block";
   feesIncludedInRent?:
     | "renovation-fund, water"
     | "renovation-fund, water, heating"
     | "renovation-fund, water, heating, garbage-collection"
-    | "renovation-fund, water, heating, garbage-collection, cleaning"; // Opłaty w czynszu, np. "fundusz remontowy, woda"
+    | "renovation-fund, water, heating, garbage-collection, cleaning";
   feesNotIncludedInRentAndCountedFromLiveUsage?:
     | "electricity"
     | "gas"
@@ -50,36 +51,35 @@ export type CharacteristicsType = {
     | "electricity-and-heating-and-gas"
     | "water-and-heating-and-gas"
     | "electricity-and-water-and-heating-and-gas";
-  // Opłaty wg liczników, np. "prąd"
-  monthlyAdministrativeRent?: number; // Mies. czynsz admin., np. "320 PLN"
-  securityDeposit?: number; // Kaucja zabezp., np. 2000
-  depositType?: "one-month" | "one-month" | "two-months"; // Rodzaj kaucji, np. "jednomiesięczna"
+  monthlyAdministrativeRent?: number;
+  securityDeposit?: number;
+  depositType?: "one-month" | "one-month" | "two-months";
 
-  typeOfPremises?: "one-storey" | "multi-storey"; // Typ lokalu, np. "jednopoziomowy"
-  floor?: number; // Piętro, np. "parter"
-  totalFloorsInBuilding?: number; // Liczba pięter w budynku
-  roomCount?: number; // Liczba pokoi, np. 2
+  typeOfPremises?: "one-storey" | "multi-storey";
+  floor?: number;
+  totalFloorsInBuilding?: number;
+  roomCount?: number;
 
-  installations?: "new" | "renewed" | "to-renew" | "to-replace" | "to-install"; // Instalacje, np. "wymienione"
-  parkingPossible?: "yes" | "no"; // Możliwość parkowania, np. "tak"
-  ownParking?: "yes" | "no"; // Własny parking, np. "tak"
+  installations?: "new" | "renewed" | "to-renew" | "to-replace" | "to-install";
+  parkingPossible?: "yes" | "no";
+  ownParking?: "yes" | "no";
 
-  condition?: "need renovation" | "good" | "very good" | "perfect"; // Stan, np. "do remontu"
-  windows?: "wooden" | "plastic" | "aluminium"; // Okna, np. "drewniane
-  balcony?: "yes" | "no"; // Balkon, np. "brak"
-  furniture?: "furnished" | "partly-furnished" | "unfurnished"; // Umeblowanie, np. "w pełni umeblowane"
+  condition?: "need renovation" | "good" | "very good" | "perfect";
+  windows?: "wooden" | "plastic" | "aluminium";
+  balcony?: "yes" | "no";
+  furniture?: "furnished" | "partly-furnished" | "unfurnished";
 
-  accessRoad?: "asphalt" | "dirt" | "concrete"; // Droga dojazdowa, np. "asfaltowa"
-  surroundings?: "houses" | "forest" | "lake" | "river" | "mountains"; // Otoczenie, np. "działki zabudowane"
-  location?: "city" | "suburbs" | "village" | "countryside"; // Położenie, np. "blisko centrum"
+  accessRoad?: "asphalt" | "dirt" | "concrete";
+  surroundings?: "houses" | "forest" | "lake" | "river" | "mountains";
+  location?: "city" | "suburbs" | "village" | "countryside";
 
   // Used for 'plots' real estates
-  plotDevelopment?: "undeveloped" | "developed"; // Zagosp. działki, np. niezagospodarowana
-  plotTopography?: "flat" | "sloping" | "hill"; // Ukształtowanie terenu, np. "płąska"
-  plotFencing?: "yes" | "no"; // Ogrodzenie działki
-  gas?: "in-street" | "in-building" | "no"; // Gaz, np. "w ulicy"
-  water?: "in-street" | "in-building" | "no"; // Woda, np. "w ulicy"
-  electricity?: "in-street" | "in-building" | "no"; // Prąd, np. "w ulicy"
+  plotDevelopment?: "undeveloped" | "developed";
+  plotTopography?: "flat" | "sloping" | "hill";
+  plotFencing?: "yes" | "no";
+  gas?: "in-street" | "in-building" | "no";
+  water?: "in-street" | "in-building" | "no";
+  electricity?: "in-street" | "in-building" | "no";
 };
 
 export type ConsultantType = "lukas";
