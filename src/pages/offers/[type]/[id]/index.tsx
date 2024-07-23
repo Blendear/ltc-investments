@@ -60,15 +60,19 @@ const RealEstateDetails = () => {
             a translation label to fetch the language-specific naming, if it's
             not a number nor a offerSymbol */}
             <ul>
-              {Object.keys(characteristicsKeys).map((key) => (
-                <li key={key}>
-                  <strong>{characteristicsKeys[key]}:</strong>{" "}
-                  {translateValue(
-                    key,
-                    realEstate.detailedDescriptions.characteristics[key]
-                  )}
-                </li>
-              ))}
+              {Object.keys(characteristicsKeys).map((key) => {
+                return (
+                  realEstate.detailedDescriptions.characteristics[key] && (
+                    <li key={key}>
+                      <strong>{characteristicsKeys[key]}</strong>
+                      {translateValue(
+                        key,
+                        realEstate.detailedDescriptions.characteristics[key]
+                      )}
+                    </li>
+                  )
+                );
+              })}
             </ul>
           </section>
 

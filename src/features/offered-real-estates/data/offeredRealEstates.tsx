@@ -15,7 +15,6 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       name: "Pałac Bizantyjski",
       detailedDescriptions: {
         characteristics: {
-          offerSymbol: "APA-1",
           area: 33.0,
           pricePerSquareMeter: 5000,
           buildingType: "tenement",
@@ -58,7 +57,6 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       name: "Bajorko Shreka",
       detailedDescriptions: {
         characteristics: {
-          offerSymbol: "APA-2",
           area: 33.0,
           pricePerSquareMeter: 5000,
           buildingType: "tenement",
@@ -98,7 +96,6 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       name: "Hata Pirata",
       detailedDescriptions: {
         characteristics: {
-          offerSymbol: "APA-3",
           area: 33.0,
           pricePerSquareMeter: 5000,
           buildingType: "tenement",
@@ -143,7 +140,6 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       name: "Gondor",
       detailedDescriptions: {
         characteristics: {
-          offerSymbol: "HOU-1",
           area: 33.0,
           pricePerSquareMeter: 5000,
           buildingType: "tenement",

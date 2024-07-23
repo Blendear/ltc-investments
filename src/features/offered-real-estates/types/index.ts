@@ -24,8 +24,7 @@ export type RealEstateType = {
 export type CharacteristicsType = {
   // Values are english strings, since they are used as translation labels that are rendered as the value
 
-  // Used for finding the translation label for this real estate details page
-  offerSymbol: `${"APA" | "HOU" | "PRE" | "PLO"}-${number}`;
+  // offerSymbol: `${"APA" | "HOU" | "PRE" | "PLO"}-${number}`;   // Used in the past for finding the translation label for this real estate details page
   area: number;
   pricePerSquareMeter: number;
 
