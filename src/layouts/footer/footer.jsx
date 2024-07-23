@@ -121,11 +121,18 @@ const Footer = () => {
 
         <div>
           <p>
-            {t.phoneLabel}: <span>+48 604 513 082</span>
+            {`${t.phoneLabel}: `}
+            <span>
+              <a href={`tel:+48 604 513 082`}>+48 604 513 082</a>
+            </span>
           </p>
           <p>
-            {t.emailLabel}: <span>l.cibis@gmail.com</span>
+            {`${t.emailLabel}: `}
+            <span>
+              <a href={`mailto:l.cibis@gmail.com`}>l.cibis@gmail.com</a>
+            </span>
           </p>
+
           <p>
             {t.nipLabel}: <span>7543070445</span>
           </p>
