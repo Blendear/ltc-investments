@@ -23,57 +23,66 @@ const tileWSCss = {
 export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
   const router = useRouter();
 
-  return (
-    <Link
-      css={tileWSCss.container(tile.variant)}
-      href={`${router.query.type}/${tile.details.id}`}
-    >
-      <div>
-        <section css={tileWSCss.gallery}>
+  const conditionalContent = (
+    <div>
+      <section css={tileWSCss.gallery}>
+        {
           {
-            {
-              "summary-short": (
-                <ImageWithWrapper src={tile.details.imagePathsList[0]} />
-              ),
+            "summary-short": (
+              <ImageWithWrapper src={tile.details.imagePathsList[0]} />
+            ),
 
-              "details-long": (
-                <Gallery imagesPathsList={tile.details.imagePathsList} />
-              ),
-            }[tile.variant]
-          }
-        </section>
-        <h2>{tile.details.name}</h2>
-        <div>
-          <FiMapPin />
-          <p>{tile.details.detailedDescriptions.location}</p>
-        </div>
-        <div>
-          <div>
-            <BiArea />
-            <p>
-              {tile.details.detailedDescriptions.characteristics.area} m
-              <sup>2</sup>
-            </p>
-          </div>
-
-          <div>
-            <GrMoney />
-            <p>
-              {
-                tile.details.detailedDescriptions.characteristics
-                  .pricePerSquareMeter
-              }
-              zł/m<sup>2</sup>
-            </p>
-          </div>
-        </div>
-        <p>
-          {tile.details.detailedDescriptions.characteristics.area *
-            tile.details.detailedDescriptions.characteristics
-              .pricePerSquareMeter}
-          zł
-        </p>
+            "details-long": (
+              <Gallery imagesPathsList={tile.details.imagePathsList} />
+            ),
+          }[tile.variant]
+        }
+      </section>
+      <h2>{tile.details.name}</h2>
+      <div>
+        <FiMapPin />
+        <p>{tile.details.detailedDescriptions.location}</p>
       </div>
-    </Link>
+      <div>
+        <div>
+          <BiArea />
+          <p>
+            {tile.details.detailedDescriptions.characteristics.area} m
+            <sup>2</sup>
+          </p>
+        </div>
+
+        <div>
+          <GrMoney />
+          <p>
+            {
+              tile.details.detailedDescriptions.characteristics
+                .pricePerSquareMeter
+            }
+            zł/m<sup>2</sup>
+          </p>
+        </div>
+      </div>
+      <p>
+        {tile.details.detailedDescriptions.characteristics.area *
+          tile.details.detailedDescriptions.characteristics.pricePerSquareMeter}
+        zł
+      </p>
+    </div>
   );
+
+  return {
+    "summary-short": (
+      <Link
+        css={tileWSCss.container(tile.variant)}
+        href={`${router.query.type}/${tile.details.id}`}
+      >
+        {conditionalContent}
+      </Link>
+    ),
+
+    "details-long": (
+      <div css={tileWSCss.container(tile.variant)}>{conditionalContent}</div>
+    ),
+  }[tile.variant];
 };
