@@ -27,11 +27,34 @@ const realEstateDCss = {
 
       "& > h2": {
         textAlign: "center",
+        marginBottom: variables.gap.md,
       },
     },
   }),
 
-  characteristics: css({}),
+  characteristics: css({
+    "& > ul": {
+      display: "grid",
+      gap: variables.gap.sm,
+
+      "& > li": {
+        display: "grid",
+        gap: variables.gap.xs,
+        gridTemplateColumns: "1fr 1fr",
+
+        "&::after": {
+          content: '""',
+          gridColumn: "1 / -1",
+          height: "2px",
+          backgroundColor: `rgb(${colors.primaryLight}, 0.25)`,
+        },
+
+        "&:last-child::after": {
+          display: "none",
+        },
+      },
+    },
+  }),
 
   consultant: css({}),
 
@@ -78,7 +101,7 @@ const RealEstateDetails = () => {
             }}
           />
 
-          <section>
+          <section css={realEstateDCss.characteristics}>
             <h2>{t.detailedDescriptions.headers.characteristics}</h2>
 
             {/* Both the key and value of the given characteristic is used as
@@ -102,7 +125,7 @@ const RealEstateDetails = () => {
             </ul>
           </section>
 
-          <section>
+          <section css={realEstateDCss.consultant}>
             <h2>{t.detailedDescriptions.headers.consultant}</h2>
             <ConsultantVisualizer
               consultant={consultants.find(
@@ -111,7 +134,7 @@ const RealEstateDetails = () => {
             />
           </section>
 
-          <section>
+          <section css={realEstateDCss.aboutLocationAndAdditionalInfo}>
             <h2>{t.detailedDescriptions.headers.about}</h2>
             <p>{realEstate.detailedDescriptions.about}</p>
 
