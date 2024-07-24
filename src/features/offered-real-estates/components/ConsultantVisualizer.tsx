@@ -6,16 +6,52 @@ import { colors } from "@/styles/emotion-css/colors";
 import { ConsultantVisualizerProps } from "../types";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
 import { capitalizeFirstLetter } from "@/utils/capitalizeFirstLetter";
+import { IoMailOpenOutline, IoPhonePortraitOutline } from "react-icons/io5";
 
 const consultantVCss = {
-  container: css({}),
+  container: css({
+    "@media (min-width: 500px)": {
+      display: "grid",
+      gridAutoFlow: "column",
+    },
+  }),
 
   image: css({
     width: "150px",
-    height: "150px",
+    aspectRatio: "1/1",
+
+    "& > span": {
+      borderRadius: variables.borderRadius.md,
+      border: `2px solid rgb(${colors.primaryLight}, 0.25)`,
+    },
   }),
 
-  details: css({}),
+  details: css({
+    display: "grid",
+    gap: variables.gap.sm,
+    gridAutoRows: "max-content",
+
+    "& > p": {
+      fontWeight: "bold",
+      fontSize: `calc(${variables.fontSize.regular} * 1.25)`,
+    },
+
+    "& > a": {
+      display: "grid",
+      gridAutoFlow: "column",
+      gridAutoColumns: "max-content",
+      gap: variables.gap.sm,
+
+      "& > svg": {
+        color: `rgb(${colors.secondaryLight})`,
+        fontSize: variables.fontSize.subheading,
+      },
+
+      "& > span": {
+        alignSelf: "center",
+      },
+    },
+  }),
 };
 
 export const ConsultantVisualizer = ({
@@ -35,9 +71,15 @@ export const ConsultantVisualizer = ({
             capitalizeFirstLetter(consultant.surname)}
         </p>
 
-        <a href={`tel:${consultant.phoneNumber}`}>{consultant.phoneNumber}</a>
+        <a href={`tel:${consultant.phoneNumber}`}>
+          <IoPhonePortraitOutline />
+          <span>{consultant.phoneNumber}</span>
+        </a>
 
-        <a href={`mailto:${consultant.email}`}>{consultant.email}</a>
+        <a href={`mailto:${consultant.email}`}>
+          <IoMailOpenOutline />
+          <span>{consultant.email}</span>
+        </a>
       </div>
     </div>
   );
