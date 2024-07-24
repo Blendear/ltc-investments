@@ -12,11 +12,26 @@ import "swiper/css/navigation";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
 
 const galleryCss = {
-  container: css({ width: "400px", aspectRatio: "16/9" }),
+  container: css({
+    color: "white",
+    borderRadius: variables.borderRadius.md,
+
+    "@media (orientation: landscape)": {
+      fontSize: variables.fontSize.subheading,
+    },
+
+    "& .swiper-button-prev, .swiper-button-next": {
+      color: "white",
+      fontWeight: "bold",
+    },
+  }),
 
   image: css({
-    width: "100%",
-    aspectRatio: "16/9",
+    aspectRatio: "20/9",
+
+    "@media (orientation: portrait)": {
+      aspectRatio: "16/9",
+    },
   }),
 };
 

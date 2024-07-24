@@ -17,13 +17,41 @@ const tileWSCss = {
   container: (variant) =>
     css([
       {
+        display: "grid",
+
         "& > div": {
+          justifySelf: "center",
           borderRadius: variables.borderRadius.md,
           border: `2px solid rgb(${colors.primaryLight}, 0.25)`,
         },
       },
 
-      variant === "summary-short" && {},
+      variant === "details-long" &&
+        css({
+          "& > div": {
+            width: "80vw",
+            display: "grid",
+            gridTemplateColumns: "1fr max-content",
+            border: "none",
+
+            "& > section:nth-of-type(1)": {
+              gridColumn: "1 / -1",
+            },
+
+            "@media (orientation: portrait)": {
+              width: "100%",
+
+              "& > section:nth-of-type(2)": {
+                gridColumn: "1 / -1",
+              },
+
+              "& > section:nth-of-type(3)": {
+                justifySelf: "center",
+                width: "max-content",
+              },
+            },
+          },
+        }),
     ]),
 
   imageSingle: css({
@@ -56,6 +84,14 @@ const tileWSCss = {
     display: "grid",
     rowGap: variables.gap.md,
 
+    "@media (orientation: portrait)": {
+      padding: `${variables.gap.md} 0`,
+
+      "& > h2": {
+        textAlign: "center",
+      },
+    },
+
     "& svg": {
       fontSize: "2.5rem",
       color: `rgb(${colors.secondaryLight})`,
@@ -83,15 +119,35 @@ const tileWSCss = {
     },
   }),
 
-  sum: css({
-    padding: variables.gap.sm,
-    textAlign: "center",
-    fontWeight: "bold",
-    letterSpacing: "0.1rem",
-    color: `rgb(${colors.whiteLight})`,
-    borderRadius: `0 0 ${variables.borderRadius.md} ${variables.borderRadius.md}`,
-    backgroundColor: `rgb(${colors.secondaryLight})`,
-  }),
+  sum: (variant) =>
+    css([
+      {
+        padding: variables.gap.sm,
+        display: "grid",
+        fontWeight: "bold",
+        letterSpacing: "0.1rem",
+        color: `rgb(${colors.whiteLight})`,
+        borderRadius: `0 0 ${variables.borderRadius.md} ${variables.borderRadius.md}`,
+        backgroundColor: `rgb(${colors.secondaryLight})`,
+
+        "& > p": {
+          alignSelf: "center",
+          height: "max-content",
+          textAlign: "center",
+        },
+      },
+
+      variant === "details-long" && {
+        padding: `${variables.gap.sm} ${variables.gap.lg}`,
+
+        borderRadius: variables.borderRadius.md,
+
+        "@media (orientation: landscape)": {
+          margin: `${variables.gap.md} 0`,
+          fontSize: `calc(${variables.fontSize.regular} * 1.3)`,
+        },
+      },
+    ]),
 };
 
 export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
@@ -119,46 +175,51 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
       <section css={tileWSCss.details}>
         <h2>{tile.details.name}</h2>
 
-        <div css={tileWSCss.location}>
-          <FiMapPin />
-          <p>{tile.details.detailedDescriptions.location}</p>
-        </div>
+        {tile.variant === "summary-short" && (
+          <>
+            <div css={tileWSCss.location}>
+              <FiMapPin />
+              <p>{tile.details.detailedDescriptions.location}</p>
+            </div>
+            <div css={tileWSCss.roomsAreaAndPrice}>
+              <div>
+                <MdOutlineMeetingRoom />
+                <p>
+                  {tile.details.detailedDescriptions.characteristics.roomCount}
+                </p>
+              </div>
 
-        <div css={tileWSCss.roomsAreaAndPrice}>
-          <div>
-            <MdOutlineMeetingRoom />
-            <p>{tile.details.detailedDescriptions.characteristics.roomCount}</p>
-          </div>
+              <div>
+                <BiArea />
+                <p>
+                  {tile.details.detailedDescriptions.characteristics.area} m
+                  <sup>2</sup>
+                </p>
+              </div>
 
-          <div>
-            <BiArea />
-            <p>
-              {tile.details.detailedDescriptions.characteristics.area} m
-              <sup>2</sup>
-            </p>
-          </div>
-
-          <div>
-            <RiCoinLine />
-            <p>
-              {
-                tile.details.detailedDescriptions.characteristics
-                  .pricePerSquareMeter
-              }
-              zł/m<sup>2</sup>
-            </p>
-          </div>
-        </div>
+              <div>
+                <RiCoinLine />
+                <p>
+                  {
+                    tile.details.detailedDescriptions.characteristics
+                      .pricePerSquareMeter
+                  }
+                  zł/m<sup>2</sup>
+                </p>
+              </div>
+            </div>
+          </>
+        )}
       </section>
 
-      <section css={tileWSCss.sum}>
+      <section css={tileWSCss.sum(tile.variant)}>
         <p>
           {(
             tile.details.detailedDescriptions.characteristics.area *
             tile.details.detailedDescriptions.characteristics
               .pricePerSquareMeter
           ).toLocaleString("pl-PL")}
-          zł
+          {` zł`}
         </p>
       </section>
     </div>

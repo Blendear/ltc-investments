@@ -16,7 +16,26 @@ import { ConsultantVisualizer } from "@/features/offered-real-estates/components
 import { consultants } from "@/features/offered-real-estates/data/consultants";
 
 const realEstateDCss = {
-  container: css({}),
+  container: css({
+    display: "grid",
+    gap: variables.gap.md,
+
+    " & > section": {
+      padding: variables.gap.md,
+      borderRadius: variables.borderRadius.md,
+      border: `2px solid rgb(${colors.primaryLight}, 0.25)`,
+
+      "& > h2": {
+        textAlign: "center",
+      },
+    },
+  }),
+
+  characteristics: css({}),
+
+  consultant: css({}),
+
+  aboutLocationAndAdditionalInfo: css({}),
 };
 
 const RealEstateDetails = () => {
@@ -51,7 +70,7 @@ const RealEstateDetails = () => {
   return (
     <article css={realEstateDCss.container}>
       {realEstate && (
-        <div>
+        <>
           <TileWithSummary
             tile={{
               variant: "details-long",
@@ -106,7 +125,7 @@ const RealEstateDetails = () => {
               </>
             )}
           </section>
-        </div>
+        </>
       )}
     </article>
   );
