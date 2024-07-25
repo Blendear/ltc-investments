@@ -164,39 +164,30 @@ const RealEstateDetails = () => {
           </section>
 
           <section css={realEstateDCss.aboutLocationAndAdditionalInfo}>
-            <h2>{t.detailedDescriptions.headers.about}</h2>
-            <p>
-              {
+            {(() => {
+              const detailedDescriptions =
                 t.detailedDescriptions
                   .realEstateSpecificDescriptionsByFamilyAndId[
                   realEstate.realEstateFamily
-                ][realEstate.id].about
-              }
-            </p>
+                ][realEstate.id];
 
-            <h2>{t.detailedDescriptions.headers.location}</h2>
-            <p>
-              {
-                t.detailedDescriptions
-                  .realEstateSpecificDescriptionsByFamilyAndId[
-                  realEstate.realEstateFamily
-                ][realEstate.id].location
-              }
-            </p>
+              return (
+                <>
+                  <h2>{t.detailedDescriptions.headers.about}</h2>
+                  <p>{detailedDescriptions.about}</p>
 
-            {realEstate.detailedDescriptions.additionalInfo && (
-              <>
-                <h2>{t.detailedDescriptions.headers.additionalInfo}</h2>
-                <p>
-                  {
-                    t.detailedDescriptions
-                      .realEstateSpecificDescriptionsByFamilyAndId[
-                      realEstate.realEstateFamily
-                    ][realEstate.id].additionalInfo
-                  }
-                </p>
-              </>
-            )}
+                  <h2>{t.detailedDescriptions.headers.location}</h2>
+                  <p>{detailedDescriptions.location}</p>
+
+                  {realEstate.detailedDescriptions.additionalInfo && (
+                    <>
+                      <h2>{t.detailedDescriptions.headers.additionalInfo}</h2>
+                      <p>{detailedDescriptions.additionalInfo}</p>
+                    </>
+                  )}
+                </>
+              );
+            })()}
           </section>
         </>
       )}
