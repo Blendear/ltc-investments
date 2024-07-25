@@ -102,10 +102,19 @@ const tileWSCss = {
     },
   }),
 
-  location: css({
-    display: "flex",
-    gap: variables.gap.xs,
-  }),
+  location: (variant) =>
+    css([
+      {
+        display: "flex",
+        gap: variables.gap.xs,
+      },
+
+      variant === "details-long" && {
+        "@media (orientation: portrait)": {
+          justifySelf: "center",
+        },
+      },
+    ]),
 
   roomsAreaAndPrice: css({
     display: "flex",
@@ -138,8 +147,9 @@ const tileWSCss = {
       },
 
       variant === "details-long" && {
+        alignSelf: "center",
+        height: "max-content",
         padding: `${variables.gap.sm} ${variables.gap.lg}`,
-
         borderRadius: variables.borderRadius.md,
 
         "@media (orientation: landscape)": {
@@ -175,12 +185,13 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
       <section css={tileWSCss.details}>
         <h2>{tile.details.name}</h2>
 
+        <div css={tileWSCss.location(tile.variant)}>
+          <FiMapPin />
+          <p>{tile.details.detailedDescriptions.location}</p>
+        </div>
+
         {tile.variant === "summary-short" && (
           <>
-            <div css={tileWSCss.location}>
-              <FiMapPin />
-              <p>{tile.details.detailedDescriptions.location}</p>
-            </div>
             <div css={tileWSCss.roomsAreaAndPrice}>
               <div>
                 <MdOutlineMeetingRoom />

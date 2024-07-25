@@ -275,6 +275,40 @@ export const en = {
           countryside: "countryside",
         },
       },
+
+      realEstateSpecificDescriptionsByFamilyAndId: {
+        apartments: {
+          1: {
+            about: "apartments 1 | about about about",
+            location: "apartments 1 | location location location",
+            additionalInfo:
+              "apartments 1 | additionalInfo additionalInfo additionalInfo",
+          },
+
+          2: {
+            about: "apartments 2 | about about about",
+            location: "apartments 2 | location location location",
+            additionalInfo:
+              "apartments 2 | additionalInfo additionalInfo additionalInfo",
+          },
+
+          3: {
+            about: "apartments 3 | about about about",
+            location: "apartments 3 | location location location",
+            additionalInfo:
+              "apartments 3 | additionalInfo additionalInfo additionalInfo",
+          },
+        },
+
+        houses: {
+          1: {
+            about: "houses 1 | about about about",
+            location: "houses 1  | location location location",
+            additionalInfo:
+              "houses 1  | additionalInfo additionalInfo additionalInfo",
+          },
+        },
+      },
     },
   },
 };

@@ -58,7 +58,13 @@ const realEstateDCss = {
 
   consultant: css({}),
 
-  aboutLocationAndAdditionalInfo: css({}),
+  aboutLocationAndAdditionalInfo: css({
+    display: "grid",
+
+    "& > p:not(:last-of-type)": {
+      marginBottom: variables.gap.md,
+    },
+  }),
 };
 
 const RealEstateDetails = () => {
@@ -136,15 +142,36 @@ const RealEstateDetails = () => {
 
           <section css={realEstateDCss.aboutLocationAndAdditionalInfo}>
             <h2>{t.detailedDescriptions.headers.about}</h2>
-            <p>{realEstate.detailedDescriptions.about}</p>
+            <p>
+              {
+                t.detailedDescriptions
+                  .realEstateSpecificDescriptionsByFamilyAndId[
+                  realEstate.realEstateFamily
+                ][realEstate.id].about
+              }
+            </p>
 
             <h2>{t.detailedDescriptions.headers.location}</h2>
-            <p>{realEstate.detailedDescriptions.location}</p>
+            <p>
+              {
+                t.detailedDescriptions
+                  .realEstateSpecificDescriptionsByFamilyAndId[
+                  realEstate.realEstateFamily
+                ][realEstate.id].location
+              }
+            </p>
 
             {realEstate.detailedDescriptions.additionalInfo && (
               <>
                 <h2>{t.detailedDescriptions.headers.additionalInfo}</h2>
-                <p>{realEstate.detailedDescriptions.additionalInfo}</p>
+                <p>
+                  {
+                    t.detailedDescriptions
+                      .realEstateSpecificDescriptionsByFamilyAndId[
+                      realEstate.realEstateFamily
+                    ][realEstate.id].additionalInfo
+                  }
+                </p>
               </>
             )}
           </section>

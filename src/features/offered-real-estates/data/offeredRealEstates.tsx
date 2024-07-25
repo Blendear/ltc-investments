@@ -4,6 +4,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
   apartments: [
     {
       id: 1,
+      realEstateFamily: "apartments",
       consultant: "lukas",
       imagePathsList: [
         "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
@@ -50,6 +51,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
     },
     {
       id: 2,
+      realEstateFamily: "apartments",
       consultant: "lukas",
       imagePathsList: [
         "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
@@ -91,6 +93,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
     },
     {
       id: 3,
+      realEstateFamily: "apartments",
       consultant: "lukas",
       imagePathsList: [
         "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
@@ -133,6 +136,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
   houses: [
     {
       id: 1,
+      realEstateFamily: "houses",
       consultant: "lukas",
       imagePathsList: [
         "https://static.wikia.nocookie.net/lugaresesdla/images/c/cf/34397_1216345233135_454_300.jpg/revision/latest?cb=20180329115746&path-prefix=es",

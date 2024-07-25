@@ -276,6 +276,40 @@ export const pl = {
           countryside: "okolica wiejska",
         },
       },
+
+      realEstateSpecificDescriptionsByFamilyAndId: {
+        apartments: {
+          1: {
+            about: "apartments 1 | mieszkania mieszkania mieszkania",
+            location: "apartments 1 | lokalizacja lokalizacja lokalizacja",
+            additionalInfo:
+              "apartments 1 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
+          },
+
+          2: {
+            about: "apartments 2 | mieszkania mieszkania mieszkania",
+            location: "apartments 2 | lokalizacja lokalizacja lokalizacja",
+            additionalInfo:
+              "apartments 2 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
+          },
+
+          3: {
+            about: "apartments 3 | mieszkania mieszkania mieszkania",
+            location: "apartments 3 | lokalizacja lokalizacja lokalizacja",
+            additionalInfo:
+              "apartments 3 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
+          },
+        },
+
+        houses: {
+          1: {
+            about: "houses 1 | domy domy domy",
+            location: "houses 1 | lokalizacja lokalizacja lokalizacja",
+            additionalInfo:
+              "houses 1 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
+          },
+        },
+      },
     },
   },
 };

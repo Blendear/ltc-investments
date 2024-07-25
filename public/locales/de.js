@@ -274,6 +274,44 @@ export const de = {
           countryside: "ländlich",
         },
       },
+
+      realEstateSpecificDescriptionsByFamilyAndId: {
+        apartments: {
+          1: {
+            about:
+              "apartments 1 | über das Angebot über das Angebot über das Angebot",
+            location: "apartments 1 | Lage Lage Lage",
+            additionalInfo:
+              "apartments 1 | zusätzliche Informationen zusätzliche Informationen zusätzliche Informationen",
+          },
+
+          2: {
+            about:
+              "apartments 2 | über das Angebot über das Angebot über das Angebot",
+            location: "apartments 2 | Lage Lage Lage",
+            additionalInfo:
+              "apartments 2 | zusätzliche Informationen zusätzliche Informationen zusätzliche Informationen",
+          },
+
+          3: {
+            about:
+              "apartments 3 | über das Angebot über das Angebot über das Angebot",
+            location: "apartments 3 | Lage Lage Lage",
+            additionalInfo:
+              "apartments 3 | zusätzliche Informationen zusätzliche Informationen zusätzliche Informationen",
+          },
+        },
+
+        houses: {
+          1: {
+            about:
+              "houses 1 | über das Angebot über das Angebot über das Angebot",
+            location: "houses 1 | Lage Lage Lage",
+            additionalInfo:
+              "houses 1 | zusätzliche Informationen zusätzliche Informationen zusätzliche Informationen",
+          },
+        },
+      },
     },
   },
 };
