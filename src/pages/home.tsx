@@ -42,6 +42,10 @@ const homeCss = {
     "@media (orientation: landscape)": {
       height: "500px",
     },
+
+    "@media (max-width: 600px)": {
+      height: "400px",
+    },
   }),
 
   frontText: css({
@@ -82,8 +86,9 @@ const homeCss = {
       },
 
       "& > span:nth-of-type(1)": {
-        "@media (max-width: 480px)": {
+        "@media (max-width: 400px)": {
           display: "block",
+          paddingBottom: "0.5rem",
         },
       },
 
