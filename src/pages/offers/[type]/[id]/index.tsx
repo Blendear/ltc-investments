@@ -39,8 +39,9 @@ const realEstateDCss = {
 
       "& > li": {
         display: "grid",
-        gap: variables.gap.xs,
+        gap: variables.gap.sm,
         gridTemplateColumns: "1fr 1fr",
+        wordBreak: "break-word",
 
         "&::after": {
           content: '""',
