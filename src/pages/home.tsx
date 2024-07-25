@@ -89,9 +89,9 @@ const Home = () => {
         <div css={homeCss.frontText}>
           <h1>{t.brandName}</h1>
           <h2>
-            Twoje inwestycje, nasza{" "}
+            {t.brandSlogan.start}{" "}
             <ReactTyped
-              strings={t.brandSlogans}
+              strings={t.brandSlogan.endings}
               typeSpeed={40}
               backDelay={1500}
               backSpeed={40}

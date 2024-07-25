@@ -60,7 +60,10 @@ export const en = {
 
   home: {
     brandName: "LTC Investments",
-    brandSlogan: "Your investments, our passion",
+    brandSlogan: {
+      start: "Your investment, our",
+      endings: ["passion", "specialty", "future"],
+    },
     infoChunks: {
       first: {
         header: "Real estate rental",

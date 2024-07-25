@@ -60,7 +60,10 @@ export const pl = {
 
   home: {
     brandName: "LTC Investments",
-    brandSlogans: ["pasja", "specjalność", "przyszłość"],
+    brandSlogan: {
+      start: "Twoja inwestycja, Nasza",
+      endings: ["pasja", "specjalność", "przyszłość"],
+    },
     infoChunks: {
       first: {
         header: "Wynajem nieruchomości",
