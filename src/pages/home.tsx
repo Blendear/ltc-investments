@@ -14,6 +14,7 @@ import { AiOutlineStock } from "react-icons/ai";
 import { GrMoney } from "react-icons/gr";
 import { HiOutlineBanknotes } from "react-icons/hi2";
 import { RiBuilding2Line } from "react-icons/ri";
+import { ReactTyped } from "react-typed";
 
 const icons = {
   first: <BsHouse />,
@@ -25,11 +26,45 @@ const icons = {
 const homeCss = {
   container: css({}),
 
-  titleVisualizer: {
-    container: css({}),
+  titleVisualizer: css({
+    display: "grid",
+  }),
 
-    backgroundVisual: css({ width: "100%", height: "500px" }),
-  },
+  backgroundVisual: css({
+    gridRow: 1,
+    gridColumn: 1,
+    width: "100%",
+    height: "500px",
+  }),
+
+  frontText: css({
+    padding: "70px 50px 50px 50px",
+    alignSelf: "end",
+    zIndex: 1,
+    gridRow: 1,
+    gridColumn: 1,
+    display: "grid",
+    justifyItems: "center",
+    alignItems: "end",
+    gap: variables.gap.md,
+    color: `rgb(${colors.whiteLight})`,
+    backgroundColor: `rgba(${colors.primaryLight}, 0.9)`,
+    backdropFilter: "blur(3px)",
+    clipPath: "polygon(0 0, 100% 20%, 100% 100%, 0% 100%)",
+
+    "& > *": {
+      width: "100%",
+      fontWeight: "normal",
+    },
+
+    "& > h2 ": {
+      fontSize: `calc(${variables.fontSize.subheading} * 0.8)`,
+
+      "& > span ": {
+        color: `rgb(${colors.secondaryLight})`,
+      },
+    },
+  }),
 
   infoChunks: css({
     "& > div > svg": {
@@ -46,13 +81,24 @@ const Home = () => {
 
   return (
     <article css={homeCss.container}>
-      <div css={homeCss.titleVisualizer.container}>
+      <div css={homeCss.titleVisualizer}>
         <ImageWithWrapper
           src="/images/home/ltc-title-image.jpg"
-          wrapperCss={homeCss.titleVisualizer.backgroundVisual}
+          wrapperCss={homeCss.backgroundVisual}
         />
-        <h1>{t.brandName}</h1>
-        <h2>{t.brandSlogan}</h2>
+        <div css={homeCss.frontText}>
+          <h1>{t.brandName}</h1>
+          <h2>
+            Twoje inwestycje, nasza{" "}
+            <ReactTyped
+              strings={t.brandSlogans}
+              typeSpeed={40}
+              backDelay={1500}
+              backSpeed={40}
+              loop
+            />
+          </h2>
+        </div>
       </div>
 
       <div css={homeCss.infoChunks}>
