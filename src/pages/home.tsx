@@ -38,6 +38,10 @@ const homeCss = {
     gridColumn: 1,
     width: "100%",
     height: "500px",
+
+    "@media (orientation: landscape)": {
+      height: "500px",
+    },
   }),
 
   frontText: css({
@@ -55,15 +59,35 @@ const homeCss = {
     backdropFilter: "blur(3px)",
     clipPath: "polygon(0 0, 100% 20%, 100% 100%, 0% 100%)",
 
+    "@media (max-width: 600px)": {
+      padding: "70px 25px 40px 25px",
+    },
+
     "& > *": {
       width: "100%",
       fontWeight: "normal",
     },
 
+    "& > h1": {
+      "@media (max-width: 600px)": {
+        fontSize: `calc(${variables.fontSize.heading} * 0.7)`,
+      },
+    },
+
     "& > h2 ": {
       fontSize: `calc(${variables.fontSize.subheading} * 0.8)`,
 
-      "& > span ": {
+      "@media (max-width: 600px)": {
+        fontSize: `calc(${variables.fontSize.subheading} * 0.65)`,
+      },
+
+      "& > span:nth-of-type(1)": {
+        "@media (max-width: 480px)": {
+          display: "block",
+        },
+      },
+
+      "& > span:last-of-type": {
         color: `rgb(${colors.secondaryLight})`,
       },
     },
@@ -131,7 +155,8 @@ const Home = () => {
         <div css={homeCss.frontText}>
           <h1>{t.brandName}</h1>
           <h2>
-            {t.brandSlogan.start}{" "}
+            <span>{t.brandSlogan.start.split(",")[0]},</span>
+            <span>{t.brandSlogan.start.split(",")[1]} </span>
             <ReactTyped
               strings={t.brandSlogan.endings}
               typeSpeed={40}
