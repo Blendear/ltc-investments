@@ -24,7 +24,10 @@ const icons = {
 };
 
 const homeCss = {
-  container: css({}),
+  container: css({
+    display: "grid",
+    gap: variables.gap.lg,
+  }),
 
   titleVisualizer: css({
     display: "grid",
@@ -67,13 +70,52 @@ const homeCss = {
   }),
 
   infoChunks: css({
-    "& > div > svg": {
-      fontSize: "100px",
-      color: `rgb(${colors.secondaryLight}, 0.85)`,
+    display: "flex",
+    gap: "2rem 6rem",
+    flexWrap: "wrap",
+    justifyContent: "center",
+
+    "& > div": {
+      width: "100%",
+      flex: "0 0 25rem",
+      display: "grid",
+      gap: variables.gap.md,
+      gridAutoRows: "max-content",
+
+      "& > *": {
+        textAlign: "center",
+      },
+
+      "& > svg": {
+        justifySelf: "center",
+        fontSize: "100px",
+        color: `rgb(${colors.secondaryLight}, 0.85)`,
+      },
     },
   }),
 
-  aboutUsButton: css({}),
+  aboutUsButton: css([
+    universalCss.button(true),
+
+    {
+      justifySelf: "center",
+      padding: `${variables.gap.md} ${variables.gap.lg}`,
+      width: "max-content",
+      display: "grid",
+      fontSize: `calc(${variables.fontSize.subheading} * 0.8)`,
+      fontWeight: "bold",
+      letterSpacing: "0.1rem",
+      color: `rgb(${colors.whiteLight})`,
+      borderRadius: variables.borderRadius.md,
+      backgroundColor: `rgb(${colors.secondaryLight})`,
+
+      "& > p": {
+        alignSelf: "center",
+        height: "max-content",
+        textAlign: "center",
+      },
+    },
+  ]),
 };
 
 const Home = () => {
@@ -106,15 +148,15 @@ const Home = () => {
           return (
             <div key={index}>
               {icons[dataVisualizer]}
-              <p>{t.infoChunks[dataVisualizer].header}</p>
+              <h3>{t.infoChunks[dataVisualizer].header}</h3>
               <p>{t.infoChunks[dataVisualizer].content}</p>
             </div>
           );
         })}
       </div>
 
-      <Link css={homeCss.aboutUsButton} href="/about-us">
-        {t.aboutUsButton}
+      <Link href="/about-us">
+        <a css={homeCss.aboutUsButton}> {t.aboutUsButton}</a>
       </Link>
     </article>
   );
