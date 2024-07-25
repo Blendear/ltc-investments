@@ -10,9 +10,10 @@ import { IoMailOpenOutline, IoPhonePortraitOutline } from "react-icons/io5";
 
 const consultantVCss = {
   container: css({
+    width: "max-content",
     display: "grid",
     gap: variables.gap.md,
-    justifyItems: "center",
+
     "@media (min-width: 500px)": {
       display: "grid",
       gridAutoFlow: "column",

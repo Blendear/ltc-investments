@@ -28,6 +28,7 @@ const galleryCss = {
 
   image: css({
     aspectRatio: "20/9",
+    maxWidth: "1200px",
 
     "@media (orientation: portrait)": {
       aspectRatio: "16/9",

@@ -17,10 +17,29 @@ import { consultants } from "@/features/offered-real-estates/data/consultants";
 
 const realEstateDCss = {
   container: css({
+    maxWidth: "1200px",
     display: "grid",
     gap: variables.gap.md,
 
-    " & > section": {
+    "@media (orientation: landscape)": {
+      gridTemplateColumns: "1fr 1fr",
+      gridTemplateRows: "max-content max-content 1fr",
+
+      "& > *": {
+        height: "max-content",
+      },
+
+      "& > div:nth-of-type(1)": {
+        gridColumn: "1 / -1",
+      },
+
+      "& > section:nth-of-type(1)": {
+        gridColumn: "1",
+        gridRow: "2/4",
+      },
+    },
+
+    "& > section": {
       padding: variables.gap.md,
       borderRadius: variables.borderRadius.md,
       border: `2px solid rgb(${colors.primaryLight}, 0.25)`,
@@ -57,7 +76,10 @@ const realEstateDCss = {
     },
   }),
 
-  consultant: css({}),
+  consultant: css({
+    display: "grid",
+    justifyItems: "center",
+  }),
 
   aboutLocationAndAdditionalInfo: css({
     display: "grid",

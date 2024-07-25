@@ -30,6 +30,7 @@ const tileWSCss = {
         css({
           "& > div": {
             width: "80vw",
+            maxWidth: "1200px",
             display: "grid",
             gridTemplateColumns: "1fr max-content",
             border: "none",
@@ -81,6 +82,7 @@ const tileWSCss = {
 
   details: css({
     padding: variables.gap.md,
+    maxWidth: "1200px",
     display: "grid",
     rowGap: variables.gap.md,
 
