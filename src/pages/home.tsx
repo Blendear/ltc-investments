@@ -67,6 +67,10 @@ const homeCss = {
       padding: "70px 25px 40px 25px",
     },
 
+    "@media (min-width: 1000px)": {
+      clipPath: "polygon(0 0, 100% 30%, 100% 100%, 0% 100%)",
+    },
+
     "& > *": {
       width: "100%",
       fontWeight: "normal",
