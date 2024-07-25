@@ -87,6 +87,10 @@ const globalCss = {
     "a, button": {
       all: "unset",
       cursor: "pointer",
+
+      "&:hover": {
+        filter: `saturate(1.25)`,
+      },
     },
 
     input: {
