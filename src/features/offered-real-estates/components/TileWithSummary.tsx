@@ -133,8 +133,8 @@ const tileWSCss = {
   sum: (variant) =>
     css([
       {
+        padding: variables.gap.sm,
         justifySelf: "center",
-        width: "max-content",
         display: "grid",
         fontWeight: "bold",
         letterSpacing: "0.1rem",
@@ -151,6 +151,7 @@ const tileWSCss = {
 
       variant === "details-long" && {
         alignSelf: "center",
+        width: "max-content",
         height: "max-content",
         padding: `${variables.gap.sm} ${variables.gap.lg}`,
         borderRadius: variables.borderRadius.md,

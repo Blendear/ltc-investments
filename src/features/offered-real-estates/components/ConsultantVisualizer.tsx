@@ -58,6 +58,10 @@ const consultantVCss = {
 
       "& > span": {
         alignSelf: "center",
+
+        "&:hover": {
+          filter: "opacity(0.75)",
+        },
       },
     },
   }),
