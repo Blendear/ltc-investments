@@ -13,8 +13,9 @@ const consultantVCss = {
     width: "max-content",
     display: "grid",
     gap: variables.gap.md,
+    justifyItems: "center",
 
-    "@media (min-width: 500px)": {
+    "@media (min-width: 750px)": {
       display: "grid",
       gridAutoFlow: "column",
     },
@@ -36,7 +37,7 @@ const consultantVCss = {
     gridAutoRows: "max-content",
     justifyItems: "center",
 
-    "@media (min-width: 500px)": {
+    "@media (min-width: 750px)": {
       justifyItems: "start",
     },
 

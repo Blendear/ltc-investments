@@ -26,7 +26,7 @@ const realEstateDCss = {
       gridTemplateRows: "max-content max-content 1fr",
 
       "& > *": {
-        height: "max-content",
+        // height: "max-content",
       },
 
       "& > div:nth-of-type(1)": {
