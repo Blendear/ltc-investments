@@ -13,6 +13,7 @@ export type RealEstateType = {
   name: string;
   consultant: ConsultantNameType;
   imagePathsList: string[];
+  crossSectionImagePath: string;
   detailedDescriptions: {
     characteristics: CharacteristicsType;
     about: string;

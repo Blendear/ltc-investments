@@ -14,6 +14,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
         "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
       ],
       name: "Pałac Bizantyjski",
+      crossSectionImagePath:
+        "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
       detailedDescriptions: {
         characteristics: {
           area: 33.0,
@@ -57,6 +59,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
         "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
       ],
       name: "Bajorko Shreka",
+      crossSectionImagePath:
+        "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
       detailedDescriptions: {
         characteristics: {
           area: 33.0,
@@ -98,6 +102,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       imagePathsList: [
         "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
       ],
+      crossSectionImagePath:
+        "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
       name: "Hata Pirata",
       detailedDescriptions: {
         characteristics: {
@@ -144,6 +150,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
         "https://static.wikia.nocookie.net/lugaresesdla/images/c/cf/34397_1216345233135_454_300.jpg/revision/latest?cb=20180329115746&path-prefix=es",
       ],
       name: "Gondor",
+      crossSectionImagePath:
+        "https://www.dsa-arch.com/wp-content/uploads/2021/08/PALACE-DOWNTOWN-LANDSCAPE-1.jpeg",
       detailedDescriptions: {
         characteristics: {
           area: 33.0,

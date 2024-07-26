@@ -14,6 +14,7 @@ import {
 import { useEffect, useState } from "react";
 import { ConsultantVisualizer } from "@/features/offered-real-estates/components/ConsultantVisualizer";
 import { consultants } from "@/features/offered-real-estates/data/consultants";
+import ImageWithWrapper from "@/components/ImageWithWrapper";
 
 const realEstateDCss = {
   container: css({
@@ -87,6 +88,19 @@ const realEstateDCss = {
 
     "& > p:not(:last-of-type)": {
       marginBottom: variables.gap.md,
+    },
+  }),
+
+  crossSectionImage: css({
+    gridColumn: "1 / -1",
+    aspectRatio: "16/9",
+
+    "@media (orientation: landscape)": {
+      aspectRatio: "20/9",
+    },
+
+    "& > span": {
+      borderRadius: variables.borderRadius.md,
     },
   }),
 };
@@ -190,6 +204,11 @@ const RealEstateDetails = () => {
               );
             })()}
           </section>
+
+          <ImageWithWrapper
+            src={realEstate.crossSectionImagePath}
+            wrapperCss={realEstateDCss.crossSectionImage}
+          />
         </>
       )}
     </article>
