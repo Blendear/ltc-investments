@@ -59,7 +59,7 @@ export const de = {
   home: {
     brandName: "LTC Investments",
     brandSlogan: {
-      start: "Ihre Investition, Unser",
+      start: "Ihre Investition, Unsere",
       endings: ["Leidenschaft", "Spezialität", "Zukunft"],
     },
     infoChunks: {
