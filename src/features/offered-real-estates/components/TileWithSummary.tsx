@@ -133,18 +133,19 @@ const tileWSCss = {
   sum: (variant) =>
     css([
       {
-        padding: variables.gap.sm,
+        justifySelf: "center",
+        width: "max-content",
         display: "grid",
         fontWeight: "bold",
         letterSpacing: "0.1rem",
         color: `rgb(${colors.whiteLight})`,
         borderRadius: `0 0 ${variables.borderRadius.md} ${variables.borderRadius.md}`,
         backgroundColor: `rgb(${colors.secondaryLight})`,
+        cursor: "pointer",
+        textAlign: "center",
 
-        "& > p": {
-          alignSelf: "center",
-          height: "max-content",
-          textAlign: "center",
+        "&:hover": {
+          filter: "saturate(1.25)",
         },
       },
 
@@ -225,16 +226,13 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
         )}
       </section>
 
-      <section css={tileWSCss.sum(tile.variant)}>
-        <p>
-          {(
-            tile.details.detailedDescriptions.characteristics.area *
-            tile.details.detailedDescriptions.characteristics
-              .pricePerSquareMeter
-          ).toLocaleString("pl-PL")}
-          {` zł`}
-        </p>
-      </section>
+      <a css={tileWSCss.sum(tile.variant)} href={`tel:+48 604 513 082`}>
+        {(
+          tile.details.detailedDescriptions.characteristics.area *
+          tile.details.detailedDescriptions.characteristics.pricePerSquareMeter
+        ).toLocaleString("pl-PL")}
+        {` zł`}
+      </a>
     </div>
   );
 
