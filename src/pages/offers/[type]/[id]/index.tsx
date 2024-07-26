@@ -83,6 +83,7 @@ const realEstateDCss = {
 
   aboutLocationAndAdditionalInfo: css({
     display: "grid",
+    gridAutoRows: "max-content",
 
     "& > p:not(:last-of-type)": {
       marginBottom: variables.gap.md,
