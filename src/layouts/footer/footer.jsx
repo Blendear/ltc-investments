@@ -49,8 +49,16 @@ const footerCss = {
           },
         },
 
-        "& > p > span": {
-          color: `rgb(${colors.secondaryLight})`,
+        "& > p": {
+          "& > span": {
+            color: `rgb(${colors.secondaryLight})`,
+          },
+        },
+
+        "& > p:nth-of-type(1), & > p:nth-of-type(2)": {
+          "& > span:hover": {
+            filter: "brightness(0.85)",
+          },
         },
       },
 
@@ -75,6 +83,10 @@ const footerCss = {
 
     "@media (orientation:landscape)": {
       gridAutoFlow: "row",
+    },
+
+    "& > a:hover": {
+      filter: "brightness(0.85)",
     },
   }),
 
