@@ -80,29 +80,34 @@ const tileWSCss = {
     },
   }),
 
-  details: css({
-    padding: variables.gap.md,
-    maxWidth: "1200px",
-    display: "grid",
-    rowGap: variables.gap.md,
+  details: (variant) =>
+    css([
+      {
+        padding: variables.gap.md,
+        maxWidth: "1200px",
+        display: "grid",
+        rowGap: variables.gap.md,
 
-    "@media (orientation: portrait)": {
-      padding: `${variables.gap.md} 0`,
+        "@media (orientation: portrait)": {
+          "& > h2": {
+            textAlign: "center",
+          },
+        },
 
-      "& > h2": {
-        textAlign: "center",
+        "& svg": {
+          fontSize: "2.5rem",
+          color: `rgb(${colors.secondaryLight})`,
+        },
+
+        "& p, svg": {
+          alignSelf: "center",
+        },
       },
-    },
 
-    "& svg": {
-      fontSize: "2.5rem",
-      color: `rgb(${colors.secondaryLight})`,
-    },
-
-    "& p, svg": {
-      alignSelf: "center",
-    },
-  }),
+      variant === "details-long" && {
+        padding: `${variables.gap.md} 0`,
+      },
+    ]),
 
   location: (variant) =>
     css([
@@ -186,7 +191,7 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
         }
       </section>
 
-      <section css={tileWSCss.details}>
+      <section css={tileWSCss.details(tile.variant)}>
         <h2>{tile.details.name}</h2>
 
         <div css={tileWSCss.location(tile.variant)}>
