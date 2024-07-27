@@ -120,7 +120,7 @@ export const en = {
     detailedDescriptions: {
       headers: {
         characteristics: "Characteristics",
-        consultant: "Consultant",
+        consultant: "Contact Person",
         about: "About the offer",
         location: "Location",
         additionalInfo: "Additional Information",
