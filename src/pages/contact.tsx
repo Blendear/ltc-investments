@@ -121,19 +121,19 @@ const Contact = () => {
 
         <section>
           <div>
-            <MdOutlineLocalPhone />
+            <IoMdTime />
           </div>
           <div>
-            <a href={`tel:+48 604 513 082`}>+48 604 513 082</a>
+            <p>08:00 - 16:00</p>
           </div>
         </section>
 
         <section>
           <div>
-            <IoMdTime />
+            <MdOutlineLocalPhone />
           </div>
           <div>
-            <p>08:00 - 16:00</p>
+            <a href={`tel:+48 604 513 082`}>+48 604 513 082</a>
           </div>
         </section>
 
