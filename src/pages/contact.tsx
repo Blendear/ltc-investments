@@ -84,7 +84,10 @@ const Contact = () => {
         </div>
         <div>
           <p>
-            {t.phoneLabel}: <span>+48 604 513 082</span>
+            {t.phoneLabel}:{" "}
+            <span>
+              <a href={`tel:+48 604 513 082`}>+48 604 513 082</a>
+            </span>
           </p>
         </div>
       </section>
@@ -94,7 +97,10 @@ const Contact = () => {
           <IoMailOutline />
         </div>
         <p>
-          {t.emailLabel}: <span>email@gmail.com</span>
+          {t.emailLabel}:{" "}
+          <span>
+            <a href={`mailto:l.cibis@gmail.com`}>l.cibis@gmail.com</a>
+          </span>
         </p>
       </section>
     </article>
