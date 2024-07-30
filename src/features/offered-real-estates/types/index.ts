@@ -30,11 +30,11 @@ export type CharacteristicsType = {
   pricePerSquareMeter: number;
 
   buildingType?: "tenement" | "block";
-  feesIncludedInRent?:
-    | "renovation-fund, water"
-    | "renovation-fund, water, heating"
-    | "renovation-fund, water, heating, garbage-collection"
-    | "renovation-fund, water, heating, garbage-collection, cleaning";
+  // feesIncludedInRent?:
+  //   | "renovation-fund, water"
+  //   | "renovation-fund, water, heating"
+  //   | "renovation-fund, water, heating, garbage-collection"
+  //   | "renovation-fund, water, heating, garbage-collection, cleaning";
   feesNotIncludedInRentAndCountedFromLiveUsage?:
     | "electricity"
     | "gas"
@@ -51,9 +51,9 @@ export type CharacteristicsType = {
     | "electricity-and-heating-and-gas"
     | "water-and-heating-and-gas"
     | "electricity-and-water-and-heating-and-gas";
-  monthlyAdministrativeRent?: number;
+  rent?: number;
   securityDeposit?: number;
-  depositType?: "one-month" | "one-month" | "two-months";
+  // depositType?: "one-month" | "one-month" | "two-months";
 
   typeOfPremises?: "one-storey" | "multi-storey";
   floor?: number;
