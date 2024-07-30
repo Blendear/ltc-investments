@@ -132,7 +132,7 @@ export const pl = {
         buildingType: "Typ budynku",
         feesIncludedInRent: "Opłaty w czynszu",
         feesByMeters: "Opłaty wg liczników",
-        monthlyAdministrativeRent: "Mies. czynsz admin.",
+        rent: "Czynsz najmu",
         securityDeposit: "Kaucja zabezpieczająca",
         depositType: "Rodzaj kaucji",
         typeOfPremises: "Typ lokalu",

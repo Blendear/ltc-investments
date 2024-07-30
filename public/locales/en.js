@@ -132,7 +132,7 @@ export const en = {
         buildingType: "Building Type",
         feesIncludedInRent: "Fees Included in Rent",
         feesByMeters: "Fees by Meters",
-        monthlyAdministrativeRent: "Monthly Administrative Rent",
+        rent: "Rent",
         securityDeposit: "Security Deposit",
         depositType: "Deposit Type",
         typeOfPremises: "Type of Premises",

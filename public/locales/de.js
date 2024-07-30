@@ -130,7 +130,7 @@ export const de = {
         buildingType: "Gebäudetyp",
         feesIncludedInRent: "Im Mietpreis enthaltene Gebühren",
         feesByMeters: "Gebühren nach Zählern",
-        monthlyAdministrativeRent: "Monatliche Verwaltungsmiete",
+        rent: "Miete",
         securityDeposit: "Sicherheitskaution",
         depositType: "Kautionsart",
         typeOfPremises: "Art der Räumlichkeiten",
