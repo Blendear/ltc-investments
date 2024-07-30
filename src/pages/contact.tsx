@@ -76,7 +76,7 @@ const contactCss = {
     },
 
     "& > section:nth-of-type(1)": {
-      gridRow: "1 / 4",
+      // gridRow: "1 / 4",
     },
   },
 };
@@ -107,24 +107,6 @@ const Contact = () => {
             <p>
               {t.addressCode}, {t.addressCity}
             </p>
-            <p>
-              {t.nipLabel}: <span>7543070445</span>
-            </p>
-            <p>
-              {t.krsLabel}: <span>0001059206</span>
-            </p>
-            <p>
-              {t.regonLabel}: <span>161512181</span>
-            </p>
-          </div>
-        </section>
-
-        <section>
-          <div>
-            <IoMdTime />
-          </div>
-          <div>
-            <p>08:00 - 16:00</p>
           </div>
         </section>
 
@@ -133,7 +115,15 @@ const Contact = () => {
             <MdOutlineLocalPhone />
           </div>
           <div>
-            <a href={`tel:+48 604 513 082`}>+48 604 513 082</a>
+            <a href={`tel:+48 604 513 082`}>(+48) 604 513 082</a>
+          </div>
+        </section>
+        <section>
+          <div>
+            <IoMdTime />
+          </div>
+          <div>
+            <p>08:00 - 16:00</p>
           </div>
         </section>
 

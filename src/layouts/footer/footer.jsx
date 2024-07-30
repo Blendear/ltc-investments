@@ -125,26 +125,16 @@ const Footer = () => {
         </div>
 
         <div>
+          <p>LTC Investments sp. z o. o.</p>
           <p> {t.addressStreet},</p>
-          <p> {t.addressCode},</p>
-          <p> {t.addressCity},</p>
+          <p>
+            {" "}
+            {t.addressCode}, {t.addressCity},
+          </p>
           <p> {t.addressCountry}</p>
         </div>
 
         <div>
-          <p>
-            {`${t.phoneLabel}: `}
-            <span>
-              <a href={`tel:+48 604 513 082`}>+48 604 513 082</a>
-            </span>
-          </p>
-          <p>
-            {`${t.emailLabel}: `}
-            <span>
-              <a href={`mailto:l.cibis@gmail.com`}>l.cibis@gmail.com</a>
-            </span>
-          </p>
-
           <p>
             {t.nipLabel}: <span>7543070445</span>
           </p>
@@ -153,6 +143,19 @@ const Footer = () => {
           </p>
           <p>
             {t.regonLabel}: <span>161512181</span>
+          </p>
+          <p></p>
+          <p>
+            {`${t.phoneLabel}: `}
+            <span>
+              <a href={`tel:+48 604 513 082`}>(+48) 604 513 082</a>
+            </span>
+          </p>
+          <p>
+            {`${t.emailLabel}: `}
+            <span>
+              <a href={`mailto:l.cibis@gmail.com`}>l.cibis@gmail.com</a>
+            </span>
           </p>
         </div>
 
