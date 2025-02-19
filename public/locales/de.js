@@ -115,6 +115,8 @@ export const de = {
 
     header: "Unsere Angebote",
 
+    offerIsAvailable: "Verfügbar",
+
     defaultOffersCardsName: {
       apartments: "Wohnung zur Miete",
       houses: "Häus zum Verkauf",

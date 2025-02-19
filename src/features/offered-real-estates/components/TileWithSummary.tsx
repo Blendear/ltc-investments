@@ -219,7 +219,7 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
                 </p>
               </div>
 
-              <div>
+              {/* <div>
                 <RiCoinLine />
                 <p>
                   {
@@ -228,19 +228,28 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
                   }
                   zł/m<sup>2</sup>
                 </p>
-              </div>
+              </div> */}
             </div>
           </>
         )}
       </section>
 
-      <a css={tileWSCss.sum(tile.variant)} href={`tel:+48 604 513 082`}>
-        {(
-          tile.details.detailedDescriptions.characteristics.area *
-          tile.details.detailedDescriptions.characteristics.pricePerSquareMeter
-        ).toLocaleString("pl-PL")}
-        {` zł`}
-      </a>
+      {tile.variant !== "summary-short" && (
+        <a css={tileWSCss.sum(tile.variant)} href={`tel:+48 604 513 082`}>
+          {(
+            tile.details.detailedDescriptions.characteristics.area *
+            tile.details.detailedDescriptions.characteristics
+              .pricePerSquareMeter
+          ).toLocaleString("pl-PL")}
+          {` zł`}
+        </a>
+      )}
+
+      {tile.variant === "summary-short" && (
+        <a css={tileWSCss.sum(tile.variant)} href={`tel:+48 604 513 082`}>
+          {t.offerIsAvailable}
+        </a>
+      )}
     </div>
   );
 

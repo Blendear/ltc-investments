@@ -117,6 +117,8 @@ export const pl = {
 
     header: "Nasze oferty",
 
+    offerIsAvailable: "Oferta aktualna",
+
     defaultOffersCardsName: {
       apartments: "Mieszkanie na wynajem",
       houses: "Dom na sprzedaż",
