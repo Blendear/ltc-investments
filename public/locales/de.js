@@ -115,6 +115,13 @@ export const de = {
 
     header: "Unsere Angebote",
 
+    defaultOffersCardsName: {
+      apartments: "Wohnungen zur Miete",
+      houses: "Häuser zum Verkauf",
+      premises: "Räumlichkeiten zur Miete",
+      plots: "Grundstücke zum Verkauf",
+    },
+
     detailedDescriptions: {
       headers: {
         characteristics: "Charakteristik",

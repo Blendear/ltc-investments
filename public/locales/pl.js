@@ -117,6 +117,13 @@ export const pl = {
 
     header: "Nasze oferty",
 
+    defaultOffersCardsName: {
+      apartments: "Mieszkanie na wynajem",
+      houses: "Dom na sprzedaż",
+      premises: "Lokal na wynajem",
+      plots: "Działka na sprzedaż",
+    },
+
     detailedDescriptions: {
       headers: {
         characteristics: "Charakterystyka",

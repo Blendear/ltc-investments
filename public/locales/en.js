@@ -117,6 +117,13 @@ export const en = {
 
     header: "Our offers",
 
+    defaultOffersCardsName: {
+      apartments: "Apartments for rent",
+      houses: "Houses for sale",
+      premises: "Premises for rent",
+      plots: "Plots for sale",
+    },
+
     detailedDescriptions: {
       headers: {
         characteristics: "Characteristics",
