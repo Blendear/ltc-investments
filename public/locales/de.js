@@ -117,6 +117,8 @@ export const de = {
 
     offerIsAvailable: "Verfügbar",
 
+    askForPrice: "Preis auf Anfrage",
+
     defaultOffersCardsName: {
       apartments: "Wohnung zur Miete",
       houses: "Häus zum Verkauf",
@@ -138,6 +140,7 @@ export const de = {
         area: "Fläche",
         buildingType: "Gebäudetyp",
         feesIncludedInRent: "Im Mietpreis enthaltene Gebühren",
+        feesAdditional: "Zusätzliche Gebühren",
         feesByMeters: "Gebühren nach Zählern",
         rent: "Miete",
         securityDeposit: "Sicherheitskaution",
@@ -181,7 +184,7 @@ export const de = {
         },
         feesAdditional: {
           media:
-            "media : Strom, Heizung, kaltes und warmes Wasser, Müll, Internet",
+            "Media (Strom, Heizung, kaltes und warmes Wasser, Müll, Internet)",
           electricity: "Strom",
           gas: "Gas",
           water: "Wasser",
@@ -275,6 +278,7 @@ export const de = {
           asphalt: "Asphalt",
           dirt: "Schotter",
           concrete: "Beton",
+          "asfalt-and-paving-stones": "Asphalt und Pflastersteine",
         },
         surroundings: {
           "preset-for-apartments-in-infiniti":
@@ -295,28 +299,24 @@ export const de = {
 
       realEstateSpecificDescriptionsByFamilyAndId: {
         apartments: {
+          // B2 - infiniti
           1: {
             about:
-              "apartments 1 | über das Angebot über das Angebot über das Angebot",
-            location: "apartments 1 | Lage Lage Lage",
+              "Mieter erhalten kostenlose Mitgliedskarten für das INFINITI Gesundheitszentrum (Fitnessstudio, Fitness und Sauna).",
+            location:
+              "Die Wohnung befindet sich in einer erstklassigen Lage, die die Ruhe der Natur mit der Bequemlichkeit städtischer Infrastruktur verbindet. In der Nähe gibt es einen malerischen Wald und einen See, perfekt für Spaziergänge und Aktivitäten im Freien. Sportbegeisterte können ein Fitnessstudio, einen Fitnessclub, eine Sauna und Tennisplätze nutzen. Familien mit Kindern werden die Nähe zu Bildungseinrichtungen wie einer Grundschule, einem Kindergarten, einer Sprachschule und einem Spielzimmer für die Kleinen zu schätzen wissen. Die Umgebung bietet zahlreiche Dienstleistungsangebote, darunter Physiotherapie- und Massagepraxen, einen Zahnarzt, Friseursalons und ein Tattoostudio. Für den täglichen Einkauf stehen Lidl- und Biedronka-Märkte, eine Bäckerei und ein Geschäft für Nahrungsergänzungsmittel zur Verfügung. In der Nähe gibt es auch Restaurants, Cafés und ein Solarium. Ein weiterer Vorteil ist der bequeme Zugang zur Orlen-Tankstelle, die komfortables Reisen ermöglicht. Dies ist der perfekte Ort für alle, die sowohl Ruhe als auch eine gute Anbindung an die städtische Infrastruktur schätzen.",
             additionalInfo:
-              "apartments 1 | zusätzliche Informationen zusätzliche Informationen zusätzliche Informationen",
+              "Haustiere sind nach vorheriger Absprache mit dem Vermieter erlaubt.",
           },
 
+          // B5 - infiniti
           2: {
             about:
-              "apartments 2 | über das Angebot über das Angebot über das Angebot",
-            location: "apartments 2 | Lage Lage Lage",
+              "Mieter erhalten kostenlose Mitgliedskarten für das INFINITI Gesundheitszentrum (Fitnessstudio, Fitness und Sauna).",
+            location:
+              "Die Wohnung befindet sich in einer erstklassigen Lage, die die Ruhe der Natur mit der Bequemlichkeit städtischer Infrastruktur verbindet. In der Nähe gibt es einen malerischen Wald und einen See, perfekt für Spaziergänge und Aktivitäten im Freien. Sportbegeisterte können ein Fitnessstudio, einen Fitnessclub, eine Sauna und Tennisplätze nutzen. Familien mit Kindern werden die Nähe zu Bildungseinrichtungen wie einer Grundschule, einem Kindergarten, einer Sprachschule und einem Spielzimmer für die Kleinen zu schätzen wissen. Die Umgebung bietet zahlreiche Dienstleistungsangebote, darunter Physiotherapie- und Massagepraxen, einen Zahnarzt, Friseursalons und ein Tattoostudio. Für den täglichen Einkauf stehen Lidl- und Biedronka-Märkte, eine Bäckerei und ein Geschäft für Nahrungsergänzungsmittel zur Verfügung. In der Nähe gibt es auch Restaurants, Cafés und ein Solarium. Ein weiterer Vorteil ist der bequeme Zugang zur Orlen-Tankstelle, die komfortables Reisen ermöglicht. Dies ist der perfekte Ort für alle, die sowohl Ruhe als auch eine gute Anbindung an die städtische Infrastruktur schätzen.",
             additionalInfo:
-              "apartments 2 | zusätzliche Informationen zusätzliche Informationen zusätzliche Informationen",
-          },
-
-          3: {
-            about:
-              "apartments 3 | über das Angebot über das Angebot über das Angebot",
-            location: "apartments 3 | Lage Lage Lage",
-            additionalInfo:
-              "apartments 3 | zusätzliche Informationen zusätzliche Informationen zusätzliche Informationen",
+              "Die Wohnung verfügt über eine großzügige Terrasse mit Grill und Blick auf den See. Haustiere sind nach vorheriger Absprache mit dem Vermieter erlaubt.",
           },
         },
 

@@ -119,6 +119,8 @@ export const en = {
 
     offerIsAvailable: "Available",
 
+    askForPrice: "Ask for price",
+
     defaultOffersCardsName: {
       apartments: "Apartment for rent",
       houses: "House for sale",
@@ -140,6 +142,7 @@ export const en = {
         area: "Area",
         buildingType: "Building Type",
         feesIncludedInRent: "Fees Included in Rent",
+        feesAdditional: "Fees Additional",
         feesByMeters: "Fees by Meters",
         rent: "Rent",
         securityDeposit: "Security Deposit",
@@ -182,7 +185,7 @@ export const en = {
         },
         feesAdditional: {
           media:
-            "media: electricity, heating, cold and hot water, garbage, internet",
+            "media (electricity, heating, cold and hot water, garbage, internet)",
           electricity: "electricity",
           gas: "gas",
           water: "water",
@@ -276,6 +279,7 @@ export const en = {
           asphalt: "asphalt",
           dirt: "dirt",
           concrete: "concrete",
+          "asfalt-and-paving-stones": "asphalt and paving stones",
         },
         surroundings: {
           "preset-for-apartments-in-infiniti":
@@ -296,25 +300,24 @@ export const en = {
 
       realEstateSpecificDescriptionsByFamilyAndId: {
         apartments: {
+          // B2 - infiniti
           1: {
-            about: "apartments 1 | about about about",
-            location: "apartments 1 | location location location",
+            about:
+              "Tenants receive free membership cards for the INFINITI Health Center (gym, fitness, and sauna).",
+            location:
+              "The apartment is in a prime location, combining the tranquility of nature with the convenience of urban infrastructure. Nearby, you'll find a picturesque forest and a lake, perfect for walks and outdoor activities. Sports enthusiasts can enjoy a gym, fitness club, sauna, and tennis courts. Families with children will appreciate the proximity of educational institutions such as a primary school, kindergarten, language school, and a playroom for the little ones. The area also features numerous service points, including physiotherapy and massage clinics, a dentist, hair salons, and a tattoo studio. Daily shopping is made easy with Lidl and Biedronka stores, a bakery, and a supplement shop. Nearby, you'll also find restaurants, cafés, and a solarium. An additional advantage is the convenient access to the Orlen gas station, ensuring comfortable travel. This is the perfect place for those who value both peace and easy access to full urban infrastructure.",
             additionalInfo:
-              "apartments 1 | additionalInfo additionalInfo additionalInfo",
+              "Pets are allowed upon prior agreement with the landlord.",
           },
 
+          // B5 - infiniti
           2: {
-            about: "apartments 2 | about about about",
-            location: "apartments 2 | location location location",
+            about:
+              "Tenants receive free membership cards for the INFINITI Health Center (gym, fitness, and sauna).",
+            location:
+              "The apartment is in a prime location, combining the tranquility of nature with the convenience of urban infrastructure. Nearby, you'll find a picturesque forest and a lake, perfect for walks and outdoor activities. Sports enthusiasts can enjoy a gym, fitness club, sauna, and tennis courts. Families with children will appreciate the proximity of educational institutions such as a primary school, kindergarten, language school, and a playroom for the little ones. The area also features numerous service points, including physiotherapy and massage clinics, a dentist, hair salons, and a tattoo studio. Daily shopping is made easy with Lidl and Biedronka stores, a bakery, and a supplement shop. Nearby, you'll also find restaurants, cafés, and a solarium. An additional advantage is the convenient access to the Orlen gas station, ensuring comfortable travel. This is the perfect place for those who value both peace and easy access to full urban infrastructure.",
             additionalInfo:
-              "apartments 2 | additionalInfo additionalInfo additionalInfo",
-          },
-
-          3: {
-            about: "apartments 3 | about about about",
-            location: "apartments 3 | location location location",
-            additionalInfo:
-              "apartments 3 | additionalInfo additionalInfo additionalInfo",
+              "The apartment has a spacious terrace with a grill and a view of the lake. Pets are allowed upon prior agreement with the landlord.",
           },
         },
 

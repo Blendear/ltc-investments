@@ -119,6 +119,8 @@ export const pl = {
 
     offerIsAvailable: "Oferta aktualna",
 
+    askForPrice: "Zapytaj o cenę",
+
     defaultOffersCardsName: {
       apartments: "Mieszkanie na wynajem",
       houses: "Dom na sprzedaż",
@@ -184,7 +186,7 @@ export const pl = {
         },
         feesAdditional: {
           media:
-            "media: prąd, ogrzewanie, woda zimna i ciepła, śmieci, internet",
+            "media (prąd, ogrzewanie, woda zimna i ciepła, śmieci, internet)",
           electricity: "prąd",
           gas: "gaz",
           water: "woda",
@@ -278,6 +280,7 @@ export const pl = {
           asphalt: "asfaltowa",
           dirt: "polna",
           concrete: "betonowa",
+          "asfalt-and-paving-stones": "asfaltowa i kostka brukowa",
         },
         surroundings: {
           "preset-for-apartments-in-infiniti":

@@ -143,7 +143,7 @@ const tileWSCss = {
         // justifySelf: "center",
         display: "grid",
         fontWeight: "bold",
-        letterSpacing: "0.1rem",
+        // letterSpacing: "0.1rem",
         color: `rgb(${colors.whiteLight})`,
         borderRadius: `0 0 ${variables.borderRadius.md} ${variables.borderRadius.md}`,
         backgroundColor: `rgb(${colors.secondaryLight})`,
@@ -236,12 +236,13 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
 
       {tile.variant !== "summary-short" && (
         <a css={tileWSCss.sum(tile.variant)} href={`tel:+48 604 513 082`}>
-          {(
+          {/* {(
             tile.details.detailedDescriptions.characteristics.area *
             tile.details.detailedDescriptions.characteristics
               .pricePerSquareMeter
           ).toLocaleString("pl-PL")}
-          {` zł`}
+          {` zł`} */}
+          {t.askForPrice}
         </a>
       )}
 
