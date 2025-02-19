@@ -174,6 +174,8 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
   const router = useRouter();
   const { t } = useTranslation("offers");
 
+  console.log(router.query.type);
+
   const conditionalContent = (
     <div>
       <section>
@@ -194,7 +196,7 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
       </section>
 
       <section css={tileWSCss.details(tile.variant)}>
-        <h2>{t.defaultOffersCardsName.apartments}</h2>
+        <h2>{t.defaultOffersCardsName[router.query.type as string]}</h2>
 
         <div css={tileWSCss.location(tile.variant)}>
           <FiMapPin />

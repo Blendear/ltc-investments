@@ -95,9 +95,9 @@ const realEstateDCss = {
     gridColumn: "1 / -1",
     aspectRatio: "16/9",
 
-    "@media (orientation: landscape)": {
-      aspectRatio: "20/9",
-    },
+    // "@media (orientation: landscape)": {
+    //   aspectRatio: "20/9",
+    // },
 
     "& > span": {
       borderRadius: variables.borderRadius.md,
