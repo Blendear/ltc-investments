@@ -138,6 +138,7 @@ export const pl = {
         area: "Powierzchnia",
         buildingType: "Typ budynku",
         feesIncludedInRent: "Opłaty w czynszu",
+        feesAdditional: "Opłaty dodatkowe",
         feesByMeters: "Opłaty wg liczników",
         rent: "Czynsz najmu",
         securityDeposit: "Kaucja zabezpieczająca",
@@ -168,6 +169,7 @@ export const pl = {
         buildingType: {
           tenement: "kamienica",
           block: "blok",
+          "multi-unit building": "budynek wielolokalowy",
         },
         feesIncludedInRent: {
           "renovation-fund, water": "fundusz remontowy, woda",
@@ -178,7 +180,9 @@ export const pl = {
           "renovation-fund, water, heating, garbage-collection, cleaning":
             "fundusz remontowy, woda, ogrzewanie, wywóz śmieci, sprzątanie",
         },
-        feesNotIncludedInRentAndCountedFromLiveUsage: {
+        feesAdditional: {
+          media:
+            "media: prąd, ogrzewanie, woda zimna i ciepła, śmieci, internet",
           electricity: "prąd",
           gas: "gaz",
           water: "woda",

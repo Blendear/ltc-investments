@@ -47,12 +47,9 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       crossSectionImagePath: "/images/offers/apartments/b2/Rzut_b2.png",
       detailedDescriptions: {
         characteristics: {
-          area: 33.0,
-          pricePerSquareMeter: 5000,
-          buildingType: "tenement",
-          feesNotIncludedInRentAndCountedFromLiveUsage: "heating-and-gas",
-          rent: 500,
-          securityDeposit: 2000,
+          area: 100.99,
+          buildingType: "multi-unit building",
+          feesAdditional: "media",
           typeOfPremises: "one-storey",
           floor: 1,
           totalFloorsInBuilding: 2,
@@ -115,11 +112,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       detailedDescriptions: {
         characteristics: {
           area: 33.0,
-          pricePerSquareMeter: 5000,
           buildingType: "tenement",
-          feesNotIncludedInRentAndCountedFromLiveUsage: "heating",
-          rent: 20,
-          securityDeposit: 2000,
+          feesAdditional: "heating",
           typeOfPremises: "one-storey",
           floor: 1,
           totalFloorsInBuilding: 2,
@@ -157,11 +151,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
     //   detailedDescriptions: {
     //     characteristics: {
     //       area: 33.0,
-    //       pricePerSquareMeter: 5000,
     //       buildingType: "tenement",
-    //       feesNotIncludedInRentAndCountedFromLiveUsage: "electricity",
-    //       rent: 320,
-    //       securityDeposit: 2000,
+    //       feesAdditional: "electricity",
     //       typeOfPremises: "one-storey",
     //       floor: 1,
     //       totalFloorsInBuilding: 2,
@@ -201,11 +192,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       detailedDescriptions: {
         characteristics: {
           area: 33.0,
-          pricePerSquareMeter: 5000,
           buildingType: "tenement",
-          feesNotIncludedInRentAndCountedFromLiveUsage: "electricity",
-          rent: 3,
-          securityDeposit: 2000,
+          feesAdditional: "electricity",
           typeOfPremises: "one-storey",
           floor: 1,
           totalFloorsInBuilding: 2,
@@ -242,11 +230,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       detailedDescriptions: {
         characteristics: {
           area: 33.0,
-          pricePerSquareMeter: 5000,
           buildingType: "tenement",
-          feesNotIncludedInRentAndCountedFromLiveUsage: "electricity",
-          rent: 3,
-          securityDeposit: 2000,
+          feesAdditional: "electricity",
           typeOfPremises: "one-storey",
           floor: 1,
           totalFloorsInBuilding: 2,
@@ -281,11 +266,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       detailedDescriptions: {
         characteristics: {
           area: 33.0,
-          pricePerSquareMeter: 5000,
           buildingType: "tenement",
-          feesNotIncludedInRentAndCountedFromLiveUsage: "electricity",
-          rent: 3,
-          securityDeposit: 2000,
+          feesAdditional: "electricity",
           typeOfPremises: "one-storey",
           floor: 1,
           totalFloorsInBuilding: 2,

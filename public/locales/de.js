@@ -166,6 +166,7 @@ export const de = {
         buildingType: {
           tenement: "Mietshaus",
           block: "Block",
+          "multi-unit building": "Mehrzweckgebäude",
         },
         feesIncludedInRent: {
           "renovation-fund, water": "Renovierungsfond, Wasser",
@@ -176,7 +177,9 @@ export const de = {
           "renovation-fund, water, heating, garbage-collection, cleaning":
             "Renovierungsfond, Wasser, Heizung, Müllabfuhr, Reinigung",
         },
-        feesNotIncludedInRentAndCountedFromLiveUsage: {
+        feesAdditional: {
+          media:
+            "media : Strom, Heizung, kaltes und warmes Wasser, Müll, Internet",
           electricity: "Strom",
           gas: "Gas",
           water: "Wasser",

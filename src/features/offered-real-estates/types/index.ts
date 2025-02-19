@@ -27,15 +27,16 @@ export type CharacteristicsType = {
   // Values are english strings, since they are used as translation labels that are rendered as the value
 
   area: number;
-  pricePerSquareMeter: number;
+  pricePerSquareMeter?: number;
 
-  buildingType?: "tenement" | "block";
+  buildingType?: "tenement" | "block" | "multi-unit building";
   // feesIncludedInRent?:
   //   | "renovation-fund, water"
   //   | "renovation-fund, water, heating"
   //   | "renovation-fund, water, heating, garbage-collection"
   //   | "renovation-fund, water, heating, garbage-collection, cleaning";
-  feesNotIncludedInRentAndCountedFromLiveUsage?:
+  feesAdditional?:
+    | "media"
     | "electricity"
     | "gas"
     | "water"
