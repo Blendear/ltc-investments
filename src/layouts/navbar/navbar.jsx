@@ -48,11 +48,11 @@ const Navbar = () => {
         </a>
       </Link>
 
-      {/* <HamburgerMenu
+      <HamburgerMenu
         subpages={["home", "aboutUs", "contact", "investments", "offers"]}
-      /> */}
+      />
 
-      {/* <LanguageFlagChooser /> */}
+      <LanguageFlagChooser />
     </nav>
   );
 };
