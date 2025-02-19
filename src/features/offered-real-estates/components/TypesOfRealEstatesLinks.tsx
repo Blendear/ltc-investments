@@ -12,7 +12,7 @@ const typesOfRealELCss = {
     justifySelf: "center",
     width: "max-content",
     display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
+    gridTemplateColumns: "repeat(2, 1fr)",
     rowGap: variables.gap.sm,
     columnGap: variables.gap.md,
     justifyItems: "center",
@@ -66,21 +66,21 @@ export const TypesOfRealEstatesLinks = ({}) => {
         setActiveType={setActiveType}
         type="apartments"
       />
-      <NavLink
+      {/* <NavLink
         activeType={activeType}
         setActiveType={setActiveType}
         type="houses"
-      />
+      /> */}
       <NavLink
         activeType={activeType}
         setActiveType={setActiveType}
         type="premises"
       />
-      <NavLink
+      {/* <NavLink
         activeType={activeType}
         setActiveType={setActiveType}
         type="plots"
-      />
+      /> */}
     </div>
   );
 };

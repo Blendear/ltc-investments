@@ -321,6 +321,16 @@ export const de = {
               "houses 1 | zusätzliche Informationen zusätzliche Informationen zusätzliche Informationen",
           },
         },
+
+        premises: {
+          1: {
+            about:
+              "premises 1 | über das Angebot über das Angebot über das Angebot",
+            location: "premises 1 | Lage Lage Lage",
+            additionalInfo:
+              "premises 1 | zusätzliche Informationen zusätzliche Informationen zusätzliche Informationen",
+          },
+        },
       },
     },
   },

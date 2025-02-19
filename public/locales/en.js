@@ -318,6 +318,15 @@ export const en = {
               "houses 1  | additionalInfo additionalInfo additionalInfo",
           },
         },
+
+        premises: {
+          1: {
+            about: "premises 1 | about about about",
+            location: "premises 1 | location location location",
+            additionalInfo:
+              "premises 1 | additionalInfo additionalInfo additionalInfo",
+          },
+        },
       },
     },
   },
