@@ -39,7 +39,7 @@ const globalCss = {
       },
 
       html: {
-        lineHeight: "1.15",
+        lineHeight: "1.5",
         WebkitTextSizeAdjust: "100%",
         boxSizing: "border-box",
         fontSize: "62.5%", // 10px/16px = 62.5% -> 1rem = 10px
