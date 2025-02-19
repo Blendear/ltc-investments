@@ -327,6 +327,13 @@ export const pl = {
             additionalInfo:
               "premises 1 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
           },
+
+          2: {
+            about: "premises 2 | lokale lokale lokale",
+            location: "premises 2 | lokalizacja lokalizacja lokalizacja",
+            additionalInfo:
+              "premises 2 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
+          },
         },
       },
     },
