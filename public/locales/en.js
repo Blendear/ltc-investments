@@ -275,6 +275,8 @@ export const en = {
           concrete: "concrete",
         },
         surroundings: {
+          "preset-for-infiniti":
+            "houses, forest, lake, gym, fitness club, sauna, Lidl & Biedronka stores, bakery, Orlen gas station, primary school, kindergarten, language school, restaurant, children's playroom, physiotherapy and massage clinics, dentist, hair salons, tattoo studio, supplement store, solarium, café, tennis courts",
           houses: "houses",
           forest: "forest",
           lake: "lake",

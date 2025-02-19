@@ -277,6 +277,8 @@ export const pl = {
           concrete: "betonowa",
         },
         surroundings: {
+          "preset-for-infiniti":
+            "domy, las, jezioro, siłownia, klub fitness, sauna, sklepy Lidl & Biedronka, piekarnia, stacja paliw Orlen, szkoła podstawowa, przedszkole, szkoła języków obcych, restauracja, sala zabaw dla dzieci, gabinety fizjoterapii i masażu, stomatolog, salony fryzjerskie, studio tatuażu, sklep z odżywkami, solarium, kawiarnia, korty tenisowe",
           houses: "domy",
           forest: "las",
           lake: "jezioro",

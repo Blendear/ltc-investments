@@ -70,8 +70,14 @@ export type CharacteristicsType = {
   balcony?: "yes" | "no";
   furniture?: "furnished" | "partly-furnished" | "unfurnished";
 
-  accessRoad?: "asphalt" | "dirt" | "concrete";
-  surroundings?: "houses" | "forest" | "lake" | "river" | "mountains";
+  accessRoad?: "asphalt" | "dirt" | "concrete" | "asfalt-and-paving-stones";
+  surroundings?:
+    | "preset-for-infiniti"
+    | "houses"
+    | "forest"
+    | "lake"
+    | "river"
+    | "mountains";
   location?: "city" | "suburbs" | "village" | "countryside";
 
   // Used for 'plots' real estates

@@ -274,6 +274,8 @@ export const de = {
           concrete: "Beton",
         },
         surroundings: {
+          "preset-for-infiniti":
+            "Häuser, Wald, See, Fitnessstudio, Fitnessclub, Sauna, Lidl- & Biedronka-Geschäfte, Bäckerei, Orlen-Tankstelle, Grundschule, Kindergarten, Sprachschule, Restaurant, Kinderspielraum, Physiotherapie- und Massagepraxen, Zahnarzt, Friseursalons, Tattoostudio, Nahrungsergänzungsmittelgeschäft, Solarium, Café, Tennisplätze",
           houses: "Häuser",
           forest: "Wald",
           lake: "See",
