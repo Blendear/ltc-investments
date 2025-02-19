@@ -140,7 +140,7 @@ const tileWSCss = {
     css([
       {
         padding: variables.gap.sm,
-        justifySelf: "center",
+        // justifySelf: "center",
         display: "grid",
         fontWeight: "bold",
         letterSpacing: "0.1rem",
