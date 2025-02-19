@@ -233,6 +233,7 @@ export const pl = {
           wooden: "drewniane",
           plastic: "plastikowe",
           aluminium: "aluminiowe",
+          "aluminium-and-plastic": "aluminiowo-plastikowe",
         },
         balcony: {
           yes: "tak",
@@ -277,7 +278,7 @@ export const pl = {
           concrete: "betonowa",
         },
         surroundings: {
-          "preset-for-infiniti":
+          "preset-for-apartments-in-infiniti":
             "domy, las, jezioro, siłownia, klub fitness, sauna, sklepy Lidl & Biedronka, piekarnia, stacja paliw Orlen, szkoła podstawowa, przedszkole, szkoła języków obcych, restauracja, sala zabaw dla dzieci, gabinety fizjoterapii i masażu, stomatolog, salony fryzjerskie, studio tatuażu, sklep z odżywkami, solarium, kawiarnia, korty tenisowe",
           houses: "domy",
           forest: "las",
@@ -295,25 +296,24 @@ export const pl = {
 
       realEstateSpecificDescriptionsByFamilyAndId: {
         apartments: {
+          // B2 - infiniti
           1: {
-            about: "apartments 1 | mieszkania mieszkania mieszkania",
-            location: "apartments 1 | lokalizacja lokalizacja lokalizacja",
+            about:
+              "Osoby wynajmujące mieszkanie otrzymują bezpłatnie karnety do Centrum Zdrowia INFINITI (siłownia, fitness i sauna).",
+            location:
+              "Mieszkanie znajduje się w doskonałej lokalizacji, łączącej spokój natury z wygodą miejskiej infrastruktury. W pobliżu znajdziesz malowniczy las oraz jezioro, idealne na spacery i aktywny wypoczynek na świeżym powietrzu. Miłośnicy sportu mogą korzystać z siłowni, klubu fitness, sauny oraz kortów tenisowych. Rodziny z dziećmi docenią bliskość placówek edukacyjnych, takich jak szkoła podstawowa, przedszkole i szkoła języków obcych, a także sali zabaw dla najmłodszych. W okolicy znajdują się liczne punkty usługowe, w tym gabinety fizjoterapii i masażu, stomatolog, salony fryzjerskie oraz studio tatuażu. Codzienne zakupy ułatwią sklepy Lidl i Biedronka, piekarnia oraz sklep z odżywkami. W pobliżu znajdziesz także restauracje, kawiarnie i solarium. Dodatkowym atutem jest wygodny dostęp do stacji paliw Orlen, co zapewnia komfortowe podróżowanie. To idealne miejsce dla osób ceniących zarówno spokój, jak i łatwy dostęp do pełnej infrastruktury miejskiej.",
             additionalInfo:
-              "apartments 1 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
+              "Zwierzęta dozwolone, po wcześniejszym ustaleniu z wynajmującym.",
           },
 
+          // B5 - infiniti
           2: {
-            about: "apartments 2 | mieszkania mieszkania mieszkania",
-            location: "apartments 2 | lokalizacja lokalizacja lokalizacja",
+            about:
+              "Osoby wynajmujące mieszkanie otrzymują bezpłatnie karnety do Centrum Zdrowia INFINITI (siłownia, fitness i sauna).",
+            location:
+              "Mieszkanie znajduje się w doskonałej lokalizacji, łączącej spokój natury z wygodą miejskiej infrastruktury. W pobliżu znajdziesz malowniczy las oraz jezioro, idealne na spacery i aktywny wypoczynek na świeżym powietrzu. Miłośnicy sportu mogą korzystać z siłowni, klubu fitness, sauny oraz kortów tenisowych. Rodziny z dziećmi docenią bliskość placówek edukacyjnych, takich jak szkoła podstawowa, przedszkole i szkoła języków obcych, a także sali zabaw dla najmłodszych. W okolicy znajdują się liczne punkty usługowe, w tym gabinety fizjoterapii i masażu, stomatolog, salony fryzjerskie oraz studio tatuażu. Codzienne zakupy ułatwią sklepy Lidl i Biedronka, piekarnia oraz sklep z odżywkami. W pobliżu znajdziesz także restauracje, kawiarnie i solarium. Dodatkowym atutem jest wygodny dostęp do stacji paliw Orlen, co zapewnia komfortowe podróżowanie. To idealne miejsce dla osób ceniących zarówno spokój, jak i łatwy dostęp do pełnej infrastruktury miejskiej.",
             additionalInfo:
-              "apartments 2 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
-          },
-
-          3: {
-            about: "apartments 3 | mieszkania mieszkania mieszkania",
-            location: "apartments 3 | lokalizacja lokalizacja lokalizacja",
-            additionalInfo:
-              "apartments 3 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
+              "Mieszkanie posiada obszerny taras z grillem i widokiem na jezioro. Zwierzęta dozwolone, po wcześniejszym ustaleniu z wynajmującym",
           },
         },
 
@@ -324,21 +324,45 @@ export const pl = {
             additionalInfo:
               "houses 1 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
           },
+
+          2: {
+            about: "houses 2 | domy domy domy",
+            location: "houses 2 | lokalizacja lokalizacja lokalizacja",
+            additionalInfo:
+              "houses 2 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
+          },
         },
 
         premises: {
+          // restaurant + fitbar - infiniti
           1: {
             about: "premises 1 | lokale lokale lokale",
             location: "premises 1 | lokalizacja lokalizacja lokalizacja",
             additionalInfo:
               "premises 1 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
           },
-
+          // shop - infiniti
           2: {
             about: "premises 2 | lokale lokale lokale",
             location: "premises 2 | lokalizacja lokalizacja lokalizacja",
             additionalInfo:
               "premises 2 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
+          },
+        },
+
+        plots: {
+          1: {
+            about: "plots 1 | działki działki działki",
+            location: "plots 1 | lokalizacja lokalizacja lokalizacja",
+            additionalInfo:
+              "plots 1 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
+          },
+
+          2: {
+            about: "plots 2 | działki działki działki",
+            location: "plots 2 | lokalizacja lokalizacja lokalizacja",
+            additionalInfo:
+              "plots 2 | dodatkowe informacje dodatkowe informacje dodatkowe informacje",
           },
         },
       },

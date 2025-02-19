@@ -16,15 +16,17 @@ export type RealEstateType = {
   crossSectionImagePath: string;
   detailedDescriptions: {
     characteristics: CharacteristicsType;
-    about: string;
-    location: string;
-    additionalInfo?: string;
+    // about: string;
+    // location: string;
+    // additionalInfo?: string;
     // priceSpecification?: string;
   };
 };
 
 export type CharacteristicsType = {
   // Values are english strings, since they are used as translation labels that are rendered as the value
+
+  address: string;
 
   area: number;
   pricePerSquareMeter?: number;
@@ -66,13 +68,13 @@ export type CharacteristicsType = {
   ownParking?: "yes" | "no";
 
   condition?: "need renovation" | "good" | "very good" | "perfect";
-  windows?: "wooden" | "plastic" | "aluminium";
+  windows?: "wooden" | "plastic" | "aluminium" | "aluminium-and-plastic";
   balcony?: "yes" | "no";
   furniture?: "furnished" | "partly-furnished" | "unfurnished";
 
   accessRoad?: "asphalt" | "dirt" | "concrete" | "asfalt-and-paving-stones";
   surroundings?:
-    | "preset-for-infiniti"
+    | "preset-for-apartments-in-infiniti"
     | "houses"
     | "forest"
     | "lake"

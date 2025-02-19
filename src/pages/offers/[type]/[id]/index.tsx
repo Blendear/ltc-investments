@@ -194,12 +194,8 @@ const RealEstateDetails = () => {
                   <h2>{t.detailedDescriptions.headers.location}</h2>
                   <p>{detailedDescriptions.location}</p>
 
-                  {realEstate.detailedDescriptions.additionalInfo && (
-                    <>
-                      <h2>{t.detailedDescriptions.headers.additionalInfo}</h2>
-                      <p>{detailedDescriptions.additionalInfo}</p>
-                    </>
-                  )}
+                  <h2>{t.detailedDescriptions.headers.additionalInfo}</h2>
+                  <p>{detailedDescriptions.additionalInfo}</p>
                 </>
               );
             })()}

@@ -198,7 +198,7 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
 
         <div css={tileWSCss.location(tile.variant)}>
           <FiMapPin />
-          <p>{tile.details.detailedDescriptions.location}</p>
+          <p>{tile.details.detailedDescriptions.characteristics.address}</p>
         </div>
 
         {tile.variant === "summary-short" && (

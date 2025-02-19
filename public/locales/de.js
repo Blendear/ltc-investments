@@ -230,6 +230,7 @@ export const de = {
           wooden: "Holz",
           plastic: "Plastik",
           aluminium: "Aluminium",
+          "aluminium-and-plastic": "Aluminium und Plastik",
         },
         balcony: {
           yes: "ja",
@@ -274,7 +275,7 @@ export const de = {
           concrete: "Beton",
         },
         surroundings: {
-          "preset-for-infiniti":
+          "preset-for-apartments-in-infiniti":
             "Häuser, Wald, See, Fitnessstudio, Fitnessclub, Sauna, Lidl- & Biedronka-Geschäfte, Bäckerei, Orlen-Tankstelle, Grundschule, Kindergarten, Sprachschule, Restaurant, Kinderspielraum, Physiotherapie- und Massagepraxen, Zahnarzt, Friseursalons, Tattoostudio, Nahrungsergänzungsmittelgeschäft, Solarium, Café, Tennisplätze",
           houses: "Häuser",
           forest: "Wald",
