@@ -118,10 +118,10 @@ export const en = {
     header: "Our offers",
 
     defaultOffersCardsName: {
-      apartments: "Apartments for rent",
-      houses: "Houses for sale",
-      premises: "Premises for rent",
-      plots: "Plots for sale",
+      apartments: "Apartment for rent",
+      houses: "House for sale",
+      premises: "Premise for rent",
+      plots: "Plot for sale",
     },
 
     detailedDescriptions: {

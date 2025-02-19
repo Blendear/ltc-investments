@@ -12,6 +12,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { RiCoinLine } from "react-icons/ri";
 import { MdOutlineMeetingRoom } from "react-icons/md";
+import { useTranslation } from "@/features/translation/hooks/useTranslation";
 
 const tileWSCss = {
   container: (variant) =>
@@ -171,6 +172,7 @@ const tileWSCss = {
 
 export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
   const router = useRouter();
+  const { t } = useTranslation("offers");
 
   const conditionalContent = (
     <div>
@@ -192,7 +194,7 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
       </section>
 
       <section css={tileWSCss.details(tile.variant)}>
-        <h2>{tile.details.name}</h2>
+        <h2>{t.defaultOffersCardsName.apartments}</h2>
 
         <div css={tileWSCss.location(tile.variant)}>
           <FiMapPin />
