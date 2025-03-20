@@ -2,11 +2,11 @@
 import { css, keyframes } from "@emotion/react";
 import Image from "next/image";
 import { ImageWithWrapperProps } from "@/types";
+import { variables } from "@/styles/emotion-css/variables";
 
 const shimmer = keyframes`
-  0% { background: linear-gradient(90deg, rgb(50, 50, 50), rgb(100, 100, 100)); }
-  50% { background: linear-gradient(90deg, rgb(70, 70, 70), rgb(150, 150, 150)); }
-  100% { background: linear-gradient(90deg, rgb(50, 50, 50), rgb(100, 100, 100)); }
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 `;
 
 const ImageWithWrapper = ({ src, alt, wrapperCss }: ImageWithWrapperProps) => {
@@ -15,7 +15,11 @@ const ImageWithWrapper = ({ src, alt, wrapperCss }: ImageWithWrapperProps) => {
       css={[
         wrapperCss,
         {
-          animation: `${shimmer} 1.5s infinite linear`,
+          background:
+            "linear-gradient(90deg, rgb(223, 223, 223) 25%, rgb(243, 243, 243) 50%, rgb(223, 223, 223) 75%)",
+          backgroundSize: "200% 100%",
+          animation: `${shimmer} 3s infinite linear`,
+          borderRadius: `${variables.borderRadius.md}`,
         },
       ]}
       style={
