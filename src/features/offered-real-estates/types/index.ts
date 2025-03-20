@@ -28,7 +28,7 @@ export type CharacteristicsType = {
 
   address: string;
 
-  area: number;
+  area: string;
   pricePerSquareMeter?: number;
 
   buildingType?: "tenement" | "block" | "multi-unit building";

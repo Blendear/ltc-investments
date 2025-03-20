@@ -48,7 +48,8 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       detailedDescriptions: {
         characteristics: {
           address: "Kędzierzyn-Koźle, al. Jana Pawła II 58",
-          area: 100.99,
+          // square meters
+          area: "100.99 m²",
           buildingType: "multi-unit building",
           feesAdditional: "media",
           floor: 3,
@@ -57,7 +58,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
           parkingPossible: "yes",
           ownParking: "yes",
           condition: "very good",
-          windows: "wooden",
+          windows: "plastic",
           balcony: "yes",
           furniture: "furnished",
           accessRoad: "asfalt-and-paving-stones",
@@ -104,7 +105,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       detailedDescriptions: {
         characteristics: {
           address: "Kędzierzyn-Koźle, al. Jana Pawła II 58",
-          area: 97.32,
+          area: "97.32 m²",
           buildingType: "multi-unit building",
           feesAdditional: "media",
           floor: 3,
@@ -139,7 +140,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       detailedDescriptions: {
         characteristics: {
           address: "Kędzierzyn-Koźle, al. Jana Pawła II 58",
-          area: 33.0,
+          area: "33.0 m²",
           buildingType: "tenement",
           feesAdditional: "electricity",
           floor: 1,
@@ -148,7 +149,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
           parkingPossible: "yes",
           ownParking: "yes",
           condition: "very good",
-          windows: "wooden",
+          windows: "aluminium",
           balcony: "yes",
           furniture: "furnished",
           plotDevelopment: "undeveloped",
@@ -172,7 +173,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
       detailedDescriptions: {
         characteristics: {
           address: "Kędzierzyn-Koźle, al. Jana Pawła II 58",
-          area: 33.0,
+          area: "33.0 m²",
           buildingType: "tenement",
           feesAdditional: "electricity",
           floor: 0,
@@ -181,7 +182,7 @@ export const offeredRealEstates: OfferedRealEstatesType = {
           parkingPossible: "yes",
           ownParking: "yes",
           condition: "very good",
-          windows: "wooden",
+          windows: "aluminium",
           balcony: "yes",
           furniture: "furnished",
           plotDevelopment: "undeveloped",

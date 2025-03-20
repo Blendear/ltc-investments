@@ -45,7 +45,7 @@ export const de = {
   },
 
   contact: {
-    header: "Kontaktiere uns",
+    header: "Kontakt",
 
     addressStreet: "Al. Jana Pawła II 58 B/7",
     addressCode: "47-232",

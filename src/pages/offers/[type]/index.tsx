@@ -44,7 +44,7 @@ const OffersByTypeOfRealEstate = () => {
     <article css={offersCss.container}>
       <h1>{t.header}</h1>
 
-      <TypesOfRealEstatesLinks />
+      {/* <TypesOfRealEstatesLinks /> */}
 
       {typeOfRealEstate && (
         <TilesWithSummaryList

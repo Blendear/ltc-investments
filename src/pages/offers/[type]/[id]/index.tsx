@@ -188,11 +188,11 @@ const RealEstateDetails = () => {
 
               return (
                 <>
-                  <h2>{t.detailedDescriptions.headers.about}</h2>
-                  <p>{detailedDescriptions.about}</p>
-
                   <h2>{t.detailedDescriptions.headers.location}</h2>
                   <p>{detailedDescriptions.location}</p>
+
+                  <h2>{t.detailedDescriptions.headers.about}</h2>
+                  <p>{detailedDescriptions.about}</p>
 
                   <h2>{t.detailedDescriptions.headers.additionalInfo}</h2>
                   <p>{detailedDescriptions.additionalInfo}</p>

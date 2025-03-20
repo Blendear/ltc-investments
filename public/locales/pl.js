@@ -244,7 +244,7 @@ export const pl = {
           no: "nie",
         },
         furniture: {
-          furnished: "umeblowane",
+          furnished: "w pełni umeblowane",
           "partly-furnished": "częściowo umeblowane",
           unfurnished: "nieumeblowane",
         },
