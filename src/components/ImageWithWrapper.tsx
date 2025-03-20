@@ -1,12 +1,23 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
+import { css, keyframes } from "@emotion/react";
 import Image from "next/image";
 import { ImageWithWrapperProps } from "@/types";
+
+const shimmer = keyframes`
+  0% { background: linear-gradient(90deg, rgb(50, 50, 50), rgb(100, 100, 100)); }
+  50% { background: linear-gradient(90deg, rgb(70, 70, 70), rgb(150, 150, 150)); }
+  100% { background: linear-gradient(90deg, rgb(50, 50, 50), rgb(100, 100, 100)); }
+`;
 
 const ImageWithWrapper = ({ src, alt, wrapperCss }: ImageWithWrapperProps) => {
   return (
     <div
-      css={wrapperCss}
+      css={[
+        wrapperCss,
+        {
+          animation: `${shimmer} 1.5s infinite linear`,
+        },
+      ]}
       style={
         !wrapperCss
           ? {
