@@ -213,10 +213,7 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
 
               <div>
                 <BiArea />
-                <p>
-                  {tile.details.detailedDescriptions.characteristics.area} m
-                  <sup>2</sup>
-                </p>
+                <p>{tile.details.detailedDescriptions.characteristics.area}</p>
               </div>
 
               {/* <div>
