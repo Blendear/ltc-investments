@@ -135,6 +135,7 @@ export const pl = {
         about: "O ofercie",
         location: "Lokalizacja",
         additionalInfo: "Dodatkowe informacje",
+        amenities: "Udogodnienia",
       },
 
       characteristicsKeys: {
@@ -309,6 +310,35 @@ export const pl = {
               "Mieszkanie znajduje się w doskonałej lokalizacji, łączącej spokój natury z wygodą miejskiej infrastruktury. W pobliżu znajdziesz malowniczy las oraz jezioro, idealne na spacery i aktywny wypoczynek na świeżym powietrzu. Miłośnicy sportu mogą korzystać z siłowni, klubu fitness, sauny oraz kortów tenisowych. Rodziny z dziećmi docenią bliskość placówek edukacyjnych, takich jak szkoła podstawowa, przedszkole i szkoła języków obcych, a także sali zabaw dla najmłodszych. W okolicy znajdują się liczne punkty usługowe, w tym gabinety fizjoterapii i masażu, stomatolog, salony fryzjerskie oraz studio tatuażu. Codzienne zakupy ułatwią sklepy Lidl i Biedronka, piekarnia oraz sklep z odżywkami. W pobliżu znajdziesz także restauracje, kawiarnie i solarium. Dodatkowym atutem jest wygodny dostęp do stacji paliw Orlen, co zapewnia komfortowe podróżowanie. To idealne miejsce dla osób ceniących zarówno spokój, jak i łatwy dostęp do pełnej infrastruktury miejskiej.",
             additionalInfo:
               "Zwierzęta dozwolone, po wcześniejszym ustaleniu z wynajmującym.",
+            amenities: [
+              { name: "siłownia", icon: "gym" },
+              { name: "winda", icon: "elevator" },
+              { name: "pełne umeblowanie", icon: "furniture" },
+              { name: "internet światłowodowy", icon: "wifi" },
+              { name: "nagłośnienie Bose", icon: "sound-system" },
+              { name: "klimatyzacja", icon: "air-conditioning" },
+              { name: "ogrzewanie podłogowe", icon: "underfloor-heating" },
+              { name: "wanna", icon: "bathtub" },
+              { name: "prysznic", icon: "shower" },
+              { name: "wieszaki", icon: "hanger" },
+              { name: "rolety okienne zewnętrzne", icon: "window-blinds" },
+              { name: "TV + Netflix", icon: "tv" },
+              { name: "lodówka", icon: "fridge" },
+              { name: "zmywarka", icon: "dishwasher" },
+              { name: "mikrofala", icon: "microwave" },
+              { name: "ekspres do kawy", icon: "coffee-machine" },
+              { name: "piekarnik", icon: "oven" },
+              { name: "płyta kuchenna", icon: "cooktop" },
+              { name: "pralka", icon: "washing-machine" },
+              { name: "wieszak / suszarka na pranie", icon: "clothes-dryer" },
+              { name: "monitoring wewnętrzny", icon: "security-camera" },
+              {
+                name: "monitoring zewnętrzny",
+                icon: "security-camera-exterior",
+              },
+              { name: "alarm antywłamaniowy", icon: "security-alarm" },
+              { name: "świetlik", icon: "skylight" },
+            ],
           },
 
           // B5 - infiniti
@@ -319,6 +349,34 @@ export const pl = {
               "Mieszkanie znajduje się w doskonałej lokalizacji, łączącej spokój natury z wygodą miejskiej infrastruktury. W pobliżu znajdziesz malowniczy las oraz jezioro, idealne na spacery i aktywny wypoczynek na świeżym powietrzu. Miłośnicy sportu mogą korzystać z siłowni, klubu fitness, sauny oraz kortów tenisowych. Rodziny z dziećmi docenią bliskość placówek edukacyjnych, takich jak szkoła podstawowa, przedszkole i szkoła języków obcych, a także sali zabaw dla najmłodszych. W okolicy znajdują się liczne punkty usługowe, w tym gabinety fizjoterapii i masażu, stomatolog, salony fryzjerskie oraz studio tatuażu. Codzienne zakupy ułatwią sklepy Lidl i Biedronka, piekarnia oraz sklep z odżywkami. W pobliżu znajdziesz także restauracje, kawiarnie i solarium. Dodatkowym atutem jest wygodny dostęp do stacji paliw Orlen, co zapewnia komfortowe podróżowanie. To idealne miejsce dla osób ceniących zarówno spokój, jak i łatwy dostęp do pełnej infrastruktury miejskiej.",
             additionalInfo:
               "Mieszkanie posiada obszerny taras z grillem i widokiem na jezioro. Zwierzęta dozwolone, po wcześniejszym ustaleniu z wynajmującym",
+            amenities: [
+              { name: "winda", icon: "elevator" },
+              {
+                name: "pełne umeblowanie (biurka, szafy, krzesła, kanapa)",
+                icon: "furniture",
+              },
+              { name: "internet światłowodowy", icon: "wifi" },
+              { name: "nagłośnienie (kino domowe)", icon: "home-theater" },
+              { name: "ogrzewanie podłogowe", icon: "underfloor-heating" },
+              { name: "wanna", icon: "bathtub" },
+              { name: "prysznic", icon: "shower" },
+              { name: "garderoba na ubrania", icon: "closet" },
+              { name: "rolety okienne zewnętrzne", icon: "window-blinds" },
+              { name: "TV", icon: "tv" },
+              { name: "lodówka (z kostkarką i zamrażalką)", icon: "fridge" },
+              { name: "zmywarka", icon: "dishwasher" },
+              { name: "mikrofala", icon: "microwave" },
+              { name: "ekspres do kawy", icon: "coffee-machine" },
+              { name: "piekarnik", icon: "oven" },
+              { name: "płyta kuchenna", icon: "cooktop" },
+              { name: "pralka", icon: "washing-machine" },
+              { name: "wieszak / suszarka na pranie", icon: "clothes-dryer" },
+              {
+                name: "monitoring zewnętrzny",
+                icon: "security-camera-exterior",
+              },
+              { name: "świetliki (dwa)", icon: "skylight" },
+            ],
           },
         },
 

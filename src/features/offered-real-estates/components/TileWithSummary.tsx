@@ -235,12 +235,6 @@ export const TileWithSummary = ({ tile }: TileWithSummaryProps) => {
 
       {tile.variant !== "summary-short" && (
         <a css={tileWSCss.sum(tile.variant)} href={`tel:+48 604 513 082`}>
-          {/* {(
-            tile.details.detailedDescriptions.characteristics.area *
-            tile.details.detailedDescriptions.characteristics
-              .pricePerSquareMeter
-          ).toLocaleString("pl-PL")}
-          {` zł`} */}
           {t.askForPrice}
         </a>
       )}

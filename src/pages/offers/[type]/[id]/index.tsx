@@ -15,6 +15,64 @@ import { useEffect, useState } from "react";
 import { ConsultantVisualizer } from "@/features/offered-real-estates/components/ConsultantVisualizer";
 import { consultants } from "@/features/offered-real-estates/data/consultants";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
+import {
+  FaDumbbell,
+  FaCouch,
+  FaWifi,
+  FaBroadcastTower,
+  FaWind,
+  FaTemperatureHigh,
+  FaBath,
+  FaShower,
+  FaTshirt,
+  FaWindowMaximize,
+  FaTv,
+  FaSnowflake,
+  FaUtensils,
+  FaMugHot,
+  FaDoorClosed,
+  FaSolarPanel,
+} from "react-icons/fa";
+import {
+  MdOutlineMicrowave,
+  MdOutlineSecurity,
+  MdOutlineLightbulb,
+  MdOutlineDryCleaning,
+  MdOutlineKitchen,
+  MdOutlineCountertops,
+  MdOutlineLocalLaundryService,
+  MdElevator,
+} from "react-icons/md";
+import { GrElevator } from "react-icons/gr";
+
+const amenitiesIcons = {
+  gym: <FaDumbbell />,
+  elevator: <MdElevator />,
+  furniture: <FaCouch />,
+  wifi: <FaWifi />,
+  "sound-system": <FaBroadcastTower />,
+  "home-theater": <FaBroadcastTower />,
+  "air-conditioning": <FaWind />,
+  "underfloor-heating": <FaTemperatureHigh />,
+  bathtub: <FaBath />,
+  shower: <FaShower />,
+  hanger: <FaTshirt />,
+  "window-blinds": <FaWindowMaximize />,
+  tv: <FaTv />,
+  fridge: <FaSnowflake />,
+  dishwasher: <FaUtensils />,
+  microwave: <MdOutlineMicrowave />,
+  "coffee-machine": <FaMugHot />,
+  oven: <FaDoorClosed />,
+  cooktop: <MdOutlineCountertops />,
+  "washing-machine": <MdOutlineLocalLaundryService />,
+  "clothes-dryer": <MdOutlineDryCleaning />,
+  "security-camera": <MdOutlineSecurity />,
+  "security-camera-exterior": <MdOutlineSecurity />,
+  "security-alarm": <MdOutlineSecurity />,
+  skylight: <MdOutlineLightbulb />,
+  closet: <FaCouch />,
+};
 
 const realEstateDCss = {
   container: css({
@@ -88,6 +146,35 @@ const realEstateDCss = {
 
     "& > p:not(:last-of-type)": {
       marginBottom: variables.gap.md,
+    },
+  }),
+
+  amenities: css({
+    display: "grid",
+
+    "@media (orientation: landscape)": {
+      gridColumn: "1/-1",
+    },
+
+    "& > ul": {
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
+      justifyItems: "start",
+      alignItems: "center",
+      gap: variables.gap.md,
+      listStyle: "none",
+
+      "& > li": {
+        display: "grid",
+        gridAutoFlow: "column",
+        gap: variables.gap.sm,
+
+        "& > svg": {
+          fontSize: "30px",
+          placeSelf: "center",
+          color: `rgb(${colors.secondaryLight})`,
+        },
+      },
     },
   }),
 
@@ -197,6 +284,28 @@ const RealEstateDetails = () => {
                   <h2>{t.detailedDescriptions.headers.additionalInfo}</h2>
                   <p>{detailedDescriptions.additionalInfo}</p>
                 </>
+              );
+            })()}
+          </section>
+
+          <section css={realEstateDCss.amenities}>
+            <h2>{t.detailedDescriptions.headers.amenities}</h2>
+            {(() => {
+              const amenities =
+                t.detailedDescriptions
+                  .realEstateSpecificDescriptionsByFamilyAndId[
+                  realEstate.realEstateFamily
+                ][realEstate.id];
+
+              return (
+                <ul>
+                  {amenities.amenities.map((amenity) => (
+                    <li key={amenity.name}>
+                      {amenitiesIcons[amenity.icon]}
+                      <p>{amenity.name}</p>
+                    </li>
+                  ))}
+                </ul>
               );
             })()}
           </section>
