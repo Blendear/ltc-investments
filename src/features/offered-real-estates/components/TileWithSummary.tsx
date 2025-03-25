@@ -140,15 +140,17 @@ const tileWSCss = {
     css([
       {
         padding: variables.gap.sm,
-        // justifySelf: "center",
         display: "grid",
         fontWeight: "bold",
-        // letterSpacing: "0.1rem",
         color: `rgb(${colors.whiteLight})`,
         borderRadius: `0 0 ${variables.borderRadius.md} ${variables.borderRadius.md}`,
         backgroundColor: `rgb(${colors.secondaryLight})`,
         cursor: "pointer",
         textAlign: "center",
+
+        "@media (orientation: portrait)": {
+          justifySelf: "center",
+        },
 
         "&:hover": {
           filter: "saturate(1.25)",
