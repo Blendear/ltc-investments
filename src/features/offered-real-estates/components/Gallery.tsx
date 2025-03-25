@@ -23,6 +23,8 @@ const galleryCss = {
     "& .swiper-button-prev, .swiper-button-next": {
       color: "white",
       fontWeight: "bold",
+      // add shadow around
+      filter: `drop-shadow(0 0 5px rgb(0,0,0,0.8))`,
     },
   }),
 
