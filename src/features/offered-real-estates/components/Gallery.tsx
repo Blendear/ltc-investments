@@ -47,6 +47,7 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
       }}
       navigation={true}
       modules={[Pagination, Navigation]}
+      loop={true}
     >
       {imagesPathsList.map((imagePath, index) => (
         <SwiperSlide key={index}>
