@@ -148,10 +148,6 @@ const tileWSCss = {
         cursor: "pointer",
         textAlign: "center",
 
-        "@media (orientation: portrait)": {
-          justifySelf: "center",
-        },
-
         "&:hover": {
           filter: "saturate(1.25)",
         },
@@ -163,6 +159,10 @@ const tileWSCss = {
         height: "max-content",
         padding: `${variables.gap.sm} ${variables.gap.lg}`,
         borderRadius: variables.borderRadius.md,
+
+        "@media (orientation: portrait)": {
+          justifySelf: "center",
+        },
 
         "@media (orientation: landscape)": {
           margin: `${variables.gap.md} 0`,
