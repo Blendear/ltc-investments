@@ -127,7 +127,7 @@ const homeCss = {
     },
   }),
 
-  aboutUsButton: css([
+  redirectButton: css([
     universalCss.button(true),
 
     {
@@ -189,8 +189,8 @@ const Home = () => {
         })}
       </div>
 
-      <Link href="/about-us">
-        <a css={homeCss.aboutUsButton}> {t.aboutUsButton}</a>
+      <Link href="/offers/apartments">
+        <a css={homeCss.redirectButton}> {t.redirectButton}</a>
       </Link>
     </article>
   );

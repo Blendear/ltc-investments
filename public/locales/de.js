@@ -84,7 +84,7 @@ export const de = {
           "Wir bieten den Verkauf von Immobilien an, die auf Ihre Bedürfnisse zugeschnitten sind. Unsere Flexibilität und individuelle Herangehensweise garantieren Zufriedenheit mit der Wahl des idealen Raums.",
       },
     },
-    aboutUsButton: "Über uns",
+    redirectButton: "Angebote",
   },
 
   investments: {

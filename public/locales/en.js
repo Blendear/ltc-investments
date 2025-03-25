@@ -86,7 +86,7 @@ export const en = {
           "Investing in real estate with us is a guarantee of return and security. Trust our experience and professionalism to make your investments profitable.",
       },
     },
-    aboutUsButton: "About Us",
+    redirectButton: "Offers",
   },
 
   investments: {

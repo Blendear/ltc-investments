@@ -86,7 +86,7 @@ export const pl = {
           "Inwestowanie w nieruchomości z nami to gwarancja zwrotu i bezpieczeństwa. Zaufaj naszemu doświadczeniu i profesjonalizmowi, aby Twoje inwestycje przynosiły zyski.",
       },
     },
-    aboutUsButton: "O nas",
+    redirectButton: "Oferty",
   },
 
   investments: {
