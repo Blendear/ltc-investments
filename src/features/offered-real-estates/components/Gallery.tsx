@@ -163,6 +163,9 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
         // zoom={true}
         touchRatio={0} // Disables the slide change on cursor/touch drag
         loop={true}
+        simulateTouch={true}
+        touchReleaseOnEdges={true}
+        passiveListeners={false}
       >
         {imagesPathsList.map((imagePath, index) => (
           <SwiperSlide key={index}>
