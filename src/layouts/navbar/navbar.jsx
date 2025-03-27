@@ -19,6 +19,7 @@ const navbarCss = {
     gridTemplateColumns: "max-content 1fr max-content",
     alignItems: "center",
     backgroundColor: `rgb(${colors.primaryLight})`,
+    zIndex: 1000,
 
     "@media (orientation:landscape)": {
       height: "150px",
