@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
 import { useState } from "react";
 import { FaExpand, FaTimes } from "react-icons/fa";
-import { parse } from "path";
+import { AiOutlineClose, AiOutlineExpand } from "react-icons/ai";
 
 const galleryCss = {
   container: (isFullscreen: boolean) =>
@@ -41,6 +41,11 @@ const galleryCss = {
         fontSize: variables.fontSize.subheading,
       },
 
+      // So that the image can be centered. It didn't work otherwise
+      "& .swiper-slide": {
+        display: "grid",
+      },
+
       "& .swiper-button-prev, .swiper-button-next, .swiper-pagination": {
         color: "white",
         filter: `drop-shadow(0 0 3px rgb(0,0,0,0.8))`,
@@ -55,17 +60,25 @@ const galleryCss = {
       },
     }),
 
-  image: css({
-    justifySelf: "center",
-    aspectRatio: "16/9",
-    maxWidth: "1200px",
-    width: "100%",
-    height: "100%",
+  image: (isFullscreen) =>
+    css([
+      {
+        alignSelf: "center",
+        justifySelf: "center",
+        aspectRatio: "16/9",
+        width: "100%",
+        height: "100%",
+      },
 
-    "@media (orientation: landscape)": {
-      // maxWidth: "unset",
-    },
-  }),
+      isFullscreen && {
+        maxWidth: "100dvw",
+        height: "unset",
+
+        "@media (orientation: landscape)": {
+          maxWidth: "1200px",
+        },
+      },
+    ]),
 
   fullscreenButton: (variant: "open" | "close") =>
     css([
@@ -93,8 +106,8 @@ const galleryCss = {
         "@media (orientation: landscape)": {
           bottom: 20,
           right: 20,
-          width: 60,
-          height: 60,
+          width: 50,
+          height: 50,
         },
 
         "& svg": {
@@ -129,7 +142,7 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
           css={galleryCss.fullscreenButton("open")}
           onClick={() => setIsFullscreen(true)}
         >
-          <FaExpand />
+          <AiOutlineExpand />
         </div>
       )}
 
@@ -144,7 +157,10 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
       >
         {imagesPathsList.map((imagePath, index) => (
           <SwiperSlide key={index}>
-            <ImageWithWrapper src={imagePath} wrapperCss={galleryCss.image} />
+            <ImageWithWrapper
+              src={imagePath}
+              wrapperCss={galleryCss.image(isFullscreen)}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -154,7 +170,7 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
           css={galleryCss.fullscreenButton("close")}
           onClick={() => setIsFullscreen(false)}
         >
-          <FaTimes />
+          <AiOutlineClose />
         </div>
       )}
     </div>

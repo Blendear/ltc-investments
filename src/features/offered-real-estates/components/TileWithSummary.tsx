@@ -30,11 +30,15 @@ const tileWSCss = {
       variant === "details-long" &&
         css({
           "& > div": {
-            width: "80vw",
-            maxWidth: "1200px",
+            width: "80dvw",
+            maxWidth: "700px",
             display: "grid",
             gridTemplateColumns: "1fr max-content",
             border: "none",
+
+            "@media (min-width: 900px)": {
+              maxWidth: "900px",
+            },
 
             "& > section:nth-of-type(1)": {
               gridColumn: "1 / -1",
