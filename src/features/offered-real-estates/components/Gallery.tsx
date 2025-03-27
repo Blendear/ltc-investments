@@ -37,12 +37,6 @@ const galleryCss = {
         fontSize: variables.fontSize.subheading,
       },
 
-      "& .swiper-wrapper": {
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      },
-
       // So that the image can be centered. It didn't work otherwise
       "& .swiper-slide": {
         display: "grid",
@@ -172,6 +166,9 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
         loop={true}
         touchReleaseOnEdges={true}
         passiveListeners={false}
+        onSlideChange={(swiper) => {
+          console.log("slide changed to ", swiper.activeIndex);
+        }}
       >
         {imagesPathsList.map((imagePath, index) => (
           <SwiperSlide key={index}>
