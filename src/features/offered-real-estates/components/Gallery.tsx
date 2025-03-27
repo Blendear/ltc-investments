@@ -32,6 +32,7 @@ const galleryCss = {
       alignItems: "center",
       justifyContent: "center",
       // transition: "all 0.3s ease-in-out",
+      touchAction: "none",
 
       "@media (orientation: landscape)": {
         fontSize: variables.fontSize.subheading,
@@ -168,7 +169,7 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
             <ImageWithWrapper
               src={imagePath}
               wrapperCss={galleryCss.image(isFullscreen)}
-              thirdPartyClassName="swiper-zoom-container"
+              // thirdPartyClassName="swiper-zoom-container"
             />
           </SwiperSlide>
         ))}
