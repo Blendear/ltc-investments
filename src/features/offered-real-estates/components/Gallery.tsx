@@ -12,11 +12,8 @@ import "swiper/css/navigation";
 import "swiper/css/zoom";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
 import { useState } from "react";
-import { FaExpand, FaTimes } from "react-icons/fa";
 import { AiOutlineClose, AiOutlineExpand } from "react-icons/ai";
-// import { Zoom } from "swiper/modules";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import React, { Component } from "react";
 
 const galleryCss = {
   container: (isFullscreen: boolean) =>
@@ -152,6 +149,7 @@ const galleryCss = {
 export const Gallery = ({ imagesPathsList }: GalleryProps) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
+  console.log("imagesPathsList", imagesPathsList);
   return (
     <div css={galleryCss.container(isFullscreen)}>
       {!isFullscreen && (
@@ -169,15 +167,9 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
           type: "fraction",
         }}
         navigation={true}
-        modules={[
-          Pagination,
-          Navigation,
-          //  Zoom
-        ]}
-        // zoom={true}
+        modules={[Pagination, Navigation]}
         touchRatio={0} // Disables the slide change on cursor/touch drag
         loop={true}
-        // simulateTouch={true}
         touchReleaseOnEdges={true}
         passiveListeners={false}
       >
@@ -188,7 +180,6 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
                 <ImageWithWrapper
                   src={imagePath}
                   wrapperCss={galleryCss.image(isFullscreen)}
-                  // thirdPartyClassName="swiper-zoom-container"
                 />
               </TransformComponent>
             </TransformWrapper>
