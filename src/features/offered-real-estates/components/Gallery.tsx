@@ -29,7 +29,7 @@ const galleryCss = {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      transition: "all 0.3s ease-in-out",
+      // transition: "all 0.3s ease-in-out",
 
       "& .swiper-wrapper": {
         display: "flex",
@@ -59,6 +59,8 @@ const galleryCss = {
     justifySelf: "center",
     aspectRatio: "16/9",
     maxWidth: "1200px",
+    width: "100%",
+    height: "100%",
 
     "@media (orientation: landscape)": {
       // maxWidth: "unset",
