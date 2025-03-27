@@ -31,14 +31,14 @@ const galleryCss = {
       justifyContent: "center",
       // transition: "all 0.3s ease-in-out",
 
+      "@media (orientation: landscape)": {
+        fontSize: variables.fontSize.subheading,
+      },
+
       "& .swiper-wrapper": {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-      },
-
-      "@media (orientation: landscape)": {
-        fontSize: variables.fontSize.subheading,
       },
 
       // So that the image can be centered. It didn't work otherwise
@@ -49,6 +49,10 @@ const galleryCss = {
       "& .swiper-button-prev, .swiper-button-next, .swiper-pagination": {
         color: "white",
         filter: `drop-shadow(0 0 3px rgb(0,0,0,0.8))`,
+
+        "@media (orientation: landscape)": {
+          margin: isFullscreen ? "0 20px" : "0",
+        },
 
         ":after": {
           fontSize: variables.fontSize.subheading,
