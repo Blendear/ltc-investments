@@ -9,10 +9,12 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/zoom";
 import ImageWithWrapper from "@/components/ImageWithWrapper";
 import { useState } from "react";
 import { FaExpand, FaTimes } from "react-icons/fa";
 import { AiOutlineClose, AiOutlineExpand } from "react-icons/ai";
+import { Zoom } from "swiper/modules";
 
 const galleryCss = {
   container: (isFullscreen: boolean) =>
@@ -156,7 +158,9 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
           type: "fraction",
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation, Zoom]}
+        // zoom={true}
+        touchRatio={0} // Disables the slide change on cursor/touch drag
         loop={true}
       >
         {imagesPathsList.map((imagePath, index) => (
@@ -164,6 +168,7 @@ export const Gallery = ({ imagesPathsList }: GalleryProps) => {
             <ImageWithWrapper
               src={imagePath}
               wrapperCss={galleryCss.image(isFullscreen)}
+              thirdPartyClassName="swiper-zoom-container"
             />
           </SwiperSlide>
         ))}

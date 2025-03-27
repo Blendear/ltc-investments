@@ -6,6 +6,7 @@ export type ImageWithWrapperProps = {
   src: string;
   alt?: string;
   wrapperCss?: {};
+  thirdPartyClassName?: string;
 };
 
 export type AppDataUniversalForAllUsersType = {

@@ -3,13 +3,19 @@ import { css, keyframes } from "@emotion/react";
 import Image from "next/image";
 import { ImageWithWrapperProps } from "@/types";
 import { variables } from "@/styles/emotion-css/variables";
+import "swiper/css/zoom";
 
 const shimmer = keyframes`
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
 `;
 
-const ImageWithWrapper = ({ src, alt, wrapperCss }: ImageWithWrapperProps) => {
+const ImageWithWrapper = ({
+  src,
+  alt,
+  wrapperCss,
+  thirdPartyClassName,
+}: ImageWithWrapperProps) => {
   return (
     <div
       css={[
@@ -31,6 +37,7 @@ const ImageWithWrapper = ({ src, alt, wrapperCss }: ImageWithWrapperProps) => {
             }
           : { position: "relative" }
       }
+      className={thirdPartyClassName}
     >
       <Image
         src={src}
